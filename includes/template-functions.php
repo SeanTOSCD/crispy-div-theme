@@ -59,6 +59,15 @@ add_action( 'wp_head', function() {
 } );
 
 /**
+ * Add Font Awesome to the theme
+ */
+add_action( 'wp_head', function() {
+    ?>
+    <script src="https://kit.fontawesome.com/6a74fc38c5.js" crossorigin="anonymous"></script>
+    <?php
+} );
+
+/**
  * Add a class to the body if the header is dark
  *
  * @param $classes
