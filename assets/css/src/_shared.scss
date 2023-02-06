@@ -1,0 +1,178 @@
+.section-title {
+	font-size: 2.5rem;
+	font-weight: 800;
+
+	@media all and (min-width: 540px) {
+		font-size: 3rem;
+	}
+
+	@media all and (min-width: 760px) {
+		font-size: 3.5rem;
+	}
+
+	@media all and (min-width: 980px) {
+		font-size: 3.75rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 4rem;
+	}
+}
+
+.section-description {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media all and (min-width: 760px) {
+		grid-template-columns: 3fr 1fr;
+	}
+
+	@media all and (min-width: 980px) {
+		grid-template-columns: 5fr 4fr;
+	}
+}
+
+.element-lead-icon {
+	display: inline-block;
+
+	[class*="fa-"] {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+
+	&.colored {
+		background: linear-gradient(135deg, $color6, $color5);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.heavy {
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.6;
+}
+
+.cta-link {
+	color: $color5;
+	font-weight: 600;
+}
+
+.subdued-links {
+
+	a {
+		color: lighten( $body, 10% );
+		text-decoration: underline;
+
+		&:active,
+		&:focus,
+		&:hover {
+			text-decoration: underline;
+			text-decoration: none;
+		}
+	}
+}
+
+.subdued-title {
+	@include headingFont;
+	color: $gray_text;
+	display: block;
+	font-size: .75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.main-content-left {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media all and (min-width: 760px) {
+		grid-template-columns: 3fr 1fr;
+	}
+
+	@media all and (min-width: 980px) {
+		grid-template-columns: 5fr 4fr;
+	}
+}
+
+.disappearing-br {
+	display: none;
+
+	@media all and (min-width: 1200px) {
+		display: block;
+	}
+}
+
+.socials-flex {
+	column-gap: 1.2rem;
+	display: flex;
+	flex-wrap: wrap;
+
+	a {
+		text-decoration: none;
+
+		[class*="fa-"] {
+			margin-right: 2px;
+		}
+	}
+}
+
+.customizations-grid {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px 2rem;
+	margin: 1rem auto 0;
+
+	.logo {
+		height: 26px;
+		position: relative;
+		width: auto;
+
+		&.advanced-custom-fields-logo,
+		&.gravity-forms-logo {
+			height: 23px;
+		}
+
+		&.affiliatewp-logo {
+			height: 21px;
+			top: -1px;
+		}
+
+		&.tailwindcss-logo {
+			height: 17px;
+			top: -1px;
+		}
+
+		&.facetwp-logo {
+			height: 22px;
+			top: -1px;
+		}
+
+		&.mailchimp-logo,
+		&.zapier-logo {
+			height: 24px;
+			top: -1px;
+		}
+
+		&.woocommerce-logo {
+			height: 26px;
+			top: 1px;
+		}
+
+		&.bootstrap-logo {
+			height: 20px;
+			top: -1px;
+		}
+
+		&.beaver-builder-logo {
+			height: 29px;
+			top: -2px;
+		}
+
+		&.stripe-logo {
+			height: 32px;
+		}
+	}
+}
+

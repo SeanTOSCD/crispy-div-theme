@@ -1,0 +1,132 @@
+.button,
+button,
+input[type="submit"] {
+	background-color: $color6;
+	border: 2px solid $color6;
+	border-radius: 1.7em;
+	color: #fff;
+	display: inline-block;
+	padding: .53em 1.7em;
+	font-size: .88rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-decoration-color: $color6;
+
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: $color5;
+		border-color: $color5;
+		cursor: pointer;
+		text-decoration-color: $color5;
+	}
+
+	&.outline {
+		background-color: transparent;
+		border-color: #fff;
+		color: #fff;
+		text-decoration-color: transparent;
+
+		&:active,
+		&:focus,
+		&:hover {
+			opacity: .7;
+			text-decoration-color: transparent;
+		}
+	}
+
+	&.purple {
+		background-color: $color2;
+		border-color: $color2;
+		text-decoration-color: $color2;
+
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color6;
+			border-color: $color6;
+			text-decoration-color: $color6;
+		}
+	}
+}
+
+p {
+
+	& + .button {
+		margin-top: 1.5rem;
+
+		@media all and (min-width: 980px) {
+			margin-top: 2rem;
+		}
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="text"],
+textarea,
+select {
+	border: 2px solid $color5;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-weight: 500 !important;
+	padding: 12px 14px;
+	width: 100%;
+
+	&:active,
+	&:focus {
+		border-color: $color1;
+	}
+}
+
+select {
+	appearance: none;
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23fff' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
+	background-color: $color4;
+	background-size: 24px 24px;
+	border: 2px solid rgba(0,0,0,.1);
+	color: #fff;
+	padding-right: 40px;
+}
+
+textarea {
+	font-weight: 400;
+}
+
+form label {
+	font-size: .95rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	[class*="form-control-wrap"] {
+		display: block;
+		margin-top: 6px;
+	}
+
+	[class*="not-valid-tip"] {
+		color: #fff;
+		opacity: .8;
+		display: block;
+		font-weight: 600;
+		font-size: .82rem;
+		font-style: italic;
+		padding-top: 6px;
+		text-transform: none;
+	}
+}
+
+.dual-cta {
+
+	.button {
+
+		& ~ a {
+			color: #fff;
+			display: inline-block;
+			font-size: .88rem;
+			margin-top: .52rem;
+			text-decoration-thickness: 1px;
+			text-transform: capitalize;
+		}
+	}
+}

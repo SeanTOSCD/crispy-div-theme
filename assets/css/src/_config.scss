@@ -1,0 +1,19 @@
+html {
+
+	body {
+		background: #fff;
+	}
+}
+
+@mixin headingFont {
+	font-family: 'Montserrat';
+	font-weight: 700;
+}
+
+@mixin FontAwesomeRegular {
+	font: var(--fa-font-regular);
+}
+
+@mixin FontAwesomeSolid {
+	font: var(--fa-font-solid);
+}

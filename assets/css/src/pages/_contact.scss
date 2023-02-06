@@ -1,0 +1,78 @@
+.contact-section {
+	background: linear-gradient(-35deg, $color4 0%, $color2 35%, $color1 100%);
+
+	.section-content {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@media all and (min-width: 980px) {
+			grid-template-columns: 50% 50%;
+		}
+
+		.contact-help-text {
+			border-bottom: 1px dashed rgba(255,255,255,.1);
+
+			@media all and (min-width: 980px) {
+				border: none;
+				order: 2;
+			}
+
+			.section-title {
+				font-weight: 700;
+			}
+
+			p {
+				margin-bottom: 1rem;
+				color: $body_over_purple;
+
+				strong {
+					color: #fff;
+				}
+
+				& + .h5 {
+					font-weight: 700;
+					margin-top: 2.5rem;
+				}
+			}
+
+			.socials-flex {
+
+				a {
+					color: $body_over_purple;
+
+					[class*="fa-"] {
+						color: #fff;
+					}
+
+					&:active,
+					&:focus,
+					&:hover {
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.contact-form-wrap {
+
+			@media all and (min-width: 980px) {
+				border-right: 1px dashed rgba(255,255,255,.1);
+				order: 1;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="url"],
+			input[type="text"],
+			textarea,
+			select {
+				border-color: $color1;
+
+				&:active,
+				&:focus {
+					border-color: $color5;
+				}
+			}
+		}
+	}
+}

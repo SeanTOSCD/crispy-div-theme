@@ -1,0 +1,152 @@
+$color1: #422680;
+$color2: #341671;
+$color3: #280659;
+$color4: #660f56;
+$color5: #ae2d68;
+$color6: #f54952;
+$gray: #f8f5fc;
+$gray_text: #8b829d;
+$black: #161616;
+
+$body: lighten( $black, 20% );
+$body_light: #333333;
+$headings: $color2;
+
+$body_over_purple: #cfc4e6;
+$border_over_purple: rgba(245,81,89,.2);
+
+$body_over_pink: #f9d2e6;
+$border_over_pink: rgba(207,111,154,.5);
+
+$body_over_orange: #ffeeef;
+$border_over_orange: rgba(255,255,255,.2);
+
+$border_over_white: rgba(0,0,0,.1);
+
+.color-black,
+strong {
+	color: $black;
+}
+
+.highlight-text {
+	color: $color6;
+}
+
+.background-white {
+	background-color: #fff;
+}
+
+.background-gray {
+	background-color: $gray;
+}
+
+.background-purple,
+.background-pink,
+.background-orange,
+.background-black,
+.background-purple-gradient {
+
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6,
+	.grid-item-title,
+	.grid-item-title.archive-item-title a,
+	.cta-link,
+	a,
+	strong,
+	form label {
+		color: #fff;
+	}
+}
+
+.background-purple {
+	background-color: $color2;
+	color: $body_over_purple;
+
+	.subdued-links a {
+		color: $body_over_purple;
+	}
+
+	.grid-item {
+		border-color: $border_over_purple !important;
+	}
+}
+
+.background-pink {
+	background-color: $color5;
+	color: $body_over_pink;
+
+	.subdued-links a {
+		color: #fff;
+	}
+
+	.element-lead-icon {
+
+		&.colored {
+			background: none;
+			color: $body_over_pink;
+			-webkit-text-fill-color: $body_over_pink;
+		}
+	}
+}
+
+.background-orange {
+	background-color: $color6;
+	color: $body_over_orange;
+
+	.subdued-links a {
+		color: #fff;
+	}
+
+	.element-lead-icon {
+
+		&.colored {
+			background: none;
+			color: $body_over_orange;
+			-webkit-text-fill-color: $body_over_orange;
+		}
+	}
+}
+
+.background-black {
+	background-color: $black;
+	color: #dfdfdf;
+
+	.subdued-links a {
+		color: #dfdfdf;
+	}
+
+	.element-lead-icon {
+
+		&.colored {
+			background: none;
+			color: #dfdfdf;
+			-webkit-text-fill-color: #dfdfdf;
+		}
+	}
+}
+
+.body-over-purple,
+.background-purple-gradient {
+	color: $body_over_purple;
+
+	a,
+	.subdued-links a {
+		color: $body_over_purple;
+	}
+}
+
+.body-over-purple {
+
+	strong {
+		color: #fff;
+	}
+}
+
+.background-purple-gradient {
+	background-color: $color6;
+	background-image: linear-gradient( 145deg, $color2 0%, rgba( 52,22,113,.85) 35%, rgba( 52,22,113,.85) 65%, $color2 100% );
+}

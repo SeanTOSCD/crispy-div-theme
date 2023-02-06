@@ -1,0 +1,135 @@
+#site-navigation {
+
+	.menu-toggle {
+		display: none;
+		background: none;
+		border: 0;
+		color: $body;
+		cursor: pointer;
+		font-size: 1.76rem;
+		padding: 0;
+		position: absolute;
+		right: 1.2rem;
+		top: 1rem;
+		transition: all .3s;
+
+		@media all and (min-width: 540px) {
+			right: 2rem;
+		}
+
+		@media all and (min-width: 1200px) {
+			right: 4.5rem;
+		}
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: $color5;
+			transform: scale(1.2);
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+
+			a {
+				color: $color2;
+				font-size: .88rem;
+				font-weight: 600;
+				text-decoration: none;
+
+				&:active,
+				&:focus,
+				&:hover {
+					color: $color6;
+				}
+			}
+
+			&.current-menu-item {
+
+				a {
+					color: $color6;
+
+					&:active,
+					&:focus,
+					&:hover {
+						cursor: text;
+					}
+				}
+			}
+		}
+	}
+
+	#primary-menu {
+		//display: none;
+		display: flex;
+		column-gap: 1.5rem;
+	}
+
+	&.toggled {
+
+		& > [class*="-container"] {
+		}
+
+		#primary-menu {
+			display: flex;
+			flex-direction: column-reverse;
+			flex-wrap: wrap;
+			text-align: right;
+		}
+	}
+}
+
+.has-dark-header {
+
+	#masthead {
+		color: #fff;
+
+		.site-header {
+
+			.site-branding {
+
+				.site-title {
+
+					a {
+						color: #fff;
+					}
+				}
+			}
+
+			#site-navigation {
+
+				.menu-toggle {
+					color: #fff;
+				}
+
+				ul {
+
+					li {
+
+						a {
+							color: $body_over_purple;
+
+							&:active,
+							&:focus,
+							&:hover {
+								color: #fff;
+							}
+						}
+
+						&.current-menu-item {
+
+							a {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

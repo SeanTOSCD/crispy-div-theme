@@ -1,0 +1,52 @@
+#masthead {
+	position: relative;
+
+	.inner {
+		max-width: unset;
+	}
+
+	.site-header {
+		display: flex;
+		justify-content: space-between;
+
+		.site-branding {
+			display: flex;
+			flex-direction: column;
+			gap: 10px 1rem;
+			padding-right: 4rem;
+
+			@media all and (min-width: 760px) {
+				align-items: center;
+				flex-direction: row;
+			}
+
+			.site-logo {
+				height: auto;
+				width: 120px;
+			}
+
+			.site-title {
+				display: inline-block;
+				margin: 0;
+				text-transform: uppercase;
+
+				a {
+					color: $body;
+					display: block;
+					font-size: 1rem;
+					font-weight: 700;
+					letter-spacing: 1px;
+					line-height: 1;
+					text-decoration: none;
+				}
+			}
+
+			.description {
+				font-size: .8rem;
+				font-weight: 500;
+				line-height: 1.4;
+				position: relative;
+			}
+		}
+	}
+}

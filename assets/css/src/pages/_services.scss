@@ -1,0 +1,329 @@
+.post-type-archive-service {
+
+	#masthead {
+		background-color: $color5;
+		border-bottom: 1px dashed $border_over_pink;
+		color: $body_over_pink;
+
+		.site-header {
+
+			.site-branding {
+
+				.site-title {
+
+					a {
+						color: #fff;
+					}
+				}
+
+				.description {
+					color: $body_over_pink;
+					position: relative;
+				}
+			}
+
+			#site-navigation {
+
+				.menu-toggle {
+					color: #fff;
+				}
+
+				ul {
+
+					li {
+
+						a {
+							color: $body_over_pink;
+
+							&:active,
+							&:focus,
+							&:hover {
+								color: #fff;
+							}
+						}
+
+						&.current-menu-item {
+
+							a {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.page-header {
+
+		.page-header-description {
+			align-items: center;
+			gap: 1rem 5rem;
+
+			@media all and (min-width: 760px) {
+				grid-template-columns: 1fr;
+			}
+
+			@media all and (min-width: 980px) {
+				grid-template-columns: 5fr 4fr;
+			}
+
+			.jump-to-section {
+
+				label {
+					display: block;
+				}
+
+				select {
+					font-size: .85rem;
+					max-width: 300px;
+				}
+			}
+		}
+	}
+
+	.service-section {
+
+		.service-content-grid {
+			gap: 4rem 2%;
+			display: grid;
+			grid-template-columns: 1fr;
+
+			@media all and (min-width: 1200px) {
+				grid-template-columns: 33% 65%;
+			}
+
+			@media all and (min-width: 1400px) {
+				grid-template-columns: 35% 63%;
+			}
+
+			.service-description {
+
+				.section-title {
+					font-weight: 800;
+					padding-bottom: 2rem;
+					margin-bottom: 2rem;
+					border-bottom: 1px dashed $border_over_white;
+
+					@media all and (min-width: 1200px) {
+						font-size: 2rem;
+					}
+
+					.wp-title-prefix {
+						color: $color5;
+						display: block;
+						font-size: 50%;
+					}
+				}
+
+				.secondary-cta {
+					color: $color5;
+					display: inline-block;
+					font-size: 95%;
+					margin-top: 1rem;
+				}
+			}
+
+			.service-aside {
+
+				@media all and (min-width: 1200px) {
+					padding-left: 2.5rem;
+				}
+
+				@media all and (min-width: 1400px) {
+					padding-left: 7rem;
+				}
+
+				.subdued-title {
+					margin-top: 3px;
+				}
+			}
+		}
+
+		&.plugin-integration-section {
+
+			.customizations-service-grid {
+				border-color: $border_over_white;
+				border-style: dashed;
+				border-width: 1px 0 0 1px;
+				display: grid;
+				grid-template-columns: 1fr;
+
+				@media all and (min-width: 760px) {
+					grid-template-columns: repeat( 2, 1fr );
+				}
+
+				.customization-brand {
+					border-color: $border_over_white;
+					border-style: dashed;
+					border-width: 0 1px 1px 0;
+					padding: 1.5rem;
+
+					.customization-brand-inner {
+						position: relative;
+
+						.logo {
+							height: 24px;
+							margin-bottom: .75rem;
+							width: auto;
+							vertical-align: bottom;
+
+							&.elementor-logo {
+								height: 28px;
+							}
+
+							&.tailwindcss-logo {
+								height: 20px;
+							}
+
+							&.woocommerce-logo {
+								height: 26px;
+							}
+
+							&.facetwp-logo {
+								height: 22px;
+							}
+
+							&.gravity-forms-logo {
+								height: 22px;
+							}
+
+							&.easy-digital-downloads-logo {
+								height: 28px;
+							}
+
+							&.beaver-builder-logo {
+								height: 28px;
+							}
+						}
+
+						.brand-description {
+							font-size: .88rem;
+							max-width: 95%;
+						}
+
+						.cta {
+							position: absolute;
+							right: -12px;
+							top: -12px;
+
+							[class*="fa-"] {
+								color: lighten( $body_light, 60% );
+								font-size: 14px;
+								transition: color .2s ease-in-out;
+
+								&:hover,
+								&:focus,
+								&:active {
+									color: $color5;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.custom-development-section {
+
+			.custom-development-example-accordion-items {
+				border-style: dashed;
+				border-color: $border_over_white;
+				border-width: 0 1px 1px;
+				margin: 2rem 0;
+
+				.custom-development-example-accordion-item {
+
+					.custom-development-example-accordion-item-header {
+						border-top: 1px dashed $border_over_white;
+						position: relative;
+
+						&:hover,
+						&:focus,
+						&:active {
+							background: $gray;
+						}
+
+						.custom-development-example-accordion-item-title {
+							display: block;
+							font-weight: 600;
+							padding: 1rem 2.5rem 1rem 1.5rem;
+
+							&:hover,
+							&:focus,
+							&:active {
+								cursor: pointer;
+
+								&:before {
+									color: lighten( $body_light , 30% );
+								}
+							}
+
+							&:before {
+								color: lighten( $body_light , 60% );
+								content: '\f058';
+								display: inline-block;
+								font-family: 'Font Awesome 6 Free';
+								font: var(--fa-font-light);
+								height: 1rem;
+								margin-right: .5rem;
+								width: 1rem;
+							}
+						}
+
+						.custom-development-example-accordion-item-icon {
+							font-size: 18px;
+							position: absolute;
+							right: 12px;
+							top: 1rem;
+						}
+
+						&.active {
+							background: $gray;
+
+							.custom-development-example-accordion-item-title {
+								color: $color5;
+
+								&:before {
+									color: $color6;
+								}
+							}
+
+							& + .custom-development-example-accordion-item-content {
+								display: block;
+							}
+
+							.custom-development-example-accordion-item-icon {
+								transform: rotate( 45deg );
+							}
+						}
+					}
+
+					.custom-development-example-accordion-item-content {
+						border-top: 1px dashed $border_over_white;
+						display: none;
+						font-size: 90%;
+						padding: 1rem 1.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	#colophon {
+		border-top: 1px dashed $border_over_white;
+	}
+}
+
+.services-grid {
+
+	.grid-item-content {
+
+		.archive-item-title {
+
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+}
