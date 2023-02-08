@@ -97,8 +97,8 @@
 		}
 	}
 }() );
+// Accordion Functionality
 const accordionItems = document.querySelectorAll(".custom-development-example-accordion-item");
-
 accordionItems.forEach(item => {
 	const header = item.querySelector(".custom-development-example-accordion-item-header");
 	const content = item.querySelector(".custom-development-example-accordion-item-content");

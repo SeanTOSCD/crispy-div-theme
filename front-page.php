@@ -30,7 +30,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <?php echo get_crispydiv_services_grid( true, false, array( 'background-purple' ) ); ?>
+        <?php echo get_crispydiv_services_grid( true, true, array( 'background-purple' ) ); ?>
     </section>
 
     <section class="plugin-integration-section">

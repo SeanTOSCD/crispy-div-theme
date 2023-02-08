@@ -2,27 +2,30 @@
 	display: grid;
 	grid-template-columns: 1fr;
 
-	@media all and (min-width: 760px) and (max-width: 1199.98px) {
-		grid-template-columns: 1fr 1fr;
+	&:not(.large) {
 
-		.grid-item:nth-child(odd) {
-			border-right: 1px dashed $border_over_white;
+		@media all and (min-width: 760px) and (max-width: 1199.98px) {
+			grid-template-columns: 1fr 1fr;
+
+			.grid-item:nth-child(odd) {
+				border-right: 1px dashed $border_over_white;
+			}
 		}
-	}
 
-	@media all and (min-width: 1200px) and (max-width: 1799.98px) {
-		grid-template-columns: repeat( 3, 1fr );
+		@media all and (min-width: 1200px) and (max-width: 1799.98px) {
+			grid-template-columns: repeat( 3, 1fr );
 
-		.grid-item:not(:nth-child(3n)) {
-			border-right: 1px dashed $border_over_white;
+			.grid-item:not(:nth-child(3n)) {
+				border-right: 1px dashed $border_over_white;
+			}
 		}
-	}
 
-	@media all and (min-width: 1800px) {
-		grid-template-columns: repeat( 4, 1fr );
+		@media all and (min-width: 1800px) {
+			grid-template-columns: repeat( 4, 1fr );
 
-		.grid-item:not(:nth-child(4n)) {
-			border-right: 1px dashed $border_over_white;
+			.grid-item:not(:nth-child(4n)) {
+				border-right: 1px dashed $border_over_white;
+			}
 		}
 	}
 
@@ -38,6 +41,10 @@
 
 		@media all and (min-width: 1800px) {
 			grid-template-columns: repeat( 3, 1fr );
+
+			.grid-item:not(:nth-child(3n)) {
+				border-right: 1px dashed $border_over_white;
+			}
 		}
 	}
 

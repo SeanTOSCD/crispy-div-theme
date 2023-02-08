@@ -32,7 +32,7 @@
                     <?php
                     $logo_color = get_crispydiv_logo_by_color() ? 'white' : 'color'; ?>
                     <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/crispy-div-logo-<?php echo $logo_color; ?>.svg" alt="<?php echo THEME_NAME; ?>" /></a></p>
-                    <p class="description"><?php echo get_bloginfo( 'description' ); ?></p>
+                    <p class="description"><?php echo get_bloginfo( 'description' ); ?><span class="highlight-text">.</span></p>
                 </div>
 		        <?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
                     <nav id="site-navigation" class="main-navigation">

@@ -4,4 +4,42 @@
 		background-color: $gray;
 		border-bottom: 1px dashed $border_over_white;
 	}
+
+	.subscribe-cta {
+		background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% ), url("assets/images/annie-spratt-subscribe-unsplash.jpg");
+		background-size: 100% auto;
+		background-position-x: 6rem;
+		background-position-y: 80%;
+		background-repeat: no-repeat;
+
+		.subscribe-content-wrap {
+			display: grid;
+			grid-template-columns: 1fr;
+
+			@media all and (min-width: 760px) {
+				grid-template-columns: 5fr 2fr;
+			}
+
+			@media all and (min-width: 960px) {
+				grid-template-columns: 5fr 3fr;
+			}
+
+			@media all and (min-width: 1400px) {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			.subscribe-content {
+
+				.subscribe-form-container {
+
+					[id*="gform"] {
+
+						input[type="submit"] {
+							background-color: transparent;
+						}
+					}
+				}
+			}
+		}
+	}
 }

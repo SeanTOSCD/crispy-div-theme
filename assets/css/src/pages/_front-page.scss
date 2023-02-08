@@ -59,7 +59,7 @@
 		color: #fff;
 
 		.page-header-hero {
-			background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% ), url("assets/images/annie-spratt-unsplash.jpg");
+			background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% ), url("assets/images/annie-spratt-hero-unsplash.jpg");
 			background-size: 110% auto;
 			background-position-x: 6rem;
 			background-position-y: 0%;
@@ -123,6 +123,15 @@
 					a {
 						color: #fff;
 					}
+				}
+
+				p {
+					font-size: 17px;
+				}
+
+				.button {
+					background-color: transparent;
+					text-decoration: none;
 				}
 			}
 		}

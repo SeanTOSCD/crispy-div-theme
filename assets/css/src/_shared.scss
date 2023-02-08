@@ -41,7 +41,7 @@
 	}
 
 	&.colored {
-		background: linear-gradient(135deg, $color6, $color5);
+		background-image: linear-gradient(135deg, $color6, $color5);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
