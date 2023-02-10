@@ -330,14 +330,13 @@
 		}
 
 		.standards-grid {
-			border-top: 1px dashed rgba(255,255,255,.1);
+			border-top: 1px dashed $border_over_purple;
 
 			@media all and (min-width: 1200px) {
 				grid-template-columns: repeat( 3, 1fr );
 			}
 
 			.grid-item {
-				border-color: rgba(255,255,255,.1);
 
 				p {
 					color: $body_over_purple;

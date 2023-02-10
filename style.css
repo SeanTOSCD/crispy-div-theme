@@ -1700,16 +1700,14 @@ html {
       font-weight: 800;
       line-height: 1.6; }
   .page-front .theme-development-section .standards-grid {
-    border-top: 1px dashed rgba(255, 255, 255, 0.1); }
+    border-top: 1px dashed rgba(245, 81, 89, 0.2); }
     @media all and (min-width: 1200px) {
       .page-front .theme-development-section .standards-grid {
         grid-template-columns: repeat(3, 1fr); } }
-    .page-front .theme-development-section .standards-grid .grid-item {
-      border-color: rgba(255, 255, 255, 0.1); }
-      .page-front .theme-development-section .standards-grid .grid-item p {
+    .page-front .theme-development-section .standards-grid .grid-item p {
+      color: #cfc4e6; }
+      .page-front .theme-development-section .standards-grid .grid-item p a {
         color: #cfc4e6; }
-        .page-front .theme-development-section .standards-grid .grid-item p a {
-          color: #cfc4e6; }
 .page-front .courses-section .section-heading {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
   @media all and (min-width: 1200px) {
