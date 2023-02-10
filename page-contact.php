@@ -4,8 +4,24 @@
  */
 
 get_header();
-crispydiv_page_header();
+crispydiv_page_header( array( 'bg-color' => 'background-gray' ) );
+?>
 
-get_template_part( 'template-parts/section', 'contact-form' );
+	<main id="site-content" class="site-main">
+		<div class="inner small">
+			<?php while ( have_posts() ) : the_post(); ?>
 
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div>
+
+				</article>
+
+			<?php endwhile; ?>
+		</div>
+	</main>
+
+<?php
 get_footer();

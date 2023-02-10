@@ -1374,6 +1374,45 @@ template {
 [hidden] {
   display: none; }
 
+.gform_wrapper {
+  max-width: 900px; }
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset.contact-type {
+    margin-bottom: 2rem; }
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=color] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=date] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=datetime-local] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=datetime] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=email] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=month] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=number] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=password] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=search] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=tel] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=text] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=time] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=url] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset input[type=week] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset select + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > fieldset textarea + label {
+    color: #494949;
+    font-weight: 600;
+    text-transform: unset; }
+  .gform_wrapper.gravity-theme .gform_body .gfield_label {
+    color: #341671;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-transform: unset; }
+    .gform_wrapper.gravity-theme .gform_body .gfield_label + .gfield_description {
+      margin-top: -1rem; }
+  .gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice label {
+    color: #494949;
+    font-weight: 500;
+    margin-left: 6px;
+    text-transform: unset; }
+  .gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice input:checked + label {
+    font-weight: 700; }
+
 html {
   color: #494949;
   font-size: 17px;
@@ -1470,44 +1509,8 @@ html {
       .blog .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container [id*="gform"] input[type="submit"]:active, .blog .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container [id*="gform"] input[type="submit"]:focus, .blog .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container [id*="gform"] input[type="submit"]:hover {
         background-color: #ae2d68; }
 
-.contact-section {
-  background: linear-gradient(-35deg, #660f56 0%, #341671 35%, #422680 100%); }
-  .contact-section .section-content {
-    display: grid;
-    grid-template-columns: 1fr; }
-    @media all and (min-width: 980px) {
-      .contact-section .section-content {
-        grid-template-columns: 50% 50%; } }
-    .contact-section .section-content .contact-help-text {
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.1); }
-      @media all and (min-width: 980px) {
-        .contact-section .section-content .contact-help-text {
-          border: none;
-          order: 2; } }
-      .contact-section .section-content .contact-help-text .section-title {
-        font-weight: 700; }
-      .contact-section .section-content .contact-help-text p {
-        margin-bottom: 1rem;
-        color: #cfc4e6; }
-        .contact-section .section-content .contact-help-text p strong {
-          color: #fff; }
-        .contact-section .section-content .contact-help-text p + .h5 {
-          font-weight: 700;
-          margin-top: 2.5rem; }
-      .contact-section .section-content .contact-help-text .socials-flex a {
-        color: #cfc4e6; }
-        .contact-section .section-content .contact-help-text .socials-flex a [class*="fa-"] {
-          color: #fff; }
-        .contact-section .section-content .contact-help-text .socials-flex a:active, .contact-section .section-content .contact-help-text .socials-flex a:focus, .contact-section .section-content .contact-help-text .socials-flex a:hover {
-          color: #fff; }
-    @media all and (min-width: 980px) {
-      .contact-section .section-content .contact-form-wrap {
-        border-right: 1px dashed rgba(245, 81, 89, 0.2);
-        order: 1; } }
-    .contact-section .section-content .contact-form-wrap input[type="submit"] {
-      background-color: transparent; }
-      .contact-section .section-content .contact-form-wrap input[type="submit"]:active, .contact-section .section-content .contact-form-wrap input[type="submit"]:focus, .contact-section .section-content .contact-form-wrap input[type="submit"]:hover {
-        background-color: #ae2d68; }
+.page-contact #masthead {
+  background: #f8f5fc; }
 
 .page-front #site-navigation .menu-toggle {
   color: #fff; }

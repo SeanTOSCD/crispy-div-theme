@@ -1,0 +1,75 @@
+.gform_wrapper {
+	max-width: 900px;
+
+	&.gravity-theme {
+
+		.gform_body {
+
+			.gform_fields {
+
+				& > fieldset {
+
+					&.contact-type {
+						margin-bottom: 2rem;
+					}
+
+					input[type=color],
+					input[type=date],
+					input[type=datetime-local],
+					input[type=datetime],
+					input[type=email],
+					input[type=month],
+					input[type=number],
+					input[type=password],
+					input[type=search],
+					input[type=tel],
+					input[type=text],
+					input[type=time],
+					input[type=url],
+					input[type=week],
+					select,
+					textarea {
+
+						& + label {
+							color: $body;
+							font-weight: 600;
+							text-transform: unset;
+						}
+					}
+				}
+			}
+
+			.gfield_label {
+				color: $headings;
+				font-size: 1.3rem;
+				font-weight: 800;
+				margin-bottom: 1rem;
+				text-transform: unset;
+
+				& + .gfield_description {
+					margin-top: -1rem;
+				}
+			}
+
+			.ginput_container {
+
+				.gchoice {
+
+					label {
+						color: $body;
+						font-weight: 500;
+						margin-left: 6px;
+						text-transform: unset;
+					}
+
+					input:checked {
+
+						& + label {
+							font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+	}
+}
