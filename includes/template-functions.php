@@ -32,6 +32,14 @@ add_filter( 'body_class', function( $classes ) {
 		$classes[] = 'has-dark-header';
 	}
 
+    if ( is_front_page() || is_post_type_archive( 'course' ) ) {
+        $classes[] = 'has-purple-header';
+    } else if ( is_post_type_archive( 'service' ) ) {
+	    $classes[] = 'has-pink-header';
+    } else {
+        $classes[] = 'has-light-header';
+    }
+
 	return $classes;
 } );
 

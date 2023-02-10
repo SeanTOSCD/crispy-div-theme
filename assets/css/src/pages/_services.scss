@@ -1,59 +1,5 @@
 .post-type-archive-service {
 
-	#masthead {
-		background-color: $color5;
-		border-bottom: 1px dashed $border_over_pink;
-		color: $body_over_pink;
-
-		.site-header {
-
-			.site-branding {
-
-				.site-title {
-
-					a {
-						color: #fff;
-					}
-				}
-
-				.description {
-					color: $body_over_pink;
-					position: relative;
-				}
-			}
-
-			#site-navigation {
-
-				.menu-toggle {
-					color: #fff;
-				}
-
-				ul {
-
-					li {
-
-						a {
-							color: $body_over_pink;
-
-							&:active,
-							&:focus,
-							&:hover {
-								color: #fff;
-							}
-						}
-
-						&.current-menu-item {
-
-							a {
-								color: #fff;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
 	.page-header {
 
 		.page-header-description {
@@ -65,7 +11,7 @@
 			}
 
 			@media all and (min-width: 980px) {
-				grid-template-columns: 5fr 4fr;
+				grid-template-columns: 3fr 2fr;
 			}
 
 			.jump-to-section {

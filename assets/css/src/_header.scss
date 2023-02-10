@@ -50,3 +50,44 @@
 		}
 	}
 }
+
+.has-dark-header {
+
+	#masthead {
+		color: #fff;
+
+		.site-header {
+
+			.site-title {
+
+				a {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.has-purple-header {
+
+	#masthead {
+		background-color: $color2;
+		border-bottom: 1px dashed $border_over_purple;
+
+		.site-header {
+			color: $body_over_purple;
+		}
+	}
+}
+
+.has-pink-header {
+
+	#masthead {
+		background-color: $color5;
+		border-bottom: 1px dashed $border_over_pink;
+
+		.site-header {
+			color: $body_over_pink;
+		}
+	}
+}

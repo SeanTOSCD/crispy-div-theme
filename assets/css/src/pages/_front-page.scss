@@ -1,52 +1,31 @@
 .page-front {
 
-	#masthead {
-		background-color: $color2;
-		border-bottom: 1px dashed $border_over_purple;
-		color: $body_over_purple;
+	#site-navigation {
 
-		.site-header {
+		.menu-toggle {
+			color: #fff;
+		}
 
-			.site-branding {
+		&:not(.toggled) {
 
-				.site-title {
+			#primary-menu {
+
+				li {
 
 					a {
-						color: #fff;
+						color: $body_over_purple;
+
+						&:active,
+						&:focus,
+						&:hover {
+							color: $color6;
+						}
 					}
-				}
 
-				.description {
-					color: $body_over_purple;
-					position: relative;
-				}
-			}
-
-			#site-navigation {
-
-				.menu-toggle {
-					color: $color6;
-				}
-
-				ul {
-
-					li {
+					&.current-menu-item {
 
 						a {
-							color: $body_over_purple;
-
-							&:active,
-							&:focus,
-							&:hover {
-								color: $color6;
-							}
-						}
-
-						&.current-menu-item {
-
-							a {
-								color: #fff;
-							}
+							color: #fff;
 						}
 					}
 				}

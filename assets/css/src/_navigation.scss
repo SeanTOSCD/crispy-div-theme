@@ -1,7 +1,6 @@
 #site-navigation {
 
 	.menu-toggle {
-		display: none;
 		background: none;
 		border: 0;
 		color: $body;
@@ -18,6 +17,7 @@
 		}
 
 		@media all and (min-width: 1200px) {
+			display: none;
 			right: 4.5rem;
 		}
 
@@ -29,30 +29,22 @@
 		}
 	}
 
-	ul {
+	#primary-menu {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 
-		li {
+		.menu-item {
 
 			a {
-				color: $color2;
 				font-size: .88rem;
 				font-weight: 600;
 				text-decoration: none;
-
-				&:active,
-				&:focus,
-				&:hover {
-					color: $color6;
-				}
 			}
 
 			&.current-menu-item {
 
 				a {
-					color: $color6;
 
 					&:active,
 					&:focus,
@@ -64,55 +56,162 @@
 		}
 	}
 
-	#primary-menu {
-		//display: none;
-		display: flex;
-		column-gap: 1.5rem;
+	&:not(.toggled) {
+
+		#primary-menu {
+			display: none;
+
+			@media all and (min-width: 1200px) {
+				column-gap: 1.5rem;
+				display: flex;
+				text-align: right;
+			}
+
+			.menu-item {
+
+				a {
+					color: $color2;
+
+					&:active,
+					&:focus,
+					&:hover {
+						color: $color6;
+					}
+				}
+
+				&.current-menu-item {
+
+					a {
+						color: $color6;
+					}
+				}
+			}
+		}
 	}
 
 	&.toggled {
 
 		& > [class*="-container"] {
+			background: #fff;
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
 		}
 
 		#primary-menu {
 			display: flex;
 			flex-direction: column-reverse;
 			flex-wrap: wrap;
-			text-align: right;
+			width: 200px;
+
+			.menu-item {
+
+				a {
+					color: $body;
+					display: block;
+					font-weight: 600;
+					padding: 10px;
+					text-decoration: none;
+
+					&:active,
+					&:focus,
+					&:hover {
+						color: $color5;
+					}
+				}
+			}
 		}
 	}
 }
 
 .has-dark-header {
 
-	#masthead {
-		color: #fff;
+	.site-title {
 
-		.site-header {
+		a {
+			color: #fff;
+		}
+	}
 
-			.site-branding {
+	#site-navigation {
 
-				.site-title {
+		.menu-toggle {
+			color: #fff;
+		}
+
+		#primary-menu {
+
+			.menu-item {
+
+				a {
+
+					&:active,
+					&:focus,
+					&:hover {
+						color: #fff;
+					}
+				}
+
+				&.current-menu-item {
 
 					a {
 						color: #fff;
 					}
 				}
 			}
+		}
+	}
+}
 
-			#site-navigation {
+.has-purple-header {
 
-				.menu-toggle {
-					color: #fff;
-				}
+	.site-header {
 
-				ul {
+		#site-navigation {
 
-					li {
+			&:not(.toggled) {
+
+				#primary-menu {
+
+					.menu-item {
 
 						a {
 							color: $body_over_purple;
+
+							&:active,
+							&:focus,
+							&:hover {
+								color: $color6;
+							}
+						}
+
+						&.current-menu-item {
+
+							a {
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.has-pink-header {
+
+	.site-header {
+
+		#site-navigation {
+
+			&:not(.toggled) {
+
+				#primary-menu {
+
+					.menu-item {
+
+						a {
+							color: $body_over_pink;
 
 							&:active,
 							&:focus,
