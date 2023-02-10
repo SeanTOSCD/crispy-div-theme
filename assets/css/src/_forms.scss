@@ -7,10 +7,15 @@ input[type="submit"] {
 	color: #fff;
 	display: inline-block;
 	padding: .53em 1.7em;
-	font-size: .88rem;
+	font-size: .75rem;
 	font-weight: 800;
 	text-transform: uppercase;
 	text-decoration-color: $color6;
+
+	&.small {
+		font-size: .75rem;
+		padding: .4em 1.2em;
+	}
 
 	&:active,
 	&:focus,
@@ -21,20 +26,6 @@ input[type="submit"] {
 		text-decoration-color: $color5;
 	}
 
-	&.outline {
-		background-color: transparent;
-		border-color: #fff;
-		color: #fff;
-		text-decoration-color: transparent;
-
-		&:active,
-		&:focus,
-		&:hover {
-			opacity: .7;
-			text-decoration-color: transparent;
-		}
-	}
-
 	&.purple {
 		background-color: $color2;
 		border-color: $color2;
@@ -43,9 +34,37 @@ input[type="submit"] {
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: $color6;
-			border-color: $color6;
-			text-decoration-color: $color6;
+			background-color: $color5;
+			border-color: $color5;
+			text-decoration-color: $color5;
+		}
+
+		&.outline {
+			color: $color2;
+
+			&:active,
+			&:focus,
+			&:hover {
+				background-color: $color5;
+				border-color: $color5;
+				color: #fff;
+				text-decoration-color: $color5;
+			}
+		}
+	}
+
+	&.outline {
+		background-color: transparent;
+		color: $color2;
+		text-decoration-color: transparent;
+
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $color5;
+			border-color: $color5;
+			color: #fff;
+			text-decoration-color: $color5;
 		}
 	}
 }
@@ -76,7 +95,7 @@ select {
 
 	&:active,
 	&:focus {
-		border-color: $color1;
+		border-color: $color6;
 	}
 }
 

@@ -1,5 +1,6 @@
 #masthead {
 	position: relative;
+	border-bottom: 1px dashed $border_over_white;
 
 	.inner {
 		max-width: unset;
@@ -72,7 +73,7 @@
 
 	#masthead {
 		background-color: $color2;
-		border-bottom: 1px dashed $border_over_purple;
+		border-color: $border_over_purple;
 
 		.site-header {
 			color: $body_over_purple;
@@ -84,7 +85,7 @@
 
 	#masthead {
 		background-color: $color5;
-		border-bottom: 1px dashed $border_over_pink;
+		border-color: $border_over_pink;
 
 		.site-header {
 			color: $body_over_pink;

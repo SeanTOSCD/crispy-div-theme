@@ -56,21 +56,17 @@
 		.contact-form-wrap {
 
 			@media all and (min-width: 980px) {
-				border-right: 1px dashed rgba(255,255,255,.1);
+				border-right: 1px dashed $border_over_purple;
 				order: 1;
 			}
 
-			input[type="text"],
-			input[type="email"],
-			input[type="url"],
-			input[type="text"],
-			textarea,
-			select {
-				border-color: $color1;
+			input[type="submit"] {
+				background-color: transparent;
 
 				&:active,
-				&:focus {
-					border-color: $color5;
+				&:focus,
+				&:hover {
+					background-color: $color5;
 				}
 			}
 		}

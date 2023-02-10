@@ -61,7 +61,7 @@ if ( ! empty( $args['bg-color'] ) ) {
 ?>
 
 <section class="page-header <?php echo $background_color_class; ?>">
-	<div class="inner">
+	<div class="inner medium">
 		<h1 class="page-header-title <?php echo $title_class; ?>"><?php echo $the_title; ?></h1>
 		<?php if ( $the_description ) { ?>
 			<div class="page-header-description">

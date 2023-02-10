@@ -2,7 +2,6 @@
 
 	#masthead {
 		background-color: $gray;
-		border-bottom: 1px dashed $border_over_white;
 	}
 
 	.subscribe-cta {
@@ -50,6 +49,12 @@
 
 						input[type="submit"] {
 							background-color: transparent;
+
+							&:active,
+							&:focus,
+							&:hover {
+								background-color: $color5;
+							}
 						}
 					}
 				}

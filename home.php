@@ -41,7 +41,7 @@ crispydiv_page_header( array( 'bg-color' => 'background-gray' ) );
                                 crispydiv_button( array(
                                     'text' => 'Keep Reading',
                                     'url' => get_permalink(),
-                                    'classes' => array( 'button' ),
+                                    'classes' => array( 'button', 'purple', 'small', 'outline' ),
                                 ) );
                                 ?>
                             </div>

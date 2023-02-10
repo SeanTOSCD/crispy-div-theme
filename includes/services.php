@@ -37,7 +37,13 @@ function get_crispydiv_services_grid( $full = false, $with_cta = false, $classes
 							$the_slug = get_post_field( 'post_name', get_the_ID() );
 							?>
                             <div class="cta">
-                                <a href="<?php echo home_url( 'services' ); ?>#<?php echo $the_slug; ?>" class="button"><?php echo get_field( 'service_cta_text' ); ?></a>
+                                <?php
+                                crispydiv_button( array(
+	                                'text' => get_field( 'service_cta_text' ),
+	                                'url' => home_url( 'services' ) . '#' . $the_slug,
+	                                'classes' => array( 'button', 'small', 'outline' ),
+                                ) );
+                                ?>
                             </div>
 						<?php } ?>
 					</div>

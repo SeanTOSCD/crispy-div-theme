@@ -55,6 +55,16 @@
 						padding-bottom: 3.5rem;
 						padding-top: 3.5rem;
 
+						@media all and (min-width: 980px) {
+							padding-bottom: 4.5rem;
+							padding-top: 4.5rem;
+						}
+
+						@media all and (min-width: 1400px) {
+							padding-bottom: 5.5rem;
+							padding-top: 5.5rem;
+						}
+
 						.page-header-title {
 							color: #fff;
 							font-weight: 800;
@@ -109,8 +119,7 @@
 				}
 
 				.button {
-					background-color: transparent;
-					text-decoration: none;
+					color: #fff;
 				}
 			}
 		}
@@ -204,16 +213,10 @@
 
 			/* Customization logos Grid in _shared.scss */
 		}
-
-		.ask-about-integrations {
-
-			p {
-				font-weight: 600;
-			}
-		}
 	}
 
 	.theme-development-section {
+		font-size: 17px;
 
 		.section-content {
 
@@ -223,14 +226,15 @@
 		}
 
 		.real-data-header {
+			padding-bottom: 5rem;
 
-			@media all and (min-width: 1200px) {
-				padding-bottom: 5rem;
+			.attribution {
+				color: #fff;
 			}
 
 			.nng-stats {
 				display: grid;
-				gap: 2.5rem;
+				gap: 1.5rem 2.5rem;
 				grid-template-columns: 1fr;
 				list-style-type: none;
 				margin: 2.5rem 0 0;
@@ -242,10 +246,19 @@
 
 				li {
 					border-radius: 10px;
-					color: #fff;
-					font-weight: 500;
 					padding: 0 2rem 0 1rem;
 					position: relative;
+
+					.stat-title {
+						@include headingFont;
+						color: #fff;
+						font-weight: 700;
+						margin-bottom: .5rem;
+
+						@media all and (min-width: 1200px) {
+							margin-bottom: .7rem;
+						}
+					}
 
 					[class*="fa-"] {
 						color: $color5;
@@ -335,23 +348,12 @@
 				}
 			}
 		}
-
-		.cta-section-slim {
-
-			p {
-				font-weight: 600;
-
-				.cta-link {
-					display: inline;
-					font-weight: 600;
-				}
-			}
-		}
 	}
 
 	.courses-section {
 
 		.section-heading {
+			border-bottom: 1px dashed $border_over_white;
 
 			@media all and (min-width: 1200px) {
 				padding-bottom: 4.5rem;

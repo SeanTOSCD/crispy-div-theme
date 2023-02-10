@@ -30,7 +30,7 @@ function get_crispydiv_courses_grid() {
 							crispydiv_button( array(
 								'text' => 'Get Started',
 								'url' => get_the_permalink( get_the_ID() ),
-								'classes' => array( 'button', 'purple' ),
+								'classes' => array( 'button', 'purple', 'small', 'outline' ),
 							) );
 							?>
 						</div>

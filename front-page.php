@@ -84,20 +84,20 @@ get_header();
                 <p>We use Gravity Forms to streamline interactions with users and maintain a detailed records. With <strong class="color-black">over 30 form fields to choose from</strong> and integration capabilities through its API & webhook functionality, the possibilities are endless and exciting.</p>
             </div>
         </div>
-        <div class="ask-about-integrations element-spacing small background-pink">
+        <div class="small-cta-section element-spacing tiny background-pink">
             <p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/' ); ?>">Send us an email</a> to ask questions. No obligations.</p>
         </div>
     </section>
 
-    <section class="theme-development-section background-purple-gradient">
+    <section class="theme-development-section background-purple">
         <div class="real-data-header element-spacing large">
             <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-table-layout"></i></span>
             <h2 class="section-title">We build themes <br class="disappearing-br">based on real data<span class="highlight-text">.</span></h2>
-            <p class="subdued-links body-over-purple">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
+            <p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
             <ul class="nng-stats">
-                <li><i class="fa-solid fa-circle"></i>Users spend 80% of their time on a website looking at the information presented above the fold on page load.</li>
-                <li><i class="fa-solid fa-circle"></i>User scan content in an "F" pattern: from top left moving horizontally, down the left side, then across the middle.</li>
-                <li><i class="fa-solid fa-circle"></i>Users are more likely to engage with content that is presented in short paragraphs and with clear headings.</li>
+                <li><i class="fa-solid fa-circle"></i><p class="stat-title">Above the Fold</p>Users spend 80% of their time on a website looking at the information presented above the fold on page load.</li>
+                <li><i class="fa-solid fa-circle"></i><p class="stat-title">The "F" pattern</p>User scan content in an "F" pattern: from top left moving horizontally, down the left side, then across the middle.</li>
+                <li><i class="fa-solid fa-circle"></i><p class="stat-title">Skimmable Content</p>Users are more likely to engage with content that is presented in short paragraphs and with clear headings.</li>
             </ul>
         </div>
         <div class="mock-browser-grid element-spacing large">
@@ -168,13 +168,13 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="cta-section-slim element-spacing small background-pink">
+        <div class="small-cta-section element-spacing tiny background-pink">
             <p><a class="cta-link" href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
         </div>
     </section>
 
     <section class="courses-section">
-        <div class="section-heading element-spacing large background-purple">
+        <div class="section-heading element-spacing large">
             <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-graduation-cap"></i></span>
             <h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<span class="highlight-text">.</span></h2>
             <div class="section-description">
@@ -184,9 +184,9 @@ get_header();
         <?php echo get_crispydiv_courses_grid(); ?>
     </section>
 
-    <section class="contact-cta-section element-spacing medium background-gray">
+    <section class="contact-cta-section element-spacing medium">
         <span class="cta-title h4">Got questions?</span>
-        <p>Don't be shy! <a class="cta-link" href="<?php echo home_url( '/contact/' ); ?>">Email us with your inquiry.</a> No obligations.</p>
+        <p>Don't be shy! <a class="cta-link" href="<?php echo home_url( '/contact/' ); ?>">Send an email</a> with your inquiry. No obligations.</p>
     </section>
 
 <?php

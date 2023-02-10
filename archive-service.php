@@ -45,7 +45,7 @@ crispydiv_page_header( array( 'bg-color' => 'background-pink' ) );
                         $button_url = home_url( '/contact/' );
 
                         if ( 'plugin-integration' === $the_slug ) {
-                            $button_text = 'Ask About Your Favorite';
+                            $button_text = 'Ask About Your Favorites';
                         } else if ( 'theme-development' === $the_slug ) {
 	                        $button_text = 'Start the Conversation';
                         } else if ( 'custom-development' === $the_slug ) {
