@@ -86,7 +86,7 @@ input[type="url"],
 input[type="text"],
 textarea,
 select {
-	border: 2px solid $color5;
+	border: 2px solid $color2;
 	border-radius: 4px;
 	box-sizing: border-box;
 	font-weight: 500 !important;
@@ -101,11 +101,10 @@ select {
 
 select {
 	appearance: none;
-	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23fff' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
-	background-color: $color4;
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23494949' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
+	background-color: $gray;
 	background-size: 24px 24px;
-	border: 2px solid rgba(0,0,0,.1);
-	color: #fff;
+	border: 2px solid $color2;
 	padding-right: 40px;
 }
 

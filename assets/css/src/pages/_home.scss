@@ -45,15 +45,36 @@
 
 				.subscribe-form-container {
 
-					[id*="gform"] {
+					.gform_wrapper {
 
-						input[type="submit"] {
-							background-color: transparent;
+						&.gravity-theme {
 
-							&:active,
-							&:focus,
-							&:hover {
-								background-color: $color5;
+							.gform_body {
+
+								.gfield {
+									margin-bottom: 0;
+
+									.gfield_label {
+										color: #fff;
+										font-size: .88rem;
+										font-weight: 700;
+										margin-bottom: .35rem;
+
+										.gfield_required {
+											display: none;
+										}
+									}
+								}
+							}
+
+							input[type="submit"] {
+								background-color: transparent;
+
+								&:active,
+								&:focus,
+								&:hover {
+									background-color: $color5;
+								}
 							}
 						}
 					}

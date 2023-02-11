@@ -24,6 +24,14 @@
 					font-size: .85rem;
 					max-width: 300px;
 				}
+
+				select {
+					background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='%23fff' d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
+					background-color: $color4;
+					background-size: 24px 24px;
+					border: 2px solid rgba(0,0,0,.1);
+					color: #fff;
+				}
 			}
 		}
 	}

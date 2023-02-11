@@ -89,3 +89,8 @@ if ( class_exists( 'acf' ) ) {
 	require THEME_INCLUDES . '/integrations/advanced-custom-fields.php';
 }
 
+// Integrations
+if ( class_exists( 'GF_Form' ) ) {
+	require THEME_INCLUDES . '/integrations/gravity-forms.php';
+}
+
