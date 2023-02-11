@@ -3,7 +3,7 @@
  * Crispy Div functions and definitions
  */
 
-const THEME_VERSION = '1.0.4';
+const THEME_VERSION = '1.0.5';
 
 define( 'THEME_URI', get_home_url() );
 define( 'THEME_NAME', get_bloginfo( 'name' ) );
@@ -89,7 +89,6 @@ if ( class_exists( 'acf' ) ) {
 	require THEME_INCLUDES . '/integrations/advanced-custom-fields.php';
 }
 
-// Integrations
 if ( class_exists( 'GF_Form' ) ) {
 	require THEME_INCLUDES . '/integrations/gravity-forms.php';
 }
