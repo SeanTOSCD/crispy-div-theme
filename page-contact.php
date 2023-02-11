@@ -14,7 +14,7 @@ crispydiv_page_header( array( 'bg-color' => 'background-gray' ) );
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<div class="entry-content">
-						<?php the_content(); ?>
+						<?php gravity_form( 'Contact', false, false, false, '', true ); ?>
 					</div>
 
 				</article>

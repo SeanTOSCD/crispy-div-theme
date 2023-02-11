@@ -62,6 +62,24 @@ strong {
 	}
 }
 
+.background-purple,
+.background-purple-gradient {
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="text"],
+	textarea,
+	select {
+		border-color: $color5;
+
+		&:active,
+		&:focus {
+			border-color: $color6;
+		}
+	}
+}
+
 .background-purple {
 	background-color: $color2;
 	color: $body_over_purple;
@@ -89,6 +107,20 @@ strong {
 			background: none;
 			color: $body_over_pink;
 			-webkit-text-fill-color: $body_over_pink;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="text"],
+	textarea,
+	select {
+		border-color: $color4;
+
+		&:active,
+		&:focus {
+			border-color: $color6;
 		}
 	}
 }

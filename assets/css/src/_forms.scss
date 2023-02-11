@@ -34,9 +34,9 @@ input[type="submit"] {
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: $color5;
-			border-color: $color5;
-			text-decoration-color: $color5;
+			background-color: $color6;
+			border-color: $color6;
+			text-decoration-color: $color6;
 		}
 
 		&.outline {
@@ -45,10 +45,10 @@ input[type="submit"] {
 			&:active,
 			&:focus,
 			&:hover {
-				background-color: $color5;
-				border-color: $color5;
+				background-color: $color6;
+				border-color: $color6;
 				color: #fff;
-				text-decoration-color: $color5;
+				text-decoration-color: $color6;
 			}
 		}
 	}
@@ -56,15 +56,16 @@ input[type="submit"] {
 	&.outline {
 		background-color: transparent;
 		color: $color2;
+		border-color: $color5;
 		text-decoration-color: transparent;
 
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: $color5;
-			border-color: $color5;
+			background-color: $color6;
+			border-color: $color6;
 			color: #fff;
-			text-decoration-color: $color5;
+			text-decoration-color: $color6;
 		}
 	}
 }

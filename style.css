@@ -108,6 +108,44 @@ strong {
 .background-purple-gradient form label {
   color: #fff; }
 
+.background-purple input[type="text"],
+.background-purple input[type="email"],
+.background-purple input[type="url"],
+.background-purple input[type="text"],
+.background-purple textarea,
+.background-purple select,
+.background-purple-gradient input[type="text"],
+.background-purple-gradient input[type="email"],
+.background-purple-gradient input[type="url"],
+.background-purple-gradient input[type="text"],
+.background-purple-gradient textarea,
+.background-purple-gradient select {
+  border-color: #ae2d68; }
+  .background-purple input[type="text"]:active, .background-purple input[type="text"]:focus,
+  .background-purple input[type="email"]:active,
+  .background-purple input[type="email"]:focus,
+  .background-purple input[type="url"]:active,
+  .background-purple input[type="url"]:focus,
+  .background-purple input[type="text"]:active,
+  .background-purple input[type="text"]:focus,
+  .background-purple textarea:active,
+  .background-purple textarea:focus,
+  .background-purple select:active,
+  .background-purple select:focus,
+  .background-purple-gradient input[type="text"]:active,
+  .background-purple-gradient input[type="text"]:focus,
+  .background-purple-gradient input[type="email"]:active,
+  .background-purple-gradient input[type="email"]:focus,
+  .background-purple-gradient input[type="url"]:active,
+  .background-purple-gradient input[type="url"]:focus,
+  .background-purple-gradient input[type="text"]:active,
+  .background-purple-gradient input[type="text"]:focus,
+  .background-purple-gradient textarea:active,
+  .background-purple-gradient textarea:focus,
+  .background-purple-gradient select:active,
+  .background-purple-gradient select:focus {
+    border-color: #f54952; }
+
 .background-purple {
   background-color: #341671;
   color: #cfc4e6; }
@@ -125,6 +163,25 @@ strong {
     background: none;
     color: #f9d2e6;
     -webkit-text-fill-color: #f9d2e6; }
+  .background-pink input[type="text"],
+  .background-pink input[type="email"],
+  .background-pink input[type="url"],
+  .background-pink input[type="text"],
+  .background-pink textarea,
+  .background-pink select {
+    border-color: #660f56; }
+    .background-pink input[type="text"]:active, .background-pink input[type="text"]:focus,
+    .background-pink input[type="email"]:active,
+    .background-pink input[type="email"]:focus,
+    .background-pink input[type="url"]:active,
+    .background-pink input[type="url"]:focus,
+    .background-pink input[type="text"]:active,
+    .background-pink input[type="text"]:focus,
+    .background-pink textarea:active,
+    .background-pink textarea:focus,
+    .background-pink select:active,
+    .background-pink select:focus {
+      border-color: #f54952; }
 
 .background-orange {
   background-color: #f54952;
@@ -462,9 +519,9 @@ input[type="submit"] {
     input[type="submit"].purple:active,
     input[type="submit"].purple:focus,
     input[type="submit"].purple:hover {
-      background-color: #ae2d68;
-      border-color: #ae2d68;
-      text-decoration-color: #ae2d68; }
+      background-color: #f54952;
+      border-color: #f54952;
+      text-decoration-color: #f54952; }
     .button.purple.outline,
     button.purple.outline,
     input[type="submit"].purple.outline {
@@ -476,15 +533,16 @@ input[type="submit"] {
       input[type="submit"].purple.outline:active,
       input[type="submit"].purple.outline:focus,
       input[type="submit"].purple.outline:hover {
-        background-color: #ae2d68;
-        border-color: #ae2d68;
+        background-color: #f54952;
+        border-color: #f54952;
         color: #fff;
-        text-decoration-color: #ae2d68; }
+        text-decoration-color: #f54952; }
   .button.outline,
   button.outline,
   input[type="submit"].outline {
     background-color: transparent;
     color: #341671;
+    border-color: #ae2d68;
     text-decoration-color: transparent; }
     .button.outline:active, .button.outline:focus, .button.outline:hover,
     button.outline:active,
@@ -493,10 +551,10 @@ input[type="submit"] {
     input[type="submit"].outline:active,
     input[type="submit"].outline:focus,
     input[type="submit"].outline:hover {
-      background-color: #ae2d68;
-      border-color: #ae2d68;
+      background-color: #f54952;
+      border-color: #f54952;
       color: #fff;
-      text-decoration-color: #ae2d68; }
+      text-decoration-color: #f54952; }
 
 p + .button {
   margin-top: 1.5rem; }
@@ -619,12 +677,12 @@ form label {
           color: #341671;
           font-size: 1.35rem;
           font-weight: 700;
-          text-decoration-color: #f54952; }
+          text-decoration-color: #ae2d68; }
       .general-grid .grid-item .grid-item-content .grid-item-description {
         flex: 1 0 auto;
         font-size: 17px; }
         .general-grid .grid-item .grid-item-content .grid-item-description:not(:last-child) {
-          margin-bottom: 2rem; }
+          margin-bottom: 1.5rem; }
         .general-grid .grid-item .grid-item-content .grid-item-description ul,
         .general-grid .grid-item .grid-item-content .grid-item-description ol {
           margin: 0;
@@ -1609,7 +1667,10 @@ html {
     .blog .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"] {
       background-color: transparent; }
       .blog .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:active, .blog .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:focus, .blog .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:hover {
-        background-color: #ae2d68; }
+        background-color: #f54952;
+        border-color: #f54952;
+        color: #fff;
+        text-decoration-color: #f54952; }
 
 .page-contact #masthead {
   background: #f8f5fc; }
@@ -1707,7 +1768,8 @@ html {
         padding-left: 4.5rem; } }
     .page-front .plugin-integration-section .advanced-custom-fields-highlight .acf-grid .acf-graphic img {
       border: 1px solid rgba(0, 0, 0, 0.2);
-      border-radius: 11px; }
+      border-radius: 11px;
+      box-shadow: 6px 6px 0 #f8f5fc; }
 .page-front .plugin-integration-section .facetwp-gravity-forms-grid {
   display: grid;
   grid-template-columns: 1fr; }

@@ -73,7 +73,10 @@
 								&:active,
 								&:focus,
 								&:hover {
-									background-color: $color5;
+									background-color: $color6;
+									border-color: $color6;
+									color: #fff;
+									text-decoration-color: $color6;
 								}
 							}
 						}

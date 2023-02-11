@@ -15,7 +15,7 @@ crispydiv_page_header( array( 'bg-color' => 'background-gray' ) );
                     <div class="subscribe-description">
                         <p>Join our mailing list and be the first to receive <strong>exclusive news, updates, and insider tips on all things WordPress</strong>. From custom development and plugin integrations to theme development and website design, we cover it all.</p>
                         <div class="subscribe-form-container">
-					        <?php echo do_shortcode( '[gravityform id="1" title="false"]' ); ?>
+                            <?php gravity_form( 'Subscribe', false, false, false, '', true ); ?>
                         </div>
                     </div>
                 </div>
