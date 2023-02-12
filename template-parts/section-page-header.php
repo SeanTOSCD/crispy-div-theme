@@ -58,9 +58,14 @@ if ( ! empty( $args['bg-color'] ) ) {
 } else if ( $background_color && 'default' !== $background_color ) {
 	$background_color_class = $background_color;
 }
+
+$corner_accent_class = '';
+if ( ! empty( $args['corner-accent-color'] ) ) {
+	$corner_accent_class = ' corner-accent ' . $args['corner-accent-color'];
+}
 ?>
 
-<section class="page-header <?php echo $background_color_class; ?>">
+<section class="page-header <?php echo $background_color_class, $corner_accent_class; ?>">
 	<div class="inner medium">
 		<h1 class="page-header-title <?php echo $title_class; ?>"><?php echo $the_title; ?></h1>
 		<?php if ( $the_description ) { ?>

@@ -132,11 +132,11 @@
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 5px 2rem;
+	gap: 5px 1.5rem;
 	margin: 1rem auto 0;
 
 	.logo {
-		height: 26px;
+		height: 21px;
 		position: relative;
 		width: auto;
 
@@ -151,8 +151,8 @@
 		}
 
 		&.tailwindcss-logo {
-			height: 17px;
-			top: -1px;
+			height: 15px;
+			top: -3px;
 		}
 
 		&.facetwp-logo {
@@ -162,12 +162,12 @@
 
 		&.mailchimp-logo,
 		&.zapier-logo {
-			height: 24px;
+			height: 22px;
 			top: -1px;
 		}
 
 		&.woocommerce-logo {
-			height: 26px;
+			height: 24px;
 			top: 1px;
 		}
 
@@ -177,12 +177,54 @@
 		}
 
 		&.beaver-builder-logo {
-			height: 29px;
+			height: 26px;
 			top: -2px;
 		}
 
 		&.stripe-logo {
-			height: 32px;
+			height: 26px;
+		}
+	}
+}
+
+.corner-accent {
+	background-size: 160px auto;
+	background-repeat: no-repeat;
+	background-position: calc( 100% - 1rem ) calc( 100% - 1rem );
+
+	&.white-orange {
+		background-image: url("assets/images/corner-accent-white-orange.svg");
+	}
+
+	&.white-purple {
+		background-image: url("assets/images/corner-accent-white-purple.svg");
+	}
+
+	&.white-pink {
+		background-image: url("assets/images/corner-accent-white-pink.svg");
+	}
+
+	&.white-white {
+		background-image: url("assets/images/corner-accent-white-white.svg");
+	}
+
+	&.black-orange {
+		background-image: url("assets/images/corner-accent-black-orange.svg");
+	}
+
+	&.black-purple {
+		background-image: url("assets/images/corner-accent-black-purple.svg");
+	}
+
+	&.black-pink {
+		background-image: url("assets/images/corner-accent-black-purple.svg");
+	}
+
+	&.top-right {
+		background-position: calc( 100% - 1rem ) 1rem;
+
+		&.white-white {
+			background-image: url("assets/images/corner-accent-top-right-white-white.svg");
 		}
 	}
 }

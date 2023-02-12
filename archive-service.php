@@ -4,7 +4,10 @@
  */
 
 get_header();
-crispydiv_page_header( array( 'bg-color' => 'background-pink' ) );
+crispydiv_page_header( array(
+    'bg-color' => 'background-pink',
+    'corner-accent-color' => 'white-white',
+) );
 ?>
 
 <div class="services-wrap">

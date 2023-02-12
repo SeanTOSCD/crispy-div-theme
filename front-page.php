@@ -9,22 +9,24 @@ get_header();
     <section class="page-header">
         <div class="page-header-hero">
             <div class="page-header-hero-inner">
-                <div class="inner no-vertical-spacing">
-                    <div class="what-we-do">
-                        <div class="content-wrap">
-                            <h1 class="page-header-title"><?php echo get_crispydiv_tagline(); ?></h1>
-                            <div class="page-header-description">
-                                <p>Getting started with WordPress is simple. Molding WordPress to your needs can be difficult. We find creative ways to solve that problem.</p>
+                <div class="corner-accent white-orange">
+                    <div class="inner no-vertical-spacing">
+                        <div class="what-we-do">
+                            <div class="content-wrap">
+                                <h1 class="page-header-title"><?php echo get_crispydiv_tagline(); ?></h1>
+                                <div class="page-header-description">
+                                    <p>Getting started with WordPress is simple. Molding WordPress to your needs can be difficult. We find creative ways to solve that problem.</p>
+                                </div>
+                                <p class="page-header-cta dual-cta">
+                                    <?php
+                                    crispydiv_button( array(
+                                        'text' => 'Start the Conversation',
+                                        'url' => home_url( '/contact/' ),
+                                        'classes' => array( 'button', 'primary' ),
+                                    ) );
+                                    ?>
+                                </p>
                             </div>
-                            <p class="page-header-cta dual-cta">
-                                <?php
-                                crispydiv_button( array(
-	                                'text' => 'Start the Conversation',
-	                                'url' => home_url( '/contact/' ),
-	                                'classes' => array( 'button', 'primary' ),
-                                ) );
-                                ?>
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +92,7 @@ get_header();
     </section>
 
     <section class="theme-development-section background-purple">
-        <div class="real-data-header element-spacing large">
+        <div class="real-data-header element-spacing large corner-accent top-right white-white">
             <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-table-layout"></i></span>
             <h2 class="section-title">We build themes <br class="disappearing-br">based on real data<span class="highlight-text">.</span></h2>
             <p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
@@ -100,29 +102,31 @@ get_header();
                 <li><i class="fa-solid fa-circle"></i><p class="stat-title">Skimmable Content</p>Users are more likely to engage with content that is presented in short paragraphs and with clear headings.</li>
             </ul>
         </div>
-        <div class="mock-browser-grid element-spacing large">
-            <div class="mock-browser-wrap">
-                <div class="mock-website" noindex>
-				    <?php get_template_part( 'template-parts/mock-browser' ); ?>
+        <div class="corner-accent white-orange">
+            <div class="mock-browser-grid element-spacing large">
+                <div class="mock-browser-wrap">
+                    <div class="mock-website" noindex>
+				        <?php get_template_part( 'template-parts/mock-browser' ); ?>
+                    </div>
+                </div>
+                <div class="design-description">
+                    <p class="blurb-title">Does this design look familiar?</p>
+                    <p>There's a reason why so many website designs follow the same content structure. It's proven, and it works.</p>
+                    <p>You've probably seen dozens of websites like this example.</p>
+                    <ul>
+                        <li>Logo top left, navigation top right</li>
+                        <li>Informative hero area above the fold</li>
+                        <li>3-column features highlight</li>
+                        <li>Logo pond for social proof</li>
+                        <li>Action buttons with high contrast</li>
+                    </ul>
+                    <p>There's a time and place for shock and awe, and that's when your ability to shock and awe holds value.</p>
+                    <p>In most other cases, it's a distraction. We won't reinvent the wheel with our designs. We'll convert your visitors.</p>
                 </div>
             </div>
-            <div class="design-description">
-                <p class="blurb-title">Does this design look familiar?</p>
-                <p>There's a reason why so many website designs follow the same content structure. It's proven, and it works.</p>
-                <p>You've probably seen dozens of websites like this example.</p>
-                <ul>
-                    <li>Logo top left, navigation top right</li>
-                    <li>Informative hero area above the fold</li>
-                    <li>3-column features highlight</li>
-                    <li>Logo pond for social proof</li>
-                    <li>Action buttons with high contrast</li>
-                </ul>
-                <p>There's a time and place for shock and awe, and that's when your ability to shock and awe holds value.</p>
-                <p>In most other cases, it's a distraction. We won't reinvent the wheel with our designs. We'll convert your visitors.</p>
+            <div class="the-standard-title element-spacing small">
+                <span class="h4">Every <?php echo THEME_NAME; ?> website meets the <br class="disappearing-br">following standards. <span class="highlight-text">No exceptions.</span></span>
             </div>
-        </div>
-        <div class="the-standard-title element-spacing small">
-            <span class="h4">Every <?php echo THEME_NAME; ?> website meets the <br class="disappearing-br">following standards. <span class="highlight-text">No exceptions.</span></span>
         </div>
         <div class="standards-grid general-grid">
             <div class="grid-item">
@@ -174,7 +178,7 @@ get_header();
     </section>
 
     <section class="courses-section">
-        <div class="section-heading element-spacing large">
+        <div class="section-heading element-spacing large corner-accent  black-purple">
             <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-graduation-cap"></i></span>
             <h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<span class="highlight-text">.</span></h2>
             <div class="section-description">

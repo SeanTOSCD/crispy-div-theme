@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.0.6
+ * Version: 1.0.7
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -316,10 +316,10 @@ html body {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 5px 2rem;
+  gap: 5px 1.5rem;
   margin: 1rem auto 0; }
   .customizations-grid .logo {
-    height: 26px;
+    height: 21px;
     position: relative;
     width: auto; }
     .customizations-grid .logo.advanced-custom-fields-logo, .customizations-grid .logo.gravity-forms-logo {
@@ -328,25 +328,48 @@ html body {
       height: 21px;
       top: -1px; }
     .customizations-grid .logo.tailwindcss-logo {
-      height: 17px;
-      top: -1px; }
+      height: 15px;
+      top: -3px; }
     .customizations-grid .logo.facetwp-logo {
       height: 22px;
       top: -1px; }
     .customizations-grid .logo.mailchimp-logo, .customizations-grid .logo.zapier-logo {
-      height: 24px;
+      height: 22px;
       top: -1px; }
     .customizations-grid .logo.woocommerce-logo {
-      height: 26px;
+      height: 24px;
       top: 1px; }
     .customizations-grid .logo.bootstrap-logo {
       height: 20px;
       top: -1px; }
     .customizations-grid .logo.beaver-builder-logo {
-      height: 29px;
+      height: 26px;
       top: -2px; }
     .customizations-grid .logo.stripe-logo {
-      height: 32px; }
+      height: 26px; }
+
+.corner-accent {
+  background-size: 160px auto;
+  background-repeat: no-repeat;
+  background-position: calc( 100% - 1rem ) calc( 100% - 1rem ); }
+  .corner-accent.white-orange {
+    background-image: url("assets/images/corner-accent-white-orange.svg"); }
+  .corner-accent.white-purple {
+    background-image: url("assets/images/corner-accent-white-purple.svg"); }
+  .corner-accent.white-pink {
+    background-image: url("assets/images/corner-accent-white-pink.svg"); }
+  .corner-accent.white-white {
+    background-image: url("assets/images/corner-accent-white-white.svg"); }
+  .corner-accent.black-orange {
+    background-image: url("assets/images/corner-accent-black-orange.svg"); }
+  .corner-accent.black-purple {
+    background-image: url("assets/images/corner-accent-black-purple.svg"); }
+  .corner-accent.black-pink {
+    background-image: url("assets/images/corner-accent-black-purple.svg"); }
+  .corner-accent.top-right {
+    background-position: calc( 100% - 1rem ) 1rem; }
+    .corner-accent.top-right.white-white {
+      background-image: url("assets/images/corner-accent-top-right-white-white.svg"); }
 
 .inner {
   margin: 0 auto;
