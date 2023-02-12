@@ -190,7 +190,7 @@
 .corner-accent {
 	background-size: 160px auto;
 	background-repeat: no-repeat;
-	background-position: calc( 100% - 1rem ) calc( 100% - 1rem );
+	background-position: calc( 100% - 2rem ) calc( 100% - 2rem );
 
 	&.white-orange {
 		background-image: url("assets/images/corner-accent-white-orange.svg");
@@ -217,11 +217,11 @@
 	}
 
 	&.black-pink {
-		background-image: url("assets/images/corner-accent-black-purple.svg");
+		background-image: url("assets/images/corner-accent-black-pink.svg");
 	}
 
 	&.top-right {
-		background-position: calc( 100% - 1rem ) 1rem;
+		background-position: calc( 100% - 2rem ) 2rem;
 
 		&.white-white {
 			background-image: url("assets/images/corner-accent-top-right-white-white.svg");

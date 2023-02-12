@@ -42,6 +42,11 @@ if ( is_home() ) {
 
 	$custom_description = get_field( 'page_header_description', get_the_ID() );
 	$the_description = $custom_description ? $custom_description : $the_description;
+
+} else if ( is_singular( 'post' ) ) {
+
+    $the_title = get_the_title( get_the_ID() );
+	$title_class = 'h2';
 }
 
 /**

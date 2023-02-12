@@ -127,6 +127,18 @@
 
 	.plugin-integration-section {
 
+		.section-heading {
+			border-bottom: 1px dashed $border_over_white;
+
+			@media all and (min-width: 980px) {
+				padding-top: 4.5rem;
+			}
+
+			@media all and (min-width: 1400px) {
+				padding-top: 6rem;
+			}
+		}
+
 		.advanced-custom-fields-highlight {
 			border-bottom: 1px dashed $border_over_white;
 

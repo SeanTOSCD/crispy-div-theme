@@ -206,6 +206,8 @@ function get_crispydiv_logo_by_color() {
 
     if (
             is_front_page()
+            || is_home()
+            || is_singular( 'post' )
             || is_post_type_archive( 'service' )
             || is_post_type_archive( 'course' )
     ) {

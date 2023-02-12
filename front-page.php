@@ -60,6 +60,13 @@ get_header();
 		    }
 		    ?>
         </div>
+        <div class="section-heading element-spacing corner-accent black-pink">
+            <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-solar-system"></i></span>
+            <h2 class="section-title">Plugin functionality <br class="disappearing-br">tweaked to perfection<span class="highlight-text">.</span></h2>
+            <div class="section-description">
+                <p>Our goal is to transform your WordPress site into a feature-packed hub with seamless plugin integrations. WordPress plugins are not always "one-size-fits-all," or "plug & play." Sometimes you need a bit of customization. That's why we're here.</p>
+            </div>
+        </div>
         <div class="advanced-custom-fields-highlight element-spacing large">
             <div class="acf-grid">
                 <div class="acf-highlight-content">
@@ -82,7 +89,7 @@ get_header();
             </div>
             <div class="gravity-forms-grid-item element-spacing">
                 <img class="logo gravity-forms-logo" src="<?php echo THEME_IMAGES . 'logos/gravity-forms-logo.svg'; ?>" alt="Gravity Forms">
-                <p><a href="https://www.gravityforms.com" target="_blank">Gravity Forms</a> is more than just a custom form builder. Its robust functionality can handle everything from collecting online payments via Stripe to routing detailed support requests to Help Scout.</p>
+                <p><a href="https://www.gravityforms.com" target="_blank">Gravity Forms</a> is more than just a custom form builder. Its functionality can handle everything from collecting payments via Stripe to routing detailed support requests to Help Scout.</p>
                 <p>We use Gravity Forms to streamline interactions with users and maintain a detailed records. With <strong class="color-black">over 30 form fields to choose from</strong> and integration capabilities through its API & webhook functionality, the possibilities are endless and exciting.</p>
             </div>
         </div>
@@ -178,7 +185,7 @@ get_header();
     </section>
 
     <section class="courses-section">
-        <div class="section-heading element-spacing large corner-accent  black-purple">
+        <div class="section-heading element-spacing large corner-accent black-purple">
             <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-graduation-cap"></i></span>
             <h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<span class="highlight-text">.</span></h2>
             <div class="section-description">
@@ -188,7 +195,7 @@ get_header();
         <?php echo get_crispydiv_courses_grid(); ?>
     </section>
 
-    <section class="contact-cta-section element-spacing medium">
+    <section class="contact-cta-section element-spacing medium corner-accent black-pink">
         <span class="cta-title h4">Got questions?</span>
         <p>Don't be shy! <a class="cta-link" href="<?php echo home_url( '/contact/' ); ?>">Send an email</a> with your inquiry. No obligations.</p>
     </section>

@@ -70,6 +70,32 @@ add_action( 'after_setup_theme', function() {
 	$GLOBALS['content_width'] = apply_filters( 'crispydiv_content_width', 640 );
 }, 0 );
 
+// Register sidebar area.
+add_action( 'widgets_init', function() {
+	register_sidebar(
+		array(
+			'name'          => 'Post Sidebar',
+			'id'            => 'sidebar-post',
+			'description'   => 'Add widgets here.',
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title h5">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => 'Post Footer',
+			'id'            => 'post-footer',
+			'description'   => 'Add widgets here.',
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title h5">',
+			'after_title'   => '</h2>',
+		)
+	);
+} );
+
 // Enqueue scripts and styles.
 add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_style( 'crispydiv-style', get_stylesheet_uri(), array(), THEME_VERSION );

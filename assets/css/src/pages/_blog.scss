@@ -1,0 +1,207 @@
+.blog {
+}
+
+.single {
+
+	.page-header {
+
+		.page-header-title {
+
+			@media all and (min-width: 960px) {
+				max-width: 85%;
+			}
+
+			@media all and (min-width: 1400px) {
+				max-width: 70%;
+			}
+		}
+	}
+
+	.post-content-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@media all and (min-width: 1080px) {
+			grid-template-columns: 2fr 1fr;
+		}
+
+		.entry-content {
+
+			@media all and (min-width: 1080px) {
+				padding-right: 4.5rem;
+			}
+		}
+
+		.sidebar {
+			font-size: .88rem;
+
+			.widget {
+
+				&:not(:last-child) {
+					margin-bottom: 2rem;
+
+					@media all and (min-width: 1400px) {
+						margin-bottom: 3rem;
+					}
+				}
+
+				ul {
+					list-style-type: unset;
+					list-style-position: outside;
+					margin-left: 1rem;
+
+					li {
+						margin-bottom: .75rem;
+
+						&:not(:last-child) {
+							margin-bottom: .75rem;
+						}
+
+						&::marker {
+							color: $color5;
+						}
+					}
+				}
+
+				&.widget_search {
+
+					label {
+						color: $headings;
+						display: block;
+						margin-bottom: 4px;
+						text-transform: unset;
+					}
+
+					input {
+						background-color: $gray;
+						border-color: $color5;
+
+						&:focus,
+						&:active {
+							border-color: $color6;
+						}
+
+						&::-webkit-input-placeholder {
+							color: lighten( $body_light, 30% );
+						}
+					}
+				}
+
+				&.widget_recent_entries {
+
+					ul {
+
+						li {
+
+							a {
+								color: $color2;
+								display: block;
+								font-weight: 700;
+								text-decoration-color: $color5;
+
+								&:active,
+								&:focus,
+								&:hover {
+									color: $color2;
+									text-decoration-color: $color5;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#colophon {
+		//border-top: 1px dashed $border_over_white;
+	}
+}
+
+
+
+.subscribe-cta {
+	background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.8) 100% ), url("assets/images/annie-spratt-subscribe-unsplash.jpg");
+	background-size: 100% auto;
+	background-position-x: 6rem;
+	background-position-y: 80%;
+	background-repeat: no-repeat;
+
+	.subscribe-content-wrap {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@media all and (min-width: 760px) {
+			grid-template-columns: 5fr 2fr;
+		}
+
+		@media all and (min-width: 960px) {
+			grid-template-columns: 5fr 3fr;
+		}
+
+		@media all and (min-width: 1400px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.subscribe-content {
+
+			.subscribe-description {
+
+				p {
+
+					@media all and (min-width: 1200px) {
+						max-width: 90%;
+					}
+
+					@media all and (min-width: 1400px) {
+						max-width: 85%;
+					}
+				}
+			}
+
+			.subscribe-form-container {
+
+				.gform_wrapper {
+
+					&.gravity-theme {
+
+						.gform_body {
+
+							.gfield {
+								margin-bottom: 0;
+
+								.gfield_label {
+									color: #fff;
+									font-size: .88rem;
+									font-weight: 700;
+									margin-bottom: .35rem;
+
+									.gfield_required {
+										display: none;
+									}
+								}
+							}
+						}
+
+						input[type="submit"] {
+							background-color: transparent;
+
+							&:active,
+							&:focus,
+							&:hover {
+								background-color: $color6;
+								border-color: $color6;
+								color: #fff;
+								text-decoration-color: $color6;
+							}
+						}
+
+						.gform_footer {
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

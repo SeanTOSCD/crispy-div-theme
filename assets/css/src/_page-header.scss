@@ -4,6 +4,10 @@
 	.page-header-title,
 	.entry-title {
 		font-weight: 800;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	.page-header-description {
