@@ -107,15 +107,8 @@
 
 			.grid-item {
 
-				.grid-item-icon {
-					display: none;
-				}
-
-				.archive-item-title {
-
-					a {
-						color: #fff;
-					}
+				.grid-item-title {
+					font-size: 1.35rem;
 				}
 
 				p {
@@ -147,7 +140,7 @@
 			border-bottom: 1px dashed $border_over_white;
 
 			@media all and (min-width: 980px) {
-				padding-bottom: 5rem;
+				padding-bottom: 3rem;
 				padding-top: 5rem;
 			}
 

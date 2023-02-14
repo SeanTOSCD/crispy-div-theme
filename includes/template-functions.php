@@ -46,6 +46,19 @@ add_filter( 'body_class', function( $classes ) {
 } );
 
 /**
+ * Pre get posts
+ *
+ * @param $query
+ *
+ * @return void
+ */
+add_action( 'pre_get_posts', function( $query ) {
+	if ( is_search() && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'post_type', 'post' );
+	}
+} );
+
+/**
  * Excerpt adjustments
  *
  * @param $length

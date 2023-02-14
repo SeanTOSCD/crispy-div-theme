@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.0.9
+ * Version: 1.0.10
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -1882,10 +1882,8 @@ html {
     @media all and (min-width: 1200px) {
       .page-front .page-header .services-grid {
         grid-template-columns: repeat(3, 1fr); } }
-    .page-front .page-header .services-grid .grid-item .grid-item-icon {
-      display: none; }
-    .page-front .page-header .services-grid .grid-item .archive-item-title a {
-      color: #fff; }
+    .page-front .page-header .services-grid .grid-item .grid-item-title {
+      font-size: 1.35rem; }
     .page-front .page-header .services-grid .grid-item p {
       font-size: 17px; }
     .page-front .page-header .services-grid .grid-item .button {
@@ -1902,7 +1900,7 @@ html {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
   @media all and (min-width: 980px) {
     .page-front .plugin-integration-section .advanced-custom-fields-highlight {
-      padding-bottom: 5rem;
+      padding-bottom: 3rem;
       padding-top: 5rem; } }
   .page-front .plugin-integration-section .advanced-custom-fields-highlight .acf-grid {
     display: grid;
