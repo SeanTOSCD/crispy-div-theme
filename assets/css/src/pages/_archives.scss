@@ -1,0 +1,22 @@
+.archive:not(.post-type-archive) {
+
+	.page-header {
+
+		.page-header-title {
+			color: $color5;
+			display: block;
+			font-size: 1.1rem;
+
+			span {
+				font-weight: 800;
+			}
+		}
+	}
+
+	.general-grid {
+	}
+
+	#colophon {
+		//border-top: 1px dashed $border_over_white;
+	}
+}

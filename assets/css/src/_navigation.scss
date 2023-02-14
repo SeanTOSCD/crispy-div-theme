@@ -232,3 +232,37 @@
 		}
 	}
 }
+
+.posts-navigation {
+
+	.nav-links {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		.nav-previous,
+		.nav-next {
+
+			a {
+				@include headingFont;
+				color: $headings;
+				font-size: .75rem;
+				font-weight: 800;
+				text-decoration: none;
+				text-transform: uppercase;
+
+				&:active,
+				&:focus,
+				&:hover {
+					color: $color5;
+				}
+			}
+		}
+
+		.nav-previous {
+
+			& + .nav-next {
+				text-align: right;
+			}
+		}
+	}
+}

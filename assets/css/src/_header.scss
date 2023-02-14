@@ -92,3 +92,11 @@
 		}
 	}
 }
+
+.has-gray-header {
+
+	#masthead {
+		background-color: $gray;
+		border-color: $border_over_white;
+	}
+}

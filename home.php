@@ -65,7 +65,13 @@ get_template_part( 'template-parts/section', 'subscribe', array(
 				?>
             </div>
 			<?php
-			the_posts_navigation();
+			if ( $wp_query->max_num_pages > 1 ) :
+				?>
+                <div class="posts-navigation-wrap element-spacing tiny">
+					<?php the_posts_navigation(); ?>
+                </div>
+			<?php
+			endif;
 		endif;
 		?>
 	</main>

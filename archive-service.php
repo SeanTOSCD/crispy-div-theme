@@ -8,13 +8,18 @@ crispydiv_page_header( array(
     'bg-color' => 'background-pink',
     'corner-accent-color' => 'white-white',
 ) );
+
+$services = new WP_Query( array(
+    'post_type' => 'service',
+    'post_status' => 'publish',
+    'posts_per_page' => -1,
+) );
 ?>
 
 <div class="services-wrap">
     <?php
-    if ( have_posts() ) {
-        while ( have_posts() ) {
-            the_post();
+    if ( $services->have_posts() ) {
+        while ( $services->have_posts() ) { $services->the_post();
             $the_slug = get_post_field( 'post_name', get_post() );
 
             if ( 'courses-software' === $the_slug ) {

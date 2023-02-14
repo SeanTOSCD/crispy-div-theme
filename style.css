@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.0.8
+ * Version: 1.0.9
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -443,61 +443,6 @@ html body {
     .element-spacing.large {
       padding: 7rem 4.5rem; } }
 
-#masthead {
-  position: relative;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
-  #masthead .inner {
-    max-width: unset; }
-  #masthead .site-header {
-    display: flex;
-    justify-content: space-between; }
-    #masthead .site-header .site-branding {
-      display: flex;
-      flex-direction: column;
-      gap: 10px 1rem;
-      padding-right: 4rem; }
-      @media all and (min-width: 760px) {
-        #masthead .site-header .site-branding {
-          align-items: center;
-          flex-direction: row; } }
-      #masthead .site-header .site-branding .site-logo {
-        height: auto;
-        width: 120px; }
-      #masthead .site-header .site-branding .site-title {
-        display: inline-block;
-        margin: 0;
-        text-transform: uppercase; }
-        #masthead .site-header .site-branding .site-title a {
-          color: #494949;
-          display: block;
-          font-size: 1rem;
-          font-weight: 700;
-          letter-spacing: 1px;
-          line-height: 1;
-          text-decoration: none; }
-      #masthead .site-header .site-branding .description {
-        font-size: .8rem;
-        font-weight: 500;
-        line-height: 1.4;
-        position: relative; }
-
-.has-dark-header #masthead {
-  color: #fff; }
-  .has-dark-header #masthead .site-header .site-title a {
-    color: #fff; }
-
-.has-purple-header #masthead {
-  background-color: #341671;
-  border-color: rgba(245, 81, 89, 0.2); }
-  .has-purple-header #masthead .site-header {
-    color: #cfc4e6; }
-
-.has-pink-header #masthead {
-  background-color: #ae2d68;
-  border-color: rgba(207, 111, 154, 0.5); }
-  .has-pink-header #masthead .site-header {
-    color: #f9d2e6; }
-
 #colophon {
   font-size: .88rem;
   font-weight: 500;
@@ -652,6 +597,140 @@ form label {
   text-decoration-thickness: 1px;
   text-transform: capitalize; }
 
+.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield {
+  margin-bottom: 1rem;
+  max-width: 900px; }
+  @media all and (min-width: 960px) {
+    .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield {
+      margin-bottom: 2rem; } }
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type {
+    margin-bottom: 2rem; }
+    @media all and (min-width: 960px) {
+      .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type {
+        margin-bottom: 3rem; } }
+    .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type > .gfield_label {
+      color: #341671; }
+      @media all and (min-width: 960px) {
+        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type > .gfield_label {
+          font-size: 1.7rem; } }
+    .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio {
+      display: grid;
+      gap: 1rem 2rem;
+      grid-template-columns: 1fr;
+      margin-top: 1rem; }
+      .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label {
+        border: 1px dashed rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-weight: 700;
+        height: 100%;
+        margin-left: 0;
+        max-width: 100%;
+        padding: 1rem;
+        width: 100%; }
+        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover {
+          cursor: pointer; }
+        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:active, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:focus, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover {
+          background: #f8f5fc;
+          border: 1px dashed #f54952; }
+          .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:active::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:focus::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover::before {
+            color: gray; }
+        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label::before {
+          color: #cccccc;
+          content: "\f058";
+          display: inline-block;
+          font: var(--fa-font-light);
+          margin-right: .5rem;
+          height: 1rem;
+          width: 1rem; }
+      .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"] {
+        display: none; }
+        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label {
+          background: #341671;
+          color: #fff; }
+          .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:active, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:focus, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:hover {
+            border: 1px solid #341671; }
+            .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:active::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:focus::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:hover::before {
+              color: #f54952; }
+          .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label::before {
+            color: #f54952; }
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=color] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=date] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime-local] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=email] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=month] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=number] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=password] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=search] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=tel] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=text] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=time] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=url] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=week] + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield select + label,
+  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield textarea + label {
+    color: #494949;
+    font-weight: 600;
+    text-transform: unset; }
+.gform_wrapper.gravity-theme .gform_body .gfield_label {
+  color: #341671;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-transform: unset; }
+  .gform_wrapper.gravity-theme .gform_body .gfield_label .gfield_required {
+    color: #f54952; }
+  .gform_wrapper.gravity-theme .gform_body .gfield_label + .gfield_description {
+    margin-top: -1rem; }
+.gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice label {
+  color: #494949;
+  font-weight: 500;
+  margin-left: 6px;
+  text-transform: unset; }
+.gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice input:checked + label {
+  font-weight: 700; }
+.gform_wrapper.gravity-theme .gform_validation_errors {
+  border-color: #f54952 !important;
+  box-shadow: none !important;
+  margin-bottom: 2rem; }
+  @media all and (min-width: 960px) {
+    .gform_wrapper.gravity-theme .gform_validation_errors {
+      margin-bottom: 3.5rem; } }
+  .gform_wrapper.gravity-theme .gform_validation_errors > h2 {
+    color: #f54952 !important; }
+.gform_wrapper.gravity-theme .gfield_validation_message,
+.gform_wrapper.gravity-theme .validation_message {
+  background-color: transparent !important;
+  border: none !important;
+  color: #f54952 !important;
+  padding: 0 !important;
+  font-style: italic; }
+.gform_wrapper.gravity-theme .gfield_error [aria-invalid=true] {
+  border-width: 2px !important;
+  border-color: #f54952 !important; }
+
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=color] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=date] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime-local] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=email] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=month] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=number] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=password] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=search] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=tel] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=text] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=time] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=url] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=week] + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield select + label,
+.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield textarea + label {
+  color: #cfc4e6; }
+.background-purple .gform_wrapper.gravity-theme .gform_body .gfield_label {
+  color: #fff; }
+.background-purple .gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice label {
+  color: #cfc4e6; }
+
 .general-grid {
   display: grid;
   grid-template-columns: 1fr; }
@@ -731,35 +810,72 @@ form label {
             .general-grid .grid-item .grid-item-content .grid-item-description ol li:not(:last-child) {
               padding-bottom: .25rem; }
 
-.page-header .page-header-title,
-.page-header .entry-title,
-.entry-header .page-header-title,
-.entry-header .entry-title {
-  font-weight: 800; }
-  .page-header .page-header-title:last-child,
-  .page-header .entry-title:last-child,
-  .entry-header .page-header-title:last-child,
-  .entry-header .entry-title:last-child {
-    margin-bottom: 0; }
-.page-header .page-header-description,
-.entry-header .page-header-description {
-  display: grid;
-  grid-template-columns: 1fr; }
-  @media all and (min-width: 760px) {
-    .page-header .page-header-description,
-    .entry-header .page-header-description {
-      grid-template-columns: 3fr 1fr; } }
-  @media all and (min-width: 980px) {
-    .page-header .page-header-description,
-    .entry-header .page-header-description {
-      grid-template-columns: 3fr 2fr; } }
+#masthead {
+  position: relative;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
+  #masthead .inner {
+    max-width: unset; }
+  #masthead .site-header {
+    display: flex;
+    justify-content: space-between; }
+    #masthead .site-header .site-branding {
+      display: flex;
+      flex-direction: column;
+      gap: 10px 1rem;
+      padding-right: 4rem; }
+      @media all and (min-width: 760px) {
+        #masthead .site-header .site-branding {
+          align-items: center;
+          flex-direction: row; } }
+      #masthead .site-header .site-branding .site-logo {
+        height: auto;
+        width: 120px; }
+      #masthead .site-header .site-branding .site-title {
+        display: inline-block;
+        margin: 0;
+        text-transform: uppercase; }
+        #masthead .site-header .site-branding .site-title a {
+          color: #494949;
+          display: block;
+          font-size: 1rem;
+          font-weight: 700;
+          letter-spacing: 1px;
+          line-height: 1;
+          text-decoration: none; }
+      #masthead .site-header .site-branding .description {
+        font-size: .8rem;
+        font-weight: 500;
+        line-height: 1.4;
+        position: relative; }
+
+.has-dark-header #masthead {
+  color: #fff; }
+  .has-dark-header #masthead .site-header .site-title a {
+    color: #fff; }
+
+.has-purple-header #masthead {
+  background-color: #341671;
+  border-color: rgba(245, 81, 89, 0.2); }
+  .has-purple-header #masthead .site-header {
+    color: #cfc4e6; }
+
+.has-pink-header #masthead {
+  background-color: #ae2d68;
+  border-color: rgba(207, 111, 154, 0.5); }
+  .has-pink-header #masthead .site-header {
+    color: #f9d2e6; }
+
+.has-gray-header #masthead {
+  background-color: #f8f5fc;
+  border-color: rgba(0, 0, 0, 0.1); }
 
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6 {
+h6, .h6,
+.archive .page-header-title span {
   font-family: 'Montserrat';
   font-weight: 700;
   color: #341671;
@@ -767,19 +883,24 @@ h6, .h6 {
   line-height: 1.2;
   margin: 0 0 1.25rem; }
 
-h1, .h1 {
+h1, .h1,
+.archive .page-header-title span {
   font-size: 2.5rem; }
   @media all and (min-width: 540px) {
-    h1, .h1 {
+    h1, .h1,
+    .archive .page-header-title span {
       font-size: 3rem; } }
   @media all and (min-width: 760px) {
-    h1, .h1 {
+    h1, .h1,
+    .archive .page-header-title span {
       font-size: 3.5rem; } }
   @media all and (min-width: 980px) {
-    h1, .h1 {
+    h1, .h1,
+    .archive .page-header-title span {
       font-size: 3.75rem; } }
   @media all and (min-width: 1200px) {
-    h1, .h1 {
+    h1, .h1,
+    .archive .page-header-title span {
       font-size: 4rem; } }
 
 h2, .h2 {
@@ -1178,6 +1299,26 @@ img {
 .has-pink-header .site-header #site-navigation:not(.toggled) #primary-menu .menu-item.current-menu-item a {
   color: #fff; }
 
+.posts-navigation .nav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .posts-navigation .nav-links .nav-previous a,
+  .posts-navigation .nav-links .nav-next a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #341671;
+    font-size: .75rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .posts-navigation .nav-links .nav-previous a:active, .posts-navigation .nav-links .nav-previous a:focus, .posts-navigation .nav-links .nav-previous a:hover,
+    .posts-navigation .nav-links .nav-next a:active,
+    .posts-navigation .nav-links .nav-next a:focus,
+    .posts-navigation .nav-links .nav-next a:hover {
+      color: #ae2d68; }
+  .posts-navigation .nav-links .nav-previous + .nav-next {
+    text-align: right; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1469,139 +1610,28 @@ template {
 [hidden] {
   display: none; }
 
-.gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield {
-  margin-bottom: 1rem;
-  max-width: 900px; }
-  @media all and (min-width: 960px) {
-    .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield {
-      margin-bottom: 2rem; } }
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type {
-    margin-bottom: 2rem; }
-    @media all and (min-width: 960px) {
-      .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type {
-        margin-bottom: 3rem; } }
-    .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type > .gfield_label {
-      color: #341671; }
-      @media all and (min-width: 960px) {
-        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type > .gfield_label {
-          font-size: 1.7rem; } }
-    .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio {
-      display: grid;
-      gap: 1rem 2rem;
-      grid-template-columns: 1fr;
-      margin-top: 1rem; }
-      .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label {
-        border: 1px dashed rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        font-weight: 700;
-        height: 100%;
-        margin-left: 0;
-        max-width: 100%;
-        padding: 1rem;
-        width: 100%; }
-        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover {
-          cursor: pointer; }
-        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:active, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:focus, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover {
-          background: #f8f5fc;
-          border: 1px dashed #f54952; }
-          .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:active::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:focus::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover::before {
-            color: gray; }
-        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label::before {
-          color: #cccccc;
-          content: "\f058";
-          display: inline-block;
-          font: var(--fa-font-light);
-          margin-right: .5rem;
-          height: 1rem;
-          width: 1rem; }
-      .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"] {
-        display: none; }
-        .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label {
-          background: #341671;
-          color: #fff; }
-          .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:active, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:focus, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:hover {
-            border: 1px solid #341671; }
-            .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:active::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:focus::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label:hover::before {
-              color: #f54952; }
-          .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice input[type="radio"]:checked + label::before {
-            color: #f54952; }
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=color] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=date] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime-local] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=email] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=month] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=number] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=password] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=search] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=tel] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=text] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=time] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=url] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=week] + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield select + label,
-  .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield textarea + label {
-    color: #494949;
-    font-weight: 600;
-    text-transform: unset; }
-.gform_wrapper.gravity-theme .gform_body .gfield_label {
-  color: #341671;
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  text-transform: unset; }
-  .gform_wrapper.gravity-theme .gform_body .gfield_label .gfield_required {
-    color: #f54952; }
-  .gform_wrapper.gravity-theme .gform_body .gfield_label + .gfield_description {
-    margin-top: -1rem; }
-.gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice label {
-  color: #494949;
-  font-weight: 500;
-  margin-left: 6px;
-  text-transform: unset; }
-.gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice input:checked + label {
-  font-weight: 700; }
-.gform_wrapper.gravity-theme .gform_validation_errors {
-  border-color: #f54952 !important;
-  box-shadow: none !important;
-  margin-bottom: 2rem; }
-  @media all and (min-width: 960px) {
-    .gform_wrapper.gravity-theme .gform_validation_errors {
-      margin-bottom: 3.5rem; } }
-  .gform_wrapper.gravity-theme .gform_validation_errors > h2 {
-    color: #f54952 !important; }
-.gform_wrapper.gravity-theme .gfield_validation_message,
-.gform_wrapper.gravity-theme .validation_message {
-  background-color: transparent !important;
-  border: none !important;
-  color: #f54952 !important;
-  padding: 0 !important;
-  font-style: italic; }
-.gform_wrapper.gravity-theme .gfield_error [aria-invalid=true] {
-  border-width: 2px !important;
-  border-color: #f54952 !important; }
-
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=color] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=date] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime-local] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=datetime] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=email] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=month] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=number] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=password] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=search] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=tel] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=text] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=time] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=url] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield input[type=week] + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield select + label,
-.background-purple .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield textarea + label {
-  color: #cfc4e6; }
-.background-purple .gform_wrapper.gravity-theme .gform_body .gfield_label {
-  color: #fff; }
-.background-purple .gform_wrapper.gravity-theme .gform_body .ginput_container .gchoice label {
-  color: #cfc4e6; }
+.page-header .page-header-title,
+.page-header .entry-title,
+.entry-header .page-header-title,
+.entry-header .entry-title {
+  font-weight: 800; }
+  .page-header .page-header-title:last-child,
+  .page-header .entry-title:last-child,
+  .entry-header .page-header-title:last-child,
+  .entry-header .entry-title:last-child {
+    margin-bottom: 0; }
+.page-header .page-header-description,
+.entry-header .page-header-description {
+  display: grid;
+  grid-template-columns: 1fr; }
+  @media all and (min-width: 760px) {
+    .page-header .page-header-description,
+    .entry-header .page-header-description {
+      grid-template-columns: 3fr 1fr; } }
+  @media all and (min-width: 980px) {
+    .page-header .page-header-description,
+    .entry-header .page-header-description {
+      grid-template-columns: 3fr 2fr; } }
 
 html {
   color: #494949;
@@ -1667,6 +1697,13 @@ html {
         border-color: rgba(0, 0, 0, 0.1);
         border-style: dashed;
         border-width: 0 0 1px 0; } }
+
+.archive:not(.post-type-archive) .page-header .page-header-title {
+  color: #ae2d68;
+  display: block;
+  font-size: 1.1rem; }
+  .archive:not(.post-type-archive) .page-header .page-header-title span {
+    font-weight: 800; }
 
 @media all and (min-width: 960px) {
   .single .page-header .page-header-title {
@@ -1985,6 +2022,13 @@ html {
       .page-front .courses-section .section-heading .section-description {
         grid-template-columns: 5fr 4fr; } }
 .page-front #colophon {
+  border-top: 1px dashed rgba(0, 0, 0, 0.1); }
+
+.search .page-header .page-header-title .search-query-title-label {
+  color: #ae2d68;
+  display: block;
+  font-size: 1.1rem; }
+.search #colophon {
   border-top: 1px dashed rgba(0, 0, 0, 0.1); }
 
 .post-type-archive-service .page-header .page-header-description {

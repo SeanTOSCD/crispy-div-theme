@@ -19,7 +19,19 @@ if ( is_home() ) {
 	$custom_description = get_field( 'blog_description', 'options' );
 	$the_description = $custom_description ? $custom_description : $the_description;
 
-} else if ( is_archive() ) {
+} else if ( is_search() ) {
+
+    // Get queries search term
+    $search_term = get_search_query();
+
+	$the_title = $search_term ? '<span class="search-query-title-label">Search results for:</span>' . $search_term : '<span class="search-query-title-label">Search results:</span>';
+
+} else if ( is_category() || is_tag() ) {
+
+	$the_title = get_the_archive_title();
+	$the_description = get_the_archive_description();
+
+} else if ( is_post_type_archive() ) {
 
     $queried_object_name_plural = get_queried_object()->name . 's';
 
