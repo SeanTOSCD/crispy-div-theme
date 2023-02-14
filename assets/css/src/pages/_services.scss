@@ -70,11 +70,18 @@
 					}
 				}
 
+				p {
+
+					& + .button {
+						margin-top: 1.25rem;
+					}
+				}
+
 				.secondary-cta {
 					color: $color5;
 					display: inline-block;
-					font-size: 95%;
-					margin-top: 1rem;
+					font-size: 90%;
+					margin-top: .5rem;
 				}
 			}
 

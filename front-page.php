@@ -61,7 +61,6 @@ get_header();
 		    ?>
         </div>
         <div class="section-heading element-spacing corner-accent black-pink">
-            <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-solar-system"></i></span>
             <h2 class="section-title">Plugin functionality <br class="disappearing-br">tweaked to perfection<span class="highlight-text">.</span></h2>
             <div class="section-description">
                 <p>Our goal is to transform your WordPress site into a feature-packed hub with seamless plugin integrations. WordPress plugins are not always "one-size-fits-all," or "plug & play." Sometimes you need a bit of customization. That's why we're here.</p>
@@ -71,10 +70,9 @@ get_header();
             <div class="acf-grid">
                 <div class="acf-highlight-content">
                     <img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields">
-                    <span class="h5 acf-highlight-title color-black">Tweak your settings, not our code.</span>
+                    <span class="h5 acf-highlight-title">Tweak your settings, not our code.</span>
                     <p><a href="https://advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a> (ACF) is a powerful plugin that allows you to create custom fields for your WordPress site. We use it to create custom post types, taxonomies, fields, and more.</p>
-                    <p>With ACF's incredible features, <strong class="color-black">we can make every element of your site editable from the WordPress dashboard</strong>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme edits.</p>
-                    <p>We write field values directly to your WordPress theme. You manage content from your WordPress dashboard. There's no need for overlap.</p>
+                    <p>With ACF's features, <strong class="color-black">we make every element of your site editable from the WordPress dashboard</strong>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme edits.</p>
                 </div>
                 <div class="acf-graphic">
                     <img class="advanced-custom-fields-graphic" src="<?php echo THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png'; ?>" alt="Advanced Custom Fields - Page Hero Fields">
@@ -93,21 +91,38 @@ get_header();
                 <p>We use Gravity Forms to streamline interactions with users and maintain a detailed records. With <strong class="color-black">over 30 form fields to choose from</strong> and integration capabilities through its API & webhook functionality, the possibilities are endless and exciting.</p>
             </div>
         </div>
-        <div class="small-cta-section element-spacing tiny background-pink">
-            <p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/' ); ?>">Send us an email</a> to ask questions. No obligations.</p>
+        <div class="small-cta-section element-spacing tiny background-gray">
+            <p>Curious about a specific plugin or service? <a href="<?php echo home_url( '/contact/?type=experience' ); ?>">Send us an email</a> to ask questions. No obligations.</p>
         </div>
     </section>
 
     <section class="theme-development-section background-purple">
         <div class="real-data-header element-spacing large corner-accent top-right white-white">
-            <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-table-layout"></i></span>
             <h2 class="section-title">We build themes <br class="disappearing-br">based on real data<span class="highlight-text">.</span></h2>
             <p class="subdued-links attribution">According to studies conducted by <a href="https://www.nngroup.com" target="_blank">Nielsen Norman Group</a>:</p>
-            <ul class="nng-stats">
-                <li><i class="fa-solid fa-circle"></i><p class="stat-title">Above the Fold</p>Users spend 80% of their time on a website looking at the information presented above the fold on page load.</li>
-                <li><i class="fa-solid fa-circle"></i><p class="stat-title">The "F" pattern</p>User scan content in an "F" pattern: from top left moving horizontally, down the left side, then across the middle.</li>
-                <li><i class="fa-solid fa-circle"></i><p class="stat-title">Skimmable Content</p>Users are more likely to engage with content that is presented in short paragraphs and with clear headings.</li>
-            </ul>
+        </div>
+        <div class="nng-stats-grid general-grid three-col">
+            <div class="grid-item">
+                <div class="grid-item-content">
+                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-browser"></i></span>
+                    <h3 class="grid-item-title">Above the Fold</h3>
+                    <p>Users spend 80% of their time on a website viewing information presented above the fold on page load.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-content">
+                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-eye"></i></span>
+                    <h3 class="grid-item-title">The "F" pattern</h3>
+                    <p>User scan content in an "F" pattern: from top left moving horizontally, down the left side, then across the middle.</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="grid-item-content">
+                    <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-align-left"></i></span>
+                    <h3 class="grid-item-title">Skimmable Content</h3>
+                    <p>Users are more likely to engage with content that is presented in short paragraphs and with clear headings.</p>
+                </div>
+            </div>
         </div>
         <div class="corner-accent white-orange">
             <div class="mock-browser-grid element-spacing large">
@@ -127,66 +142,65 @@ get_header();
                         <li>Logo pond for social proof</li>
                         <li>Action buttons with high contrast</li>
                     </ul>
-                    <p>There's a time and place for shock and awe, and that's when your ability to shock and awe holds value.</p>
-                    <p>In most other cases, it's a distraction. We won't reinvent the wheel with our designs. We'll convert your visitors.</p>
+                    <p>There's a time and place for shock and awe, and that's when your ability to shock and awe holds value to your typical site visitor.</p>
+                    <p>In most other cases, it's a distraction. We won't reinvent the wheel with our designs. We'll convert your visitors instead.</p>
                 </div>
             </div>
             <div class="the-standard-title element-spacing small">
                 <span class="h4">Every <?php echo THEME_NAME; ?> website meets the <br class="disappearing-br">following standards. <span class="highlight-text">No exceptions.</span></span>
             </div>
         </div>
-        <div class="standards-grid general-grid">
+        <div class="standards-grid general-grid three-col">
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-mobile"></i></span>
-                    <h3 class="grid-item-title color-black">Mobile-friendly</h3>
+                    <h3 class="grid-item-title">Mobile-friendly</h3>
                     <p>Both desktop and mobile designs are standard. More than 60% of all web traffic is mobile (<a href="https://gs.statcounter.com/platform-market-share/desktop-mobile/worldwide/#yearly-2011-2022" target="_blank">source</a>).</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-bullseye-arrow"></i></span>
-                    <h3 class="grid-item-title color-black">Purpose-driven</h3>
+                    <h3 class="grid-item-title">Purpose-driven</h3>
                     <p>Pages are designed to guide visitors towards an action, like clicking a link or reading specific text.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-handshake-angle"></i></span>
-                    <h3 class="grid-item-title color-black">Accessibility-focused</h3>
+                    <h3 class="grid-item-title">Accessibility-focused</h3>
                     <p>Clarity, contrast, and usability are paramount, providing the best user experience for visitors.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-timer"></i></span>
-                    <h3 class="grid-item-title color-black">Fast-loading</h3>
+                    <h3 class="grid-item-title">Fast-loading</h3>
                     <p>47% of users expect a page to load in two seconds or less. 40% will leave after three seconds (<a href="https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-page-speed-new-industry-benchmarks/" target="_blank">source</a>).</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-pen-ruler"></i></span>
-                    <h3 class="grid-item-title color-black">Meticulously-designed</h3>
+                    <h3 class="grid-item-title">Meticulously-designed</h3>
                     <p>Even the tiny details matter. When viewed as a whole, you can feel if a design is <em>crisp</em> or sloppy.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-shield-check"></i></span>
-                    <h3 class="grid-item-title color-black">Well-secured</h3>
+                    <h3 class="grid-item-title">Well-secured</h3>
                     <p>Only trusted and maintained scripts and resources are used. Site owners and visitors are protected.</p>
                 </div>
             </div>
         </div>
         <div class="small-cta-section element-spacing tiny background-pink">
-            <p><a class="cta-link" href="<?php echo home_url( '/contact/' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
+            <p><a class="cta-link" href="<?php echo home_url( '/contact/?type=work-together' ); ?>">Reach out to start the conversation.</a> Let's see if we're a good fit. No obligations.</p>
         </div>
     </section>
 
     <section class="courses-section">
         <div class="section-heading element-spacing large corner-accent black-purple">
-            <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-graduation-cap"></i></span>
             <h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<span class="highlight-text">.</span></h2>
             <div class="section-description">
                 <p>Sometimes you just have to "roll your own." We get it. In fact, that's how the journey begins for most self-taught developers and designers. Welcome to the club. We're here to help you <strong>learn the tricks of the trade, skip the unnecessary hardships</strong>, and actually get some work done. Here's what we have to offer.</p>
@@ -197,7 +211,7 @@ get_header();
 
     <section class="contact-cta-section element-spacing medium corner-accent black-pink">
         <span class="cta-title h4">Got questions?</span>
-        <p>Don't be shy! <a class="cta-link" href="<?php echo home_url( '/contact/' ); ?>">Send an email</a> with your inquiry. No obligations.</p>
+        <p>Don't be shy! <a class="cta-link" href="<?php echo home_url( '/contact/?type=general' ); ?>">Send an email</a> with your inquiry. No obligations.</p>
     </section>
 
 <?php

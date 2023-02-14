@@ -118,7 +118,37 @@
 	}
 }
 
+.content-filter-section {
+	border-bottom: 1px dashed $border_over_white;
 
+	.content-filter-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem 1rem;
+
+		.facetwp-filter,
+		.search-filter {
+			height: auto;
+			padding-right: 3rem;
+
+			input,
+			select {
+				max-width: 330px;
+			}
+		}
+
+		.facetwp-filter {
+
+			.facetwp-facet {
+				margin-bottom: 0;
+			}
+		}
+
+		.search-filter {
+
+		}
+	}
+}
 
 .subscribe-cta {
 	background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.8) 100% ), url("assets/images/annie-spratt-subscribe-unsplash.jpg");

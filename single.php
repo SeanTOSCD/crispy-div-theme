@@ -23,7 +23,7 @@ crispydiv_page_header( array(
 			                <?php the_content(); ?>
                         </div>
                         <footer class="post-footer">
-	                        <?php dynamic_sidebar( 'Post Footer' );  ?>
+<!--	                        --><?php //dynamic_sidebar( 'Post Footer' );  ?>
                         </footer>
                     </article>
                     <div class="sidebar">

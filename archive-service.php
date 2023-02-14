@@ -37,27 +37,40 @@ crispydiv_page_header( array(
                     <div class="service-description">
                         <h2 class="section-title h3"><?php echo $the_title; ?></h2>
                         <?php
-                        $content = wpautop( get_the_content( get_the_ID() ) );
+                        // Service content description
+                        $content = get_the_content( get_the_ID() );
                         if ( ! empty( $content ) ) {
                             echo $content;
                         } else {
                             echo '<p>' . get_field( 'service_description', get_the_ID() ) . '</p>';
                         }
 
+                        // CTA defaults
                         $button_text = 'Let\'s Work Together';
-                        $button_url = home_url( '/contact/' );
+                        $button_url = home_url( '/contact/?type=work-together' );
+                        $button_classes = array( 'button', 'purple' );
+                        $alt_link_text = '';
+                        $alt_link_url = '';
+                        $alt_link_classes = array( 'secondary-cta' );
 
+                        // Service type CTA overrides
                         if ( 'plugin-integration' === $the_slug ) {
-                            $button_text = 'Ask About Your Favorites';
+	                        $alt_link_text = 'Ask about your favorites.';
+	                        $alt_link_url = home_url( '/contact/?type=experience' );
                         } else if ( 'theme-development' === $the_slug ) {
 	                        $button_text = 'Start the Conversation';
                         } else if ( 'custom-development' === $the_slug ) {
 	                        $button_text = 'Let\'s Talk Details';
                         }
+
+                        // The shared CTA
                         crispydiv_button( array(
                             'text' => $button_text,
                             'url' => $button_url,
-                            'classes' => array( 'button', 'purple' ),
+                            'classes' => $button_classes,
+                            'alt_link_text' => $alt_link_text,
+                            'alt_link_url' => $alt_link_url,
+                            'alt_link_classes' => $alt_link_classes,
                         ) );
                         ?>
                     </div>

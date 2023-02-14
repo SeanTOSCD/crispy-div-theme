@@ -107,6 +107,10 @@
 
 			.grid-item {
 
+				.grid-item-icon {
+					display: none;
+				}
+
 				.archive-item-title {
 
 					a {
@@ -143,7 +147,7 @@
 			border-bottom: 1px dashed $border_over_white;
 
 			@media all and (min-width: 980px) {
-				padding-bottom: 2.5rem;
+				padding-bottom: 5rem;
 				padding-top: 5rem;
 			}
 
@@ -239,48 +243,18 @@
 		}
 
 		.real-data-header {
-			padding-bottom: 5rem;
+			border-bottom: 1px dashed $border_over_purple;
+			padding-bottom: 2rem;
 
 			.attribution {
 				color: #fff;
 			}
 
-			.nng-stats {
-				display: grid;
-				gap: 1.5rem 2.5rem;
-				grid-template-columns: 1fr;
-				list-style-type: none;
-				margin: 2.5rem 0 0;
-				padding: 0;
+			.nng-stats-grid {
+				border-top: 1px dashed $border_over_purple;
 
 				@media all and (min-width: 1200px) {
-					grid-template-columns: 1fr 1fr 1fr;
-				}
-
-				li {
-					border-radius: 10px;
-					padding: 0 2rem 0 1rem;
-					position: relative;
-
-					.stat-title {
-						@include headingFont;
-						color: #fff;
-						font-weight: 700;
-						margin-bottom: .5rem;
-
-						@media all and (min-width: 1200px) {
-							margin-bottom: .7rem;
-						}
-					}
-
-					[class*="fa-"] {
-						color: $color5;
-						font-size: .35rem;
-						left: -1px;
-						margin-bottom: 1.5rem;
-						position: absolute;
-						top: 9px;
-					}
+					grid-template-columns: repeat( 3, 1fr );
 				}
 			}
 		}
@@ -288,10 +262,10 @@
 		.mock-browser-grid {
 			display: grid;
 			grid-template-columns: 100%;
-			padding-top: 0;
 
 			@media (min-width: 1200px) {
 				grid-template-columns: 2fr 1fr;
+				padding-top: 5rem;
 			}
 
 			.mock-browser-wrap {
