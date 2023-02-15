@@ -128,6 +128,20 @@ ul {
 	}
 }
 
-img {
+iframe,
+object {
+	height: auto;
 	max-width: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figcaption,
+.wp-caption-text {
+	font-size: .8rem;
+	font-weight: 600;
+	font-style: italic;
 }

@@ -15,7 +15,7 @@ get_header();
                             <div class="content-wrap">
                                 <h1 class="page-header-title"><?php echo get_crispydiv_tagline(); ?></h1>
                                 <div class="page-header-description">
-                                    <p>Getting started with WordPress is simple. Molding WordPress to your needs can be difficult. We find creative ways to solve that problem.</p>
+                                    <?php echo get_field( 'page_header_description' ); ?>
                                 </div>
                                 <p class="page-header-cta dual-cta">
                                     <?php

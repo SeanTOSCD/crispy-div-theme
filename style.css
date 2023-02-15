@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.0.10
+ * Version: 1.0.11
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -986,8 +986,20 @@ a {
 ul li::marker {
   color: #ae2d68; }
 
-img {
+iframe,
+object {
+  height: auto;
   max-width: 100%; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+figcaption,
+.wp-caption-text {
+  font-size: .8rem;
+  font-weight: 600;
+  font-style: italic; }
 
 .browser {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1817,6 +1829,13 @@ html {
   .archive:not(.post-type-archive) .page-header .page-header-title span {
     font-weight: 800; }
 
+@media all and (min-width: 1400px) {
+  .blog .subscribe-cta .subscribe-content-wrap {
+    grid-template-columns: 5fr 3fr; } }
+@media all and (min-width: 980px) {
+  .blog .subscribe-cta .subscribe-content-wrap.element-spacing.medium {
+    padding-bottom: 5.5rem;
+    padding-top: 5.5rem; } }
 .blog .content-filter-section {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
   .blog .content-filter-section .content-filter-grid {
@@ -1859,11 +1878,11 @@ html {
       .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap {
         padding-bottom: 3.5rem;
         padding-top: 3.5rem; }
-        @media all and (min-width: 980px) {
+        @media all and (min-width: 760px) {
           .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap {
             padding-bottom: 4.5rem;
             padding-top: 4.5rem; } }
-        @media all and (min-width: 1400px) {
+        @media all and (min-width: 980px) {
           .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap {
             padding-bottom: 5.5rem;
             padding-top: 5.5rem; } }
@@ -2209,14 +2228,19 @@ html {
   @media all and (min-width: 1080px) {
     .single .post-content-grid,
     .page .post-content-grid {
-      grid-template-columns: 2fr 1fr; } }
+      grid-template-columns: 66.66667% 33.33333%; } }
   @media all and (min-width: 1080px) {
     .single .post-content-grid .entry-content,
     .page .post-content-grid .entry-content {
       padding-right: 4.5rem; } }
   .single .post-content-grid .sidebar,
   .page .post-content-grid .sidebar {
-    font-size: .88rem; }
+    font-size: .88rem;
+    margin-top: 2rem; }
+    @media all and (min-width: 1080px) {
+      .single .post-content-grid .sidebar,
+      .page .post-content-grid .sidebar {
+        margin-top: 0; } }
     .single .post-content-grid .sidebar .widget:not(:last-child),
     .page .post-content-grid .sidebar .widget:not(:last-child) {
       margin-bottom: 2rem; }

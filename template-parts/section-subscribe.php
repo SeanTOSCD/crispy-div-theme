@@ -14,7 +14,7 @@ if ( ! empty( $args['size'] ) ) {
 <section id="subscribe" class="subscribe-cta background-purple">
 	<div class="subscribe-content-wrap element-spacing <?php echo $size; ?> corner-accent white-orange">
 		<div class="subscribe-content">
-			<span class="subscribe-title h3"><?php echo $title; ?><span class="highlight-text">.</span></span>
+			<span class="subscribe-title <?php echo is_home() ? 'h1' : 'h3'; ?>"><?php echo $title; ?><span class="highlight-text">.</span></span>
 			<div class="subscribe-description">
 				<p>Join our mailing list and be the first to receive <strong>exclusive news, updates, and insider tips on all things WordPress</strong>. From custom development and plugin integrations to theme development and website design, we cover it all.</p>
 				<div class="subscribe-form-container">

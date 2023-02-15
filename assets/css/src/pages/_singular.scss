@@ -20,7 +20,7 @@
 		grid-template-columns: 1fr;
 
 		@media all and (min-width: 1080px) {
-			grid-template-columns: 2fr 1fr;
+			grid-template-columns: 66.66667% 33.33333%;
 		}
 
 		.entry-content {
@@ -32,6 +32,11 @@
 
 		.sidebar {
 			font-size: .88rem;
+			margin-top: 2rem;
+
+			@media all and (min-width: 1080px) {
+				margin-top: 0;
+			}
 
 			.widget {
 

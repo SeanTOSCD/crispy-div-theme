@@ -1,5 +1,26 @@
 .blog {
 
+	.subscribe-cta {
+
+		.subscribe-content-wrap {
+
+			@media all and (min-width: 1400px) {
+				grid-template-columns: 5fr 3fr;
+			}
+
+			&.element-spacing {
+
+				&.medium {
+
+					@media all and (min-width: 980px) {
+						padding-bottom: 5.5rem;
+						padding-top: 5.5rem;
+					}
+				}
+			}
+		}
+	}
+
 	.content-filter-section {
 		border-bottom: 1px dashed $border_over_white;
 
