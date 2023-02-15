@@ -22,4 +22,15 @@
 			grid-template-columns: 3fr 2fr;
 		}
 	}
+
+	.search-form {
+		margin-top: 2rem;
+
+		input {
+
+			@media all and (min-width: 760px) {
+				max-width: 50%;
+			}
+		}
+	}
 }

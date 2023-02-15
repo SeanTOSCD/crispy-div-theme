@@ -21,7 +21,7 @@ function get_crispydiv_services_grid( $full = false, $with_cta = false, $classes
 			<?php
             while ( $services->have_posts() ) :
                 $services->the_post();
-                get_template_part( 'template-parts/content', get_post_type(), array(
+                get_template_part( 'template-parts/content', 'grid-item', array(
                     'is-services' => true,
                     'services-full' => $full,
                     'services-with-cta' => $with_cta,

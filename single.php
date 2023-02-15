@@ -11,7 +11,7 @@ get_header();
 crispydiv_page_header( array(
     'bg-color' => 'background-purple',
     'corner-accent-color' => 'white-orange',
-));
+) );
 ?>
 
     <main id="site-content" class="site-main">
@@ -22,9 +22,6 @@ crispydiv_page_header( array(
                         <div class="entry-content">
 			                <?php the_content(); ?>
                         </div>
-                        <footer class="post-footer">
-<!--	                        --><?php //dynamic_sidebar( 'Post Footer' );  ?>
-                        </footer>
                     </article>
                     <div class="sidebar">
                         <?php dynamic_sidebar( 'Post Sidebar' );  ?>
@@ -36,12 +33,12 @@ crispydiv_page_header( array(
             'title' => 'Subscribe for more',
             'size' => 'medium',
         ) ); ?>
-        <div class="post-navigation element-spacing small background-gray">
+        <div class="post-navigation-wrap element-spacing small background-gray">
 		    <?php
 		    the_post_navigation(
 			    array(
-				    'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'crispydiv' ) . '</span> <span class="nav-title">%title</span>',
-				    'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'crispydiv' ) . '</span> <span class="nav-title">%title</span>',
+				    'prev_text' => '<span class="nav-subtitle">Previous post:</span> <span class="nav-title">%title</span>',
+				    'next_text' => '<span class="nav-subtitle">Next post:</span> <span class="nav-title">%title</span>',
 			    )
 		    );
 		    ?>

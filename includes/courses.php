@@ -21,7 +21,7 @@ function get_crispydiv_courses_grid() {
 			<?php
             while ( $courses->have_posts() ) :
                 $courses->the_post();
-	            get_template_part( 'template-parts/content', get_post_type(), array(
+	            get_template_part( 'template-parts/content', 'grid-item', array(
 		            'is-courses' => true,
 	            ) );
             endwhile;

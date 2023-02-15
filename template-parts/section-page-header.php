@@ -26,7 +26,7 @@ if ( is_home() ) {
 
 	$the_title = $search_term ? '<span class="search-query-title-label">Search results for:</span>' . $search_term : '<span class="search-query-title-label">Search results:</span>';
 
-} else if ( is_category() || is_tag() ) {
+} else if ( is_category() || is_tag() || is_tax() || is_author() || is_date() ) {
 
 	$the_title = get_the_archive_title();
 	$the_description = get_the_archive_description();
@@ -48,12 +48,14 @@ if ( is_home() ) {
 
 	$custom_title = get_field( 'page_header_title', get_the_ID() );
 	$the_title = $custom_title ? $custom_title : $the_title;
-    if ( get_field( 'page_header_small_title', get_the_ID() ) ) {
-	    $title_class = 'h4';
-    }
+	$title_class = 'h2';
 
 	$custom_description = get_field( 'page_header_description', get_the_ID() );
 	$the_description = $custom_description ? $custom_description : $the_description;
+
+} else if ( is_404() ) {
+
+	$the_title = '404, unfortunately.';
 
 } else if ( is_singular( 'post' ) ) {
 
@@ -69,7 +71,7 @@ if ( is_home() ) {
  * 3. Default
  */
 $background_color = get_field( 'page_header_background_color', get_the_ID() );
-$background_color_class = '';
+$background_color_class = 'background-gray';
 if ( ! empty( $args['bg-color'] ) ) {
 	$background_color_class = $args['bg-color'];
 } else if ( $background_color && 'default' !== $background_color ) {
@@ -85,35 +87,67 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
 <section class="page-header <?php echo $background_color_class, $corner_accent_class; ?>">
 	<div class="inner medium">
 		<h1 class="page-header-title <?php echo $title_class; ?>"><?php echo $the_title; ?></h1>
-		<?php if ( $the_description ) { ?>
-			<div class="page-header-description">
-				<div class="page-header-description-inner">
-					<?php echo $the_description; ?>
-				</div>
-                <?php if ( is_post_type_archive( 'service' ) ) { ?>
-                    <div class="jump-to-section">
-                        <select id="jump-menu" onchange="location = this.options[this.selectedIndex].value;">
-                            <option value="#">Select a Service</option>
-                            <?php
-                            // Get all services by title
-                            $services = get_posts( array(
-                                'post_type' => 'service',
-                                'posts_per_page' => -1,
-                                'orderby' => 'title',
-                                'order' => 'ASC',
-                            ) );
-                            foreach ( $services as $service ) {
-                                $service_title = $service->post_title;
-                                $service_slug = $service->post_name;
-                                ?>
-                                <option value="#<?php echo $service_slug; ?>"><?php echo $service_title; ?></option>
-                                <?php
-                            }
-                            ?>
-                        </select>
+		<?php
+            if ( $the_description ) {
+                ?>
+                <div class="page-header-description">
+                    <div class="page-header-description-inner">
+                        <?php echo $the_description; ?>
                     </div>
-                <?php } ?>
-			</div>
-		<?php } ?>
+                    <?php if ( is_post_type_archive( 'service' ) ) { ?>
+                        <div class="jump-to-section">
+                            <select id="jump-menu" onchange="location = this.options[this.selectedIndex].value;">
+                                <option value="#">Select a Service</option>
+                                <?php
+                                // Get all services by title
+                                $services = get_posts( array(
+                                    'post_type' => 'service',
+                                    'posts_per_page' => -1,
+                                    'orderby' => 'title',
+                                    'order' => 'ASC',
+                                ) );
+                                foreach ( $services as $service ) {
+                                    $service_title = $service->post_title;
+                                    $service_slug = $service->post_name;
+                                    ?>
+                                    <option value="#<?php echo $service_slug; ?>"><?php echo $service_title; ?></option>
+                                    <?php
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    <?php } ?>
+                </div>
+                <?php
+            }
+
+            if ( is_search() ) {
+                ?>
+                <div class="page-header-description">
+                    <?php
+                    if ( have_posts() ) {
+                        ?>
+                        <p>Success! Explore the content below, or try searching again.</p>
+                        <?php
+                    } else {
+                        ?>
+                        <p>Nothing matched your search terms. Try again with different keywords.</p>
+                        <?php
+                    }
+                    ?>
+                </div>
+                <?php get_search_form(); ?>
+                <?php
+            }
+
+            if ( is_404() ) {
+                ?>
+                <div class="page-header-description">
+                    <p>The page you are looking for does not exist. Try search.</p>
+                </div>
+                <?php
+                get_search_form();
+            }
+        ?>
 	</div>
 </section>

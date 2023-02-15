@@ -266,3 +266,64 @@
 		}
 	}
 }
+
+.post-navigation {
+
+	.nav-links {
+		display: grid;
+		row-gap: 1.5rem;
+		grid-template-columns: 1fr;
+
+		@media all and (min-width: 980px) {
+			column-gap: 5rem;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.nav-previous,
+		.nav-next {
+
+			a {
+				text-decoration: none;
+			}
+
+			.nav-subtitle {
+				@include headingFont;
+				color: $headings;
+				display: block;
+				font-size: .75rem;
+				font-weight: 800;
+				text-transform: uppercase;
+
+				&:active,
+				&:focus,
+				&:hover {
+					color: $headings;
+				}
+			}
+
+			.nav-title {
+				color: $color5;
+				font-size: .88rem;
+				text-decoration: underline;
+				text-decoration-style: dotted;
+				text-decoration-thickness: 2px;
+
+				&:active,
+				&:focus,
+				&:hover {
+					text-decoration-style: solid;
+				}
+			}
+		}
+
+		.nav-previous {
+
+			@media all and (min-width: 980px) {
+
+				& + .nav-next {
+					text-align: right;
+				}
+			}
+		}
+	}
+}

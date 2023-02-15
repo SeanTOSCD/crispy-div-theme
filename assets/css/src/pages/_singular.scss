@@ -1,0 +1,124 @@
+.single,
+.page {
+
+	.page-header {
+
+		.page-header-title {
+
+			@media all and (min-width: 960px) {
+				max-width: 85%;
+			}
+
+			@media all and (min-width: 1400px) {
+				max-width: 70%;
+			}
+		}
+	}
+
+	.post-content-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@media all and (min-width: 1080px) {
+			grid-template-columns: 2fr 1fr;
+		}
+
+		.entry-content {
+
+			@media all and (min-width: 1080px) {
+				padding-right: 4.5rem;
+			}
+		}
+
+		.sidebar {
+			font-size: .88rem;
+
+			.widget {
+
+				&:not(:last-child) {
+					margin-bottom: 2rem;
+
+					@media all and (min-width: 1400px) {
+						margin-bottom: 3rem;
+					}
+				}
+
+				ul {
+					list-style-type: unset;
+					list-style-position: outside;
+					margin-left: 1rem;
+
+					li {
+						margin-bottom: .75rem;
+
+						&:not(:last-child) {
+							margin-bottom: .75rem;
+						}
+
+						&::marker {
+							color: $color5;
+						}
+					}
+				}
+
+				&.widget_search {
+
+					label {
+						color: $headings;
+						display: block;
+						margin-bottom: 4px;
+						text-transform: unset;
+					}
+
+					input {
+						background-color: $gray;
+						border-color: $color5;
+
+						&:focus,
+						&:active {
+							border-color: $color6;
+						}
+
+						&::-webkit-input-placeholder {
+							color: lighten( $body_light, 30% );
+						}
+					}
+				}
+
+				&.widget_recent_entries {
+
+					ul {
+
+						li {
+
+							a {
+								color: $color2;
+								display: block;
+								font-weight: 700;
+								text-decoration-color: $color5;
+
+								&:active,
+								&:focus,
+								&:hover {
+									color: $color2;
+									text-decoration-color: $color5;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.single {
+
+}
+
+.page {
+
+	#colophon {
+		border-top: 1px dashed $border_over_white;
+	}
+}

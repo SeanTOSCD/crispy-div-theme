@@ -128,6 +128,30 @@
 	}
 }
 
+.border-bottom-over-white {
+	border-bottom: 1px dashed $border_over_white;
+}
+
+.border-top-over-white {
+	border-top: 1px dashed $border_over_white;
+}
+
+.border-bottom-over-purple {
+	border-bottom: 1px dashed $border_over_purple;
+}
+
+.border-top-over-purple {
+	border-top: 1px dashed $border_over_purple;
+}
+
+.border-bottom-over-pink {
+	border-bottom: 1px dashed $border_over_pink;
+}
+
+.border-top-over-pink {
+	border-top: 1px dashed $border_over_pink;
+}
+
 .customizations-grid {
 	align-items: center;
 	display: flex;
@@ -188,6 +212,7 @@
 }
 
 .corner-accent {
+	background-image: url("assets/images/corner-accent-black-orange.svg");
 	background-size: 160px auto;
 	background-repeat: no-repeat;
 	background-position: calc( 100% - 2rem ) calc( 100% - 2rem );

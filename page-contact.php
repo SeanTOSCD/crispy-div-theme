@@ -11,17 +11,13 @@ crispydiv_page_header( array(
 ?>
 
 	<main id="site-content" class="site-main">
-		<div class="inner small">
+		<div class="inner">
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 					<div class="entry-content">
 						<?php gravity_form( 'Contact', false, false, false, '', true ); ?>
 					</div>
-
 				</article>
-
 			<?php endwhile; ?>
 		</div>
 	</main>

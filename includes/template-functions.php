@@ -36,7 +36,7 @@ add_filter( 'body_class', function( $classes ) {
         $classes[] = 'has-purple-header';
     } else if ( is_post_type_archive( 'service' ) ) {
 	    $classes[] = 'has-pink-header';
-    } else if ( is_search() || is_category() || is_tag() ) {
+    } else if ( is_page() || is_search() || is_category() || is_tag() || is_tax() || is_author() || is_date() || is_404() ) {
 	    $classes[] = 'has-gray-header';
     } else {
         $classes[] = 'has-light-header';
