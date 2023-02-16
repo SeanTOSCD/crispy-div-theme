@@ -59,6 +59,10 @@ input[type="submit"] {
 		border-color: $color5;
 		text-decoration-color: transparent;
 
+		&.orange {
+			border-color: $color6;
+		}
+
 		&:active,
 		&:focus,
 		&:hover {

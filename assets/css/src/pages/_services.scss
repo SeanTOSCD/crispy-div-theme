@@ -216,12 +216,12 @@
 								cursor: pointer;
 
 								&:before {
-									color: lighten( $body_light , 30% );
+									color: $color6;
 								}
 							}
 
 							&:before {
-								color: lighten( $body_light , 60% );
+								color: $color6;
 								content: '\f058';
 								display: inline-block;
 								font-family: 'Font Awesome 6 Free';

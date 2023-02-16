@@ -70,7 +70,7 @@ get_header();
             <div class="acf-grid">
                 <div class="acf-highlight-content">
                     <img class="advanced-custom-fields-logo" src="<?php echo THEME_IMAGES . 'logos/advanced-custom-fields-logo.png'; ?>" alt="Advanced Custom Fields">
-                    <span class="h5 acf-highlight-title">Tweak your settings, not our code.</span>
+                    <span class="h5 acf-highlight-title">Tweak settings, not code.</span>
                     <p><a href="https://advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a> (ACF) is a powerful plugin that allows you to create custom fields for your WordPress site. We use it to create custom post types, taxonomies, fields, and more.</p>
                     <p>With ACF's features, <strong class="color-black">we make every element of your site editable from the WordPress dashboard</strong>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme edits.</p>
                 </div>

@@ -257,9 +257,7 @@ html body {
     font-size: 30px;
     margin-bottom: 10px; }
   .element-lead-icon.colored [class*="fa-"] {
-    background-image: linear-gradient(135deg, #f54952, #ae2d68);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    color: #f54952; }
 
 .heavy {
   font-size: 1.5rem;
@@ -534,6 +532,10 @@ input[type="submit"] {
     color: #341671;
     border-color: #ae2d68;
     text-decoration-color: transparent; }
+    .button.outline.orange,
+    button.outline.orange,
+    input[type="submit"].outline.orange {
+      border-color: #f54952; }
     .button.outline:active, .button.outline:focus, .button.outline:hover,
     button.outline:active,
     button.outline:focus,
@@ -984,7 +986,7 @@ a {
     text-decoration-style: solid; }
 
 ul li::marker {
-  color: #ae2d68; }
+  color: #f54952; }
 
 iframe,
 object {
@@ -2022,7 +2024,7 @@ html {
           font-weight: 500;
           padding-bottom: 6px; }
           .page-front .theme-development-section .mock-browser-grid .design-description ul li::marker {
-            color: #ae2d68; }
+            color: #f54952; }
   .page-front .theme-development-section .the-standard-title {
     padding-top: 0; }
     .page-front .theme-development-section .the-standard-title span {
@@ -2177,9 +2179,9 @@ html {
       .post-type-archive-service .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title:hover, .post-type-archive-service .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title:focus, .post-type-archive-service .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title:active {
         cursor: pointer; }
         .post-type-archive-service .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title:hover:before, .post-type-archive-service .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title:focus:before, .post-type-archive-service .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title:active:before {
-          color: gray; }
+          color: #f54952; }
       .post-type-archive-service .service-section.custom-development-section .custom-development-example-accordion-items .custom-development-example-accordion-item .custom-development-example-accordion-item-header .custom-development-example-accordion-item-title:before {
-        color: #cccccc;
+        color: #f54952;
         content: '\f058';
         display: inline-block;
         font-family: 'Font Awesome 6 Free';
