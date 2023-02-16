@@ -1694,6 +1694,11 @@ template {
   .entry-header .page-header-title:last-child,
   .entry-header .entry-title:last-child {
     margin-bottom: 0; }
+.page-header .page-header-title-label,
+.entry-header .page-header-title-label {
+  color: #ae2d68;
+  display: block;
+  font-size: 1.1rem; }
 .page-header .page-header-description,
 .entry-header .page-header-description {
   display: grid;
@@ -1713,6 +1718,12 @@ template {
     .page-header .search-form input,
     .entry-header .search-form input {
       max-width: 50%; } }
+
+.background-purple .page-header-title-label {
+  color: #cfc4e6; }
+
+.background-pink .page-header-title-label {
+  color: #f9d2e6; }
 
 .subscribe-cta {
   background-image: linear-gradient(to right, #341671 0%, #341671 10%, rgba(52, 22, 113, 0.8) 100%), url("assets/images/annie-spratt-subscribe-unsplash.jpg");
@@ -2051,11 +2062,6 @@ html {
       grid-template-columns: 5fr 4fr; } }
 .page-front #colophon {
   border-top: 1px dashed rgba(0, 0, 0, 0.1); }
-
-.search .page-header .page-header-title .search-query-title-label {
-  color: #ae2d68;
-  display: block;
-  font-size: 1.1rem; }
 
 .post-type-archive-service .page-header .page-header-description {
   align-items: center;

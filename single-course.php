@@ -4,10 +4,14 @@
  */
 
 get_header();
+crispydiv_page_header( array(
+	'bg-color' => 'background-purple',
+	'corner-accent-color' => 'white-orange',
+) );
 ?>
 
 	<main id="site-content" class="site-main">
-		<div class="inner large">
+		<div class="inner medium">
 			<?php
 			while ( have_posts() ) :
 				the_post();

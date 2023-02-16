@@ -8,6 +8,7 @@ if ( get_field( 'page_header_hide', get_the_ID() ) ) {
 }
 
 $the_title = get_the_title( get_the_ID() );
+$title_label = '';
 $title_class = 'h1';
 $the_description = '';
 
@@ -24,7 +25,7 @@ if ( is_home() ) {
     // Get queries search term
     $search_term = get_search_query();
 
-	$the_title = $search_term ? '<span class="search-query-title-label">Search results for:</span>' . $search_term : '<span class="search-query-title-label">Search results:</span>';
+	$the_title = $search_term ? '<span class="page-header-title-label">Search results for:</span>' . $search_term : '<span class="search-query-title-label">Search results:</span>';
 
 } else if ( is_category() || is_tag() || is_tax() || is_author() || is_date() ) {
 
@@ -61,6 +62,12 @@ if ( is_home() ) {
 
     $the_title = get_the_title( get_the_ID() );
 	$title_class = 'h2';
+
+} else if ( is_singular( 'course' ) ) {
+
+	$the_title = get_the_title( get_the_ID() );
+	$title_label = 'Course:';
+	$the_description = get_the_excerpt();
 }
 
 /**
@@ -86,7 +93,12 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
 
 <section class="page-header <?php echo $background_color_class, $corner_accent_class; ?>">
 	<div class="inner medium">
-		<h1 class="page-header-title <?php echo $title_class; ?>"><?php echo $the_title; ?></h1>
+		<h1 class="page-header-title <?php echo $title_class; ?>">
+            <?php if ( ! empty( $title_label ) ) { ?>
+                <span class="page-header-title-label"><?php echo $title_label; ?></span>
+            <?php } ?>
+            <?php echo $the_title; ?>
+        </h1>
 		<?php
             if ( $the_description ) {
                 ?>

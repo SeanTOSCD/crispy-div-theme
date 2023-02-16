@@ -210,6 +210,7 @@ function get_crispydiv_logo_by_color() {
             || is_singular( 'post' )
             || is_post_type_archive( 'service' )
             || is_post_type_archive( 'course' )
+            || is_singular( 'course' )
     ) {
         return true;
     }
