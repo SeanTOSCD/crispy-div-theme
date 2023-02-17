@@ -1,14 +1,15 @@
 <?php // Standard button output
 
-if ( empty( $args ) ) {
-	$args = array(
-		'text' => 'Learn More',
-		'url' => '#',
-		'classes' => array( 'button' ),
+if ( isset( $args ) ) {
+
+    $args = wp_parse_args( $args, array(
+        'text' => 'Learn More',
+        'url' => '#',
+        'classes' => array( 'button' ),
         'alt_link_text' => '',
-		'alt_link_url' => '',
-		'alt_link_classes' => array( 'secondary-cta' ),
-	);
+        'alt_link_url' => '',
+        'alt_link_classes' => array( 'secondary-cta' ),
+    ) );
 }
 ?>
 

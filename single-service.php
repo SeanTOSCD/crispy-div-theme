@@ -29,5 +29,22 @@ if ( have_posts() ) {
 			'the-title' => $the_title,
 		) );
 	}
+	?>
+	<section class="all-services-cta element-spacing small corner-accent black-orange border-bottom-over-white border-top-over-white">
+		<div class="service-content">
+			<span class="all-services-cta-title h4">Not what you're looking for? There's more.</span>
+			<p>We offer a wide range of services to help you grow your business.</p>
+			<?php
+			crispydiv_button(
+				array(
+					'text'  => 'View All Services',
+					'url'  => get_post_type_archive_link( 'service' ),
+					'classes' => array( 'button', 'outline' ),
+				)
+			);
+			?>
+		</div>
+	</section>
+	<?php
 }
 get_footer();
