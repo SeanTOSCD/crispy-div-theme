@@ -5,8 +5,10 @@
 
 get_header();
 crispydiv_page_header( array(
-	'bg-color' => 'background-purple',
+	'bg-color'            => 'background-purple',
 	'corner-accent-color' => 'white-orange',
+	'title-label'         => 'Course:',
+	'description'         => get_the_excerpt(),
 ) );
 ?>
 

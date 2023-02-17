@@ -32,17 +32,13 @@ add_filter( 'body_class', function( $classes ) {
 		$classes[] = 'has-dark-header';
 	}
 
-    if ( is_front_page() || is_home() || is_singular( 'post' )
-         || is_post_type_archive( 'course' )
-         || is_singular( 'course' )
-    ) {
+    // Conditionally add header color classes
+    if ( is_front_page() || is_home() || is_singular( 'post' ) || is_post_type_archive( 'course' ) || is_singular( 'course' ) ) {
         $classes[] = 'has-purple-header';
-    } else if ( is_post_type_archive( 'service' ) ) {
+    } else if ( is_post_type_archive( 'service' ) || is_singular( 'service' ) ) {
 	    $classes[] = 'has-pink-header';
-    } else if ( is_page() || is_search() || is_category() || is_tag() || is_tax() || is_author() || is_date() || is_404() ) {
-	    $classes[] = 'has-gray-header';
     } else {
-        $classes[] = 'has-light-header';
+	    $classes[] = 'has-gray-header';
     }
 
 	return $classes;

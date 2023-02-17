@@ -5,8 +5,10 @@
 
 get_header();
 crispydiv_page_header( array(
-    'bg-color' => 'background-gray',
-    'corner-accent-color' => 'black-orange',
+	'corner-accent-color' => 'black-orange',
+	'title' => get_field( 'page_header_title' ),
+	'title-class' => 'h2',
+	'description' => get_field( 'page_header_description' ) ?: '',
 ) );
 ?>
 

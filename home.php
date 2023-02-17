@@ -4,10 +4,6 @@
  */
 
 get_header();
-//crispydiv_page_header( array(
-//    'bg-color' => 'background-gray',
-//    'corner-accent-color' => 'black-orange',
-//) );
 
 get_template_part( 'template-parts/section', 'subscribe', array(
 	'title' => 'Crispy Reads',

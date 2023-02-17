@@ -4,9 +4,10 @@
  */
 
 get_header();
+
 crispydiv_page_header( array(
-    'bg-color' => 'background-gray',
     'corner-accent-color' => 'black-orange',
+    'title' => get_search_query() ? '<span class="page-header-title-label">Search results for:</span>' . get_search_query() : '<span class="page-header-title-label">Search results:</span>',
 ) );
 ?>
 

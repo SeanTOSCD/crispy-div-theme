@@ -10,6 +10,7 @@
 get_header();
 crispydiv_page_header( array(
 	'corner-accent-color' => 'black-orange',
+    'title' => '404, unfortunately.',
 ) );
 ?>
 

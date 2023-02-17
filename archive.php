@@ -9,8 +9,9 @@
 
 get_header();
 crispydiv_page_header( array(
-	'bg-color' => 'background-gray',
 	'corner-accent-color' => 'black-orange',
+    'title' => get_the_archive_title(),
+    'description' => get_the_archive_description(),
 ) );
 ?>
 

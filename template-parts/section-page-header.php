@@ -3,108 +3,46 @@
  * Page header section
  */
 
+
+// Bail if the page header is hidden
 if ( get_field( 'page_header_hide', get_the_ID() ) ) {
 	return;
 }
 
-$the_title = get_the_title( get_the_ID() );
-$title_label = '';
-$title_class = 'h1';
-$the_description = '';
+// Get the page header args and set defaults
+if ( isset( $args ) ) {
 
-if ( is_home() ) {
-
-	$custom_title = get_field( 'blog_title', 'options' );
-	$the_title = $custom_title ? $custom_title : $the_title;
-
-	$custom_description = get_field( 'blog_description', 'options' );
-	$the_description = $custom_description ? $custom_description : $the_description;
-
-} else if ( is_search() ) {
-
-    // Get queries search term
-    $search_term = get_search_query();
-
-	$the_title = $search_term ? '<span class="page-header-title-label">Search results for:</span>' . $search_term : '<span class="search-query-title-label">Search results:</span>';
-
-} else if ( is_category() || is_tag() || is_tax() || is_author() || is_date() ) {
-
-	$the_title = get_the_archive_title();
-	$the_description = get_the_archive_description();
-
-} else if ( is_post_type_archive() ) {
-
-    $queried_object_name_plural = get_queried_object()->name . 's';
-
-	$custom_title = get_field( $queried_object_name_plural . '_title', 'options' );
-	$the_title = $custom_title ? $custom_title : $the_title;
-	if ( get_field( $queried_object_name_plural . '_small_title', 'options' ) ) {
-		$title_class = 'h4';
-	}
-
-	$custom_description = get_field( $queried_object_name_plural . '_description', 'options' );
-	$the_description = $custom_description ? $custom_description : $the_description;
-
-} else if ( is_page() && ! is_home() ) {
-
-	$custom_title = get_field( 'page_header_title', get_the_ID() );
-	$the_title = $custom_title ? $custom_title : $the_title;
-	$title_class = 'h2';
-
-	$custom_description = get_field( 'page_header_description', get_the_ID() );
-	$the_description = $custom_description ? $custom_description : $the_description;
-
-} else if ( is_404() ) {
-
-	$the_title = '404, unfortunately.';
-
-} else if ( is_singular( 'post' ) ) {
-
-    $the_title = get_the_title( get_the_ID() );
-	$title_class = 'h2';
-
-} else if ( is_singular( 'course' ) ) {
-
-	$the_title = get_the_title( get_the_ID() );
-	$title_label = 'Course:';
-	$the_description = get_the_excerpt();
+    $args = wp_parse_args( $args, array(
+        'bg-color' => 'background-gray',
+        'corner-accent-color' => 'black-orange',
+        'title' => get_the_title( get_the_ID() ),
+        'title-class' => 'h1',
+        'title-label' => '',
+        'description' => '',
+    ) );
 }
 
-/**
- * Background color
- *
- * 1. Set from crispydiv_page_header() function
- * 2. Set from page edit screen
- * 3. Default
- */
-$background_color = get_field( 'page_header_background_color', get_the_ID() );
-$background_color_class = 'background-gray';
-if ( ! empty( $args['bg-color'] ) ) {
-	$background_color_class = $args['bg-color'];
-} else if ( $background_color && 'default' !== $background_color ) {
-	$background_color_class = $background_color;
-}
-
-$corner_accent_class = '';
+// Build full class name for corner accent
+$corner_accent_classes = '';
 if ( ! empty( $args['corner-accent-color'] ) ) {
-	$corner_accent_class = ' corner-accent ' . $args['corner-accent-color'];
+	$corner_accent_classes = ' corner-accent ' . $args['corner-accent-color'];
 }
 ?>
 
-<section class="page-header <?php echo $background_color_class, $corner_accent_class; ?>">
+<section class="page-header <?php echo $args['bg-color'], $corner_accent_classes; ?>">
 	<div class="inner medium">
-		<h1 class="page-header-title <?php echo $title_class; ?>">
-            <?php if ( ! empty( $title_label ) ) { ?>
-                <span class="page-header-title-label"><?php echo $title_label; ?></span>
+		<h1 class="page-header-title <?php echo $args['title-class']; ?>">
+            <?php if ( ! empty( $args['title-label'] ) ) { ?>
+                <span class="page-header-title-label"><?php echo $args['title-label']; ?></span>
             <?php } ?>
-            <?php echo $the_title; ?>
+            <?php echo $args['title']; ?>
         </h1>
 		<?php
-            if ( $the_description ) {
+            if ( ! empty( $args['description'] ) ) {
                 ?>
                 <div class="page-header-description">
                     <div class="page-header-description-inner">
-                        <?php echo $the_description; ?>
+                        <?php echo $args['description']; ?>
                     </div>
                     <?php if ( is_post_type_archive( 'service' ) ) { ?>
                         <div class="jump-to-section">
