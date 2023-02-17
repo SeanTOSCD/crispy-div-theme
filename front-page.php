@@ -199,15 +199,17 @@ get_header();
         </div>
     </section>
 
-    <section class="courses-section background-gray">
-        <div class="section-heading element-spacing large corner-accent black-pink">
-            <h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<span class="highlight-text">.</span></h2>
-            <div class="section-description">
-                <p>Sometimes you just have to "roll your own." We get it. In fact, that's how the journey begins for most self-taught developers and designers. Welcome to the club. We're here to help you <strong>learn the tricks of the trade, skip the unnecessary hardships</strong>, and actually get some work done. Here's what we have to offer.</p>
+    <?php if ( ! empty( get_crispydiv_courses_grid() ) ) { ?>
+        <section class="courses-section background-gray">
+            <div class="section-heading element-spacing large corner-accent black-pink">
+                <h2 class="section-title">Build WordPress <br class="disappearing-br">yourself, your way<span class="highlight-text">.</span></h2>
+                <div class="section-description">
+                    <p>Sometimes you just have to "roll your own." We get it. In fact, that's how the journey begins for most self-taught developers and designers. Welcome to the club. We're here to help you <strong>learn the tricks of the trade, skip the unnecessary hardships</strong>, and actually get some work done. Here's what we have to offer.</p>
+                </div>
             </div>
-        </div>
-        <?php echo get_crispydiv_courses_grid(); ?>
-    </section>
+		    <?php echo get_crispydiv_courses_grid(); ?>
+        </section>
+    <?php } ?>
 
     <section class="contact-cta-section element-spacing medium corner-accent black-orange">
         <span class="cta-title h4">Got questions?</span>

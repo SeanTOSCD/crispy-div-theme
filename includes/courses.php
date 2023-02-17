@@ -13,9 +13,8 @@ function get_crispydiv_courses_grid() {
 		'posts_per_page' => -1,
 	) );
 
-	ob_start();
-
 	if ( $courses->have_posts() ) :
+		ob_start();
 		?>
 		<div class="courses-grid general-grid large background-white">
 			<?php
@@ -28,7 +27,9 @@ function get_crispydiv_courses_grid() {
             wp_reset_postdata();
             ?>
 		</div>
-	<?php
+	    <?php
+		return ob_get_clean();
+    else :
+        return false;
 	endif;
-	return ob_get_clean();
 }
