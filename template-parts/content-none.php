@@ -13,12 +13,15 @@
     </div>
 </section>
 <?php echo get_crispydiv_services_grid( true, true, array( 'background-white' ) ); ?>
-<section class="element-spacing medium border-bottom-over-white">
-    <div class="section-header">
-        <h2 class="section-title">Courses</h2>
-        <div class="section-description">
-            <p>You're a do-it-yourself-er? Awesome. We're into that too. Check out our Courses to learn how to handle custom development and design.</p>
+
+<?php if ( ! empty( get_crispydiv_courses_grid() ) ) { ?>
+    <section class="element-spacing medium border-bottom-over-white">
+        <div class="section-header">
+            <h2 class="section-title">Courses</h2>
+            <div class="section-description">
+                <p>You're a do-it-yourself-er? Awesome. We're into that too. Check out our Courses to learn how to handle custom development and design.</p>
+            </div>
         </div>
-    </div>
-</section>
-<?php echo get_crispydiv_courses_grid(); ?>
+    </section>
+    <?php echo get_crispydiv_courses_grid(); ?>
+<?php } ?>

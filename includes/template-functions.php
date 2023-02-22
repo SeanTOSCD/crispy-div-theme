@@ -107,3 +107,18 @@ add_action( 'wp_footer', function() {
     <script src="like_button.js"></script>
 	<?php
 } );
+
+/**
+ * Add icon to the last menu item (Members)
+ * @param $items
+ * @param $args
+ *
+ * @return mixed|string
+ */
+add_filter( 'wp_nav_menu_items', function( $items, $args ) {
+	if ( $args->theme_location == 'primary-menu' ) {
+		$items .= '<li class="menu-item members-menu-item"><a href="' . home_url( '/members/' ) . '"><i class="fa-solid fa-circle-user"></i> Members</a></li>';
+	}
+	return $items;
+}, 10, 2 );
+

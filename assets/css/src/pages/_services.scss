@@ -51,7 +51,15 @@
 	}
 }
 
-.services-grid {
+.services-grid:not(.large) {
+
+	@media all and (min-width: 760px) and (max-width: 1199.98px) {
+		grid-template-columns: 1fr;
+	}
+
+	@media all and (min-width: 1200px) {
+		grid-template-columns: repeat( 3, 1fr );
+	}
 
 	.grid-item-content {
 

@@ -112,7 +112,7 @@ get_header();
             <div class="grid-item">
                 <div class="grid-item-content">
                     <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-eye"></i></span>
-                    <h3 class="grid-item-title">The "F" pattern</h3>
+                    <h3 class="grid-item-title">The "F" Pattern</h3>
                     <p>User scan content in an "F" pattern: from top left moving horizontally, down the left side, then across the middle.</p>
                 </div>
             </div>

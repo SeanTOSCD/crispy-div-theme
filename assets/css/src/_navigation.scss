@@ -85,6 +85,17 @@
 						color: $color6;
 					}
 				}
+
+				&.members-menu-item {
+
+					a {
+
+						[class*="fa-"] {
+							margin-left: 1rem;
+							margin-right: 4px;
+						}
+					}
+				}
 			}
 		}
 	}
