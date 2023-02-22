@@ -116,9 +116,23 @@ add_action( 'wp_footer', function() {
  * @return mixed|string
  */
 add_filter( 'wp_nav_menu_items', function( $items, $args ) {
-	if ( $args->theme_location == 'primary-menu' ) {
-		$items .= '<li class="menu-item members-menu-item"><a href="' . home_url( '/members/' ) . '"><i class="fa-solid fa-circle-user"></i> Members</a></li>';
+
+	$query = new WP_Query( array(
+		'post_type' => 'course',
+		'post_status' => 'publish',
+		'posts_per_page' => 1,
+		'fields' => 'ids'
+	) );
+
+	if ( $query->have_posts() ) {
+		if ( $args->theme_location == 'primary-menu' ) {
+			$items .= '<li class="menu-item members-menu-item"><a href="' . home_url( '/members/' ) . '"><i class="fa-solid fa-circle-user"></i> Members</a></li>';
+		}
+		wp_reset_postdata();
+		return $items;
 	}
+
 	return $items;
+
 }, 10, 2 );
 
