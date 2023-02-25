@@ -145,3 +145,156 @@ figcaption,
 	font-weight: 600;
 	font-style: italic;
 }
+
+blockquote {
+	border-left: 2px solid $color5;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: 500;
+	margin: 0 0 1.25rem;
+	padding: 0 0 0 1.25rem;
+
+	&:not(:last-child) {
+		margin-bottom: 1.25rem;
+	}
+}
+
+q {
+	font-style: italic;
+	font-weight: 500;
+}
+
+pre {
+	border-radius: 5px;
+	padding: 1.5rem;
+	margin: 1.5rem 0 2rem;
+}
+
+// Adjustments to markup in standard WordPress content areas (so, not custom)
+.site-main {
+
+	h1, .h1,
+	h2, .h2 {
+		font-size: 1.5rem;
+
+		@media all and (min-width: 540px) {
+			font-size: 1.75rem;
+		}
+
+		@media all and (min-width: 760px) {
+			font-size: 2rem;
+		}
+
+		@media all and (min-width: 980px) {
+			font-size: 2.25rem;
+		}
+
+		@media all and (min-width: 1200px) {
+			font-size: 2.5rem;
+		}
+	}
+
+	h2, .h2 {
+		color: $color4;
+	}
+
+	h3, .h3 {
+		color: $color5;
+		font-size: 1.25rem;
+
+		@media all and (min-width: 540px) {
+			font-size: 1.5rem;
+		}
+
+		@media all and (min-width: 760px) {
+			font-size: 1.75rem;
+		}
+
+		@media all and (min-width: 980px) {
+			font-size: 2rem;
+		}
+
+		@media all and (min-width: 1200px) {
+			font-size: 2.25rem;
+		}
+	}
+
+	h4, .h4 {
+		font-size: 1.25rem;
+
+		@media all and (min-width: 540px) {
+			font-size: 1.5rem;
+		}
+
+		@media all and (min-width: 760px) {
+			font-size: 1.75rem;
+		}
+
+		@media all and (min-width: 980px) {
+			font-size: 2rem;
+		}
+	}
+
+	h5, .h5,
+	h6, .h6 {
+		font-size: 1rem;
+	}
+
+	h5, .h5 {
+		color: $color4;
+	}
+
+	h6, .h6 {
+		color: $color5;
+	}
+
+	.entry-content {
+
+		h1:not(:first-child), .h1:not(:first-child),
+		h2:not(:first-child), .h2:not(:first-child),
+		h3:not(:first-child), .h3:not(:first-child),
+		h4:not(:first-child), .h4:not(:first-child),
+		h5:not(:first-child), .h5:not(:first-child),
+		h6:not(:first-child), .h6:not(:first-child) {
+			margin-top: 1.75rem;
+
+			@media all and (min-width: 760px) {
+				margin-top: 2rem;
+			}
+
+			@media all and (min-width: 1080px) {
+				margin-top: 2.5rem;
+			}
+		}
+	}
+
+	ul, ol {
+		margin: 0 0 1.25rem 1.25rem;
+		padding: 0;
+
+		li {
+			margin-bottom: .5rem;
+
+			&::marker {
+				color: $color5;
+			}
+
+			ul, ol {
+				margin-top: .5rem;
+			}
+		}
+	}
+
+	pre,
+	code {
+		background: $gray;
+		color: $color2;
+		font-family: 'Fira Code', monospace;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	address {
+		margin-bottom: 1.25rem;
+	}
+}

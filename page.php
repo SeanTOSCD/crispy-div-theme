@@ -24,13 +24,17 @@ crispydiv_page_header( array(
         <div class="inner medium">
 	        <?php while ( have_posts() ) : the_post(); ?>
                 <div class="post-content-grid">
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <div class="entry-content">
-			                <?php the_content(); ?>
+                    <div class="content-column">
+                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            <div class="entry-content">
+			                    <?php the_content(); ?>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="sidebar-column">
+                        <div class="sidebar">
+		                    <?php dynamic_sidebar( 'Post Sidebar' ); ?>
                         </div>
-                    </article>
-                    <div class="sidebar">
-		                <?php dynamic_sidebar( 'Post Sidebar' );  ?>
                     </div>
                 </div>
 	        <?php endwhile; ?>
