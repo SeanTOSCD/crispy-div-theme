@@ -63,7 +63,7 @@ if ( isset( $args ) ) {
 			 */
 			if ( 'plugin-integration' === $args['the-slug'] ) {
 				?>
-                <h3 class="subdued-title">Some our favorite plugins and services...</h3>
+                <h3 class="subdued-title">Some our favorite plugins and services</h3>
 				<?php
 				$customization_logos = get_customization_logos();
 				if ( ! empty( $customization_logos ) ) {
@@ -87,6 +87,9 @@ if ( isset( $args ) ) {
 					<?php
 				}
 			} else if ( 'theme-development' === $args['the-slug'] ) {
+                ?>
+                <h3 class="subdued-title">Proven Design Practices</h3>
+                <?php
 				get_template_part( 'template-parts/mock-browser' );
 			} else if ( 'custom-development' === $args['the-slug'] ) {
 				?>

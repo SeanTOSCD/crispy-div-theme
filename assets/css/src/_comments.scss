@@ -61,7 +61,7 @@
 							&:active,
 							&:focus,
 							&:hover {
-								color: $color4;
+								color: $color5;
 							}
 						}
 					}
@@ -127,6 +127,10 @@
 			& + .comment {
 				margin-top: 2rem;
 			}
+		}
+
+		& + #respond {
+			margin-top: 3rem;
 		}
 	}
 

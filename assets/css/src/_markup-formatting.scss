@@ -170,6 +170,33 @@ pre {
 	margin: 1.5rem 0 2rem;
 }
 
+.wp-block-gallery {
+
+	&:not(.alignleft) {
+		margin-right: 0;
+	}
+
+	&:not(.alignright) {
+		margin-left: 0;
+	}
+}
+
+.wp-caption,
+.wp-block-image {
+	max-width: 100%;
+}
+
+.wp-block-image,
+.wp-block-cover {
+
+	img {
+
+		& + figcaption {
+			margin-top: .75rem;
+		}
+	}
+}
+
 // Adjustments to markup in standard WordPress content areas (so, not custom)
 .site-main {
 

@@ -76,6 +76,14 @@
 			flex-direction: column;
 			height: 100%;
 
+			.post-thumbnail {
+				margin-bottom: 1.5rem;
+
+				img {
+					border-radius: 5px;
+				}
+			}
+
 			.grid-item-title {
 				display: block;
 				font-size: 1rem;

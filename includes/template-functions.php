@@ -41,6 +41,12 @@ add_filter( 'body_class', function( $classes ) {
 	    $classes[] = 'has-gray-header';
     }
 
+    if ( is_singular() && has_post_thumbnail( $post->ID ) ) {
+        $classes[] = 'has-post-thumbnail';
+    } else {
+        $classes[] = 'has-no-post-thumbnail';
+    }
+
 	return $classes;
 } );
 

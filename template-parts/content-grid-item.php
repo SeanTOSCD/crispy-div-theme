@@ -56,7 +56,7 @@ if ( isset( $args ) ) {
 			        <?php
 			        crispydiv_button( array(
 				        'text' => get_field( 'service_cta_text' ),
-				        'url' => home_url( 'services' ) . '#' . $the_slug,
+				        'url' => home_url( 'services/' ) . $the_slug,
 				        'classes' => array( 'button', 'small', 'outline', 'orange' ),
 			        ) );
 			        ?>

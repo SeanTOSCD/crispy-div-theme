@@ -17,9 +17,16 @@ crispydiv_page_header( array(
                 <div class="post-content-grid">
                     <div class="content-column">
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	                        <?php crispydiv_post_thumbnail(); ?>
+                            <div class="entry-meta">
+                                <span class="posted-on"><?php echo crispydiv_posted_on(), crispydiv_posted_by(); ?></span>
+                            </div>
                             <div class="entry-content">
 			                    <?php the_content(); ?>
                             </div>
+                            <footer class="entry-footer">
+                                <?php crispydiv_post_categories_tags(); ?>
+                            </footer>
                         </article>
                         <div class="post-comments">
                             <?php

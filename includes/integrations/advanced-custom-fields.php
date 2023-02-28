@@ -17,4 +17,10 @@ if ( function_exists( 'acf_add_options_sub_page' ) ) {
 		'menu_title'  => 'Archive Settings',
 		'parent_slug' => 'crispy-div',
 	) );
+
+	acf_add_options_sub_page( array(
+		'page_title'  => 'Mock Browser Settings',
+		'menu_title'  => 'Mock Browser',
+		'parent_slug' => 'crispy-div',
+	) );
 }
