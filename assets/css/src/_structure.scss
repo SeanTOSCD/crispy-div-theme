@@ -79,6 +79,8 @@
 	}
 
 	&.tiny {
+		padding-bottom: 1rem;
+		padding-top: 1rem;
 
 		@media all and (min-width: 980px) {
 			padding-bottom: 1rem;
