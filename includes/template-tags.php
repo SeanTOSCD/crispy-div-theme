@@ -22,7 +22,7 @@ function crispydiv_posted_on() {
 		esc_html_x( 'Posted on %s', 'post date', 'crispydiv' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
-	echo '<span class="posted-on">' . $posted_on . '</span>';
+	echo '<span class="posted-on"><i class="fa-regular fa-circle-info"></i>' . $posted_on . '</span>';
 }
 
 

@@ -24,10 +24,10 @@
 			}
 
 			.post-thumbnail {
-				margin-bottom: 1rem;
+				margin-bottom: 1.75rem;
 
 				img {
-					border-radius: 5px;
+					border-radius: 10px;
 				}
 			}
 
@@ -139,7 +139,7 @@
 
 	&.has-post-thumbnail {
 
-		@media all and (min-width: 1400px) {
+		@media all and (min-width: 1080px) {
 
 			.page-header {
 
@@ -157,8 +157,16 @@
 				.content-column {
 
 					.post-thumbnail {
-						margin-bottom: 2.5rem;
+						margin-bottom: 1.75rem;
 						margin-top: -4rem;
+
+						@media all and (min-width: 1400px) {
+							margin-bottom: 1rem;
+						}
+
+						img {
+							box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+						}
 					}
 				}
 
@@ -185,10 +193,33 @@
 	}
 
 	.entry-meta {
+		color: $gray_text;
 		margin-bottom: 1.5rem;
+
+		.posted-on {
+
+			[class*="fa-"] {
+				color: darken( $gray_text, 20% );
+				margin-right: 8px;
+			}
+		}
+
+		a {
+			color: darken( $gray_text, 20% );
+		}
 	}
 
 	.entry-content {
+
+		& > p:first-child {
+			font-size: 110%;
+			font-weight: 600;
+			margin-top: 2rem;
+
+			@media all and (min-width: 1080px) {
+				margin-top: 3rem;
+			}
+		}
 
 		.post-password-form {
 
@@ -204,7 +235,17 @@
 	}
 
 	.entry-footer {
+		color: $gray_text;
 		margin-top: 1.5rem;
+
+		.image-attribution {
+			font-size: 14px;
+			margin-top: 6px;
+		}
+
+		a {
+			color: darken( $gray_text, 20% );
+		}
 	}
 }
 

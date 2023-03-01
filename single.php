@@ -26,14 +26,21 @@ crispydiv_page_header( array(
                                 the_content();
 			                    wp_link_pages(
 				                    array(
-					                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
+					                    'before' => '<div class="page-links">Pages:',
 					                    'after'  => '</div>',
 				                    )
 			                    );
                                 ?>
                             </div>
                             <footer class="entry-footer">
-                                <?php crispydiv_post_categories_tags(); ?>
+                                <?php
+                                crispydiv_post_categories_tags();
+                                if ( get_field( 'image_attribution' ) ) {
+                                    ?>
+                                    <p class="image-attribution"><?php echo get_field( 'image_attribution' ); ?></p>
+                                    <?php
+                                }
+                                ?>
                             </footer>
                         </article>
                         <div class="post-comments">

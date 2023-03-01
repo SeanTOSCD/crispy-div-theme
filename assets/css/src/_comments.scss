@@ -21,11 +21,14 @@
 
 	.logged-in-as,
 	.comment-notes {
-		font-size: 16px;
+		color: $gray_text;
+		font-size: 15px;
+		font-weight: 600;
 
-		a {
-			color: $color4;
-		}
+		 a {
+			color: darken( $gray_text, 20% );
+			 text-decoration-color: $color5;
+		 }
 	}
 
 	.comment-list {
