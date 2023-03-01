@@ -944,38 +944,39 @@ form label {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
   #masthead .inner {
     max-width: unset; }
-  #masthead .site-header {
-    display: flex;
-    justify-content: space-between; }
-    #masthead .site-header .site-branding {
+  @media all and (min-width: 1200px) {
+    #masthead .site-header {
       display: flex;
-      flex-direction: column;
-      gap: 10px 1rem;
-      padding-right: 4rem; }
-      @media all and (min-width: 760px) {
-        #masthead .site-header .site-branding {
-          align-items: center;
-          flex-direction: row; } }
-      #masthead .site-header .site-branding .site-logo {
-        height: auto;
-        width: 120px; }
-      #masthead .site-header .site-branding .site-title {
-        display: inline-block;
-        margin: 0;
-        text-transform: uppercase; }
-        #masthead .site-header .site-branding .site-title a {
-          color: #494949;
-          display: block;
-          font-size: 1rem;
-          font-weight: 700;
-          letter-spacing: 1px;
-          line-height: 1;
-          text-decoration: none; }
-      #masthead .site-header .site-branding .description {
-        font-size: .8rem;
-        font-weight: 500;
-        line-height: 1.4;
-        position: relative; }
+      justify-content: space-between; } }
+  #masthead .site-header .site-branding {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 1rem;
+    padding-right: 4rem; }
+    @media all and (min-width: 760px) {
+      #masthead .site-header .site-branding {
+        align-items: center;
+        flex-direction: row; } }
+    #masthead .site-header .site-branding .site-logo {
+      height: auto;
+      width: 120px; }
+    #masthead .site-header .site-branding .site-title {
+      display: inline-block;
+      margin: 0;
+      text-transform: uppercase; }
+      #masthead .site-header .site-branding .site-title a {
+        color: #494949;
+        display: block;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1;
+        text-decoration: none; }
+    #masthead .site-header .site-branding .description {
+      font-size: .8rem;
+      font-weight: 500;
+      line-height: 1.4;
+      position: relative; }
 
 .has-dark-header #masthead {
   color: #fff; }
@@ -1513,12 +1514,16 @@ pre {
     text-decoration: none; }
   #site-navigation #primary-menu .menu-item.current-menu-item a:active, #site-navigation #primary-menu .menu-item.current-menu-item a:focus, #site-navigation #primary-menu .menu-item.current-menu-item a:hover {
     cursor: text; }
-#site-navigation:not(.toggled) #primary-menu {
+#site-navigation:not(.toggled) > [class*="-container"] {
   display: none; }
+  @media all and (min-width: 1200px) {
+    #site-navigation:not(.toggled) > [class*="-container"] {
+      display: block; } }
+#site-navigation:not(.toggled) #primary-menu {
+  display: flex; }
   @media all and (min-width: 1200px) {
     #site-navigation:not(.toggled) #primary-menu {
       column-gap: 1.5rem;
-      display: flex;
       text-align: right; } }
   #site-navigation:not(.toggled) #primary-menu .menu-item a {
     color: #341671; }
@@ -1529,21 +1534,20 @@ pre {
   #site-navigation:not(.toggled) #primary-menu .menu-item.members-menu-item a [class*="fa-"] {
     margin-left: 1rem;
     margin-right: 4px; }
-#site-navigation.toggled > [class*="-container"] {
-  background: #fff;
-  position: absolute;
-  top: 1rem;
-  right: 1rem; }
 #site-navigation.toggled #primary-menu {
+  gap: .7rem;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 200px; }
+  margin-top: 10px;
+  padding: 10px 0; }
   #site-navigation.toggled #primary-menu .menu-item a {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
     color: #494949;
     display: block;
     font-weight: 600;
-    padding: 10px;
+    padding: 7px 20px;
     text-decoration: none; }
     #site-navigation.toggled #primary-menu .menu-item a:active, #site-navigation.toggled #primary-menu .menu-item a:focus, #site-navigation.toggled #primary-menu .menu-item a:hover {
       color: #ae2d68; }
