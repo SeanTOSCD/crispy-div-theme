@@ -1,9 +1,13 @@
 .subscribe-cta {
 	background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.8) 100% ), url("assets/images/annie-spratt-subscribe-unsplash.jpg");
-	background-size: 100% auto;
-	background-position-x: 6rem;
-	background-position-y: 80%;
+	background-size: cover;
 	background-repeat: no-repeat;
+
+	@media all and (min-width: 760px) {
+		background-size: 100% auto;
+		background-position-x: 6rem;
+		background-position-y: 80%;
+	}
 
 	.subscribe-content-wrap {
 		display: grid;
