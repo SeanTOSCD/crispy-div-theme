@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.0.17
+ * Version: 1.0.18
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -1544,13 +1544,15 @@ pre {
   #site-navigation.toggled #primary-menu .menu-item a {
     background: rgba(0, 0, 0, 0.1);
     border-radius: 24px;
-    color: #494949;
+    color: #341671;
     display: block;
     font-weight: 600;
     padding: 7px 20px;
     text-decoration: none; }
     #site-navigation.toggled #primary-menu .menu-item a:active, #site-navigation.toggled #primary-menu .menu-item a:focus, #site-navigation.toggled #primary-menu .menu-item a:hover {
       color: #ae2d68; }
+  #site-navigation.toggled #primary-menu .menu-item.current-menu-item a {
+    color: #ae2d68; }
 
 .has-dark-header .site-title a {
   color: #fff; }
@@ -1560,6 +1562,10 @@ pre {
   color: #fff; }
 .has-dark-header #site-navigation #primary-menu .menu-item.current-menu-item a {
   color: #fff; }
+.has-dark-header #site-navigation.toggled #primary-menu.menu .menu-item a:active, .has-dark-header #site-navigation.toggled #primary-menu.menu .menu-item a:focus, .has-dark-header #site-navigation.toggled #primary-menu.menu .menu-item a:hover {
+  color: #fff; }
+.has-dark-header #site-navigation.toggled #primary-menu.menu .menu-item.current-menu-item a {
+  color: #fff; }
 
 .has-purple-header .site-header #site-navigation:not(.toggled) #primary-menu .menu-item a {
   color: #cfc4e6; }
@@ -1567,6 +1573,8 @@ pre {
     color: #f54952; }
 .has-purple-header .site-header #site-navigation:not(.toggled) #primary-menu .menu-item.current-menu-item a {
   color: #fff; }
+.has-purple-header .site-header #site-navigation.toggled #primary-menu .menu-item a {
+  color: #cfc4e6; }
 
 .has-pink-header .site-header #site-navigation:not(.toggled) #primary-menu .menu-item a {
   color: #f9d2e6; }
@@ -1574,6 +1582,8 @@ pre {
     color: #fff; }
 .has-pink-header .site-header #site-navigation:not(.toggled) #primary-menu .menu-item.current-menu-item a {
   color: #fff; }
+.has-pink-header .site-header #site-navigation.toggled #primary-menu .menu-item a {
+  color: #f9d2e6; }
 
 .posts-navigation .nav-links {
   display: grid;
