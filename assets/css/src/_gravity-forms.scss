@@ -58,12 +58,12 @@
 										border: 1px dashed $color6;
 
 										&::before {
-											color: lighten( $body_light , 30% );
+											color: $color2;
 										}
 									}
 
 									&::before {
-										color: lighten( $body_light , 60% );
+										color: $color2;
 										content: "\f058";
 										display: inline-block;
 										font: var(--fa-font-light);

@@ -185,7 +185,22 @@
 	}
 
 	.entry-meta {
-		margin-bottom: .75rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.entry-content {
+
+		.post-password-form {
+
+			label {
+				display: block;
+			}
+
+			input[type="password"] {
+				margin-bottom: 10px;
+				max-width: 300px;
+			}
+		}
 	}
 
 	.entry-footer {

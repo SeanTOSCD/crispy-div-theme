@@ -69,6 +69,8 @@ strong {
 	input[type="email"],
 	input[type="url"],
 	input[type="text"],
+	input[type="search"],
+	input[type="password"],
 	textarea,
 	select {
 		border-color: $color5;
@@ -115,6 +117,7 @@ strong {
 	input[type="url"],
 	input[type="text"],
 	input[type="search"],
+	input[type="password"],
 	textarea,
 	select {
 		border-color: $color4;

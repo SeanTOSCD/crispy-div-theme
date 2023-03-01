@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.0.20
+ * Version: 1.0.21
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -112,12 +112,16 @@ strong {
 .background-purple input[type="email"],
 .background-purple input[type="url"],
 .background-purple input[type="text"],
+.background-purple input[type="search"],
+.background-purple input[type="password"],
 .background-purple textarea,
 .background-purple select,
 .background-purple-gradient input[type="text"],
 .background-purple-gradient input[type="email"],
 .background-purple-gradient input[type="url"],
 .background-purple-gradient input[type="text"],
+.background-purple-gradient input[type="search"],
+.background-purple-gradient input[type="password"],
 .background-purple-gradient textarea,
 .background-purple-gradient select {
   border-color: #ae2d68; }
@@ -128,6 +132,10 @@ strong {
   .background-purple input[type="url"]:focus,
   .background-purple input[type="text"]:active,
   .background-purple input[type="text"]:focus,
+  .background-purple input[type="search"]:active,
+  .background-purple input[type="search"]:focus,
+  .background-purple input[type="password"]:active,
+  .background-purple input[type="password"]:focus,
   .background-purple textarea:active,
   .background-purple textarea:focus,
   .background-purple select:active,
@@ -140,6 +148,10 @@ strong {
   .background-purple-gradient input[type="url"]:focus,
   .background-purple-gradient input[type="text"]:active,
   .background-purple-gradient input[type="text"]:focus,
+  .background-purple-gradient input[type="search"]:active,
+  .background-purple-gradient input[type="search"]:focus,
+  .background-purple-gradient input[type="password"]:active,
+  .background-purple-gradient input[type="password"]:focus,
   .background-purple-gradient textarea:active,
   .background-purple-gradient textarea:focus,
   .background-purple-gradient select:active,
@@ -168,6 +180,7 @@ strong {
   .background-pink input[type="url"],
   .background-pink input[type="text"],
   .background-pink input[type="search"],
+  .background-pink input[type="password"],
   .background-pink textarea,
   .background-pink select {
     border-color: #660f56; }
@@ -180,6 +193,8 @@ strong {
     .background-pink input[type="text"]:focus,
     .background-pink input[type="search"]:active,
     .background-pink input[type="search"]:focus,
+    .background-pink input[type="password"]:active,
+    .background-pink input[type="password"]:focus,
     .background-pink textarea:active,
     .background-pink textarea:focus,
     .background-pink select:active,
@@ -666,6 +681,7 @@ input[type="email"],
 input[type="url"],
 input[type="text"],
 input[type="search"],
+input[type="password"],
 textarea,
 select {
   border: 2px solid #341671;
@@ -683,6 +699,8 @@ select {
   input[type="text"]:focus,
   input[type="search"]:active,
   input[type="search"]:focus,
+  input[type="password"]:active,
+  input[type="password"]:focus,
   textarea:active,
   textarea:focus,
   select:active,
@@ -761,9 +779,9 @@ form label {
           background: #f8f5fc;
           border: 1px dashed #f54952; }
           .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:active::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:focus::before, .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label:hover::before {
-            color: gray; }
+            color: #341671; }
         .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio .gchoice label::before {
-          color: #cccccc;
+          color: #341671;
           content: "\f058";
           display: inline-block;
           font: var(--fa-font-light);
@@ -2020,6 +2038,8 @@ template {
         margin-bottom: .35rem; }
         .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme .gform_body .gfield .gfield_label .gfield_required {
           display: none; }
+    .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme .gform_body .ginput_container_email {
+      max-width: 400px; }
     .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"] {
       background-color: transparent; }
       .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:active, .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:focus, .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:hover {
@@ -2614,7 +2634,12 @@ html {
   .single .entry-footer .updated {
     display: none; }
 .single .entry-meta {
-  margin-bottom: .75rem; }
+  margin-bottom: 1.5rem; }
+.single .entry-content .post-password-form label {
+  display: block; }
+.single .entry-content .post-password-form input[type="password"] {
+  margin-bottom: 10px;
+  max-width: 300px; }
 .single .entry-footer {
   margin-top: 1.5rem; }
 

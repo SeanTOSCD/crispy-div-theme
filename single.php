@@ -22,7 +22,15 @@ crispydiv_page_header( array(
                                 <span class="posted-on"><?php echo crispydiv_posted_on(), crispydiv_posted_by(); ?></span>
                             </div>
                             <div class="entry-content">
-			                    <?php the_content(); ?>
+			                    <?php
+                                the_content();
+			                    wp_link_pages(
+				                    array(
+					                    'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
+					                    'after'  => '</div>',
+				                    )
+			                    );
+                                ?>
                             </div>
                             <footer class="entry-footer">
                                 <?php crispydiv_post_categories_tags(); ?>
