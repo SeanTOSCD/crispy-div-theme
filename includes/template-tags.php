@@ -143,6 +143,7 @@ function get_customization_logos( $exclusions = array() ) {
 
 	$logos = array(
 		'advanced-custom-fields' => array(
+            'id' => 'advanced-custom-fields',
 			'name' => 'Advanced Custom Fields',
 			'description' => 'Custom Fields Management for WordPress',
 			'image' => 'advanced-custom-fields-logo.png',
@@ -150,6 +151,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://www.advancedcustomfields.com/',
 		),
 		'facetwp' => array(
+            'id' => 'facetwp',
 			'name' => 'FacetWP',
 			'description' => 'Advanced Content Filtering for WordPress',
 			'image' => 'facetwp-logo.png',
@@ -157,6 +159,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://facetwp.com/',
 		),
 		'gravity-forms' => array(
+            'id' => 'gravity-forms',
 			'name' => 'Gravity Forms',
 			'description' => 'Drag & Drop Form Builder for WordPress',
 			'image' => 'gravity-forms-logo.svg',
@@ -164,6 +167,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://www.gravityforms.com',
 		),
 		'elementor' => array(
+            'id' => 'elementor',
 			'name' => 'Elementor',
 			'description' => 'Drag & Drop Page Builder for WordPress',
 			'image' => 'elementor-logo.svg',
@@ -171,6 +175,7 @@ function get_customization_logos( $exclusions = array() ) {
             'url' => 'https://elementor.com/',
 		),
 		'mailchimp' => array(
+            'id' => 'mailchimp',
 			'name' => 'Mailchimp',
 			'description' => 'Email Marketing & Automations Service',
 			'image' => 'mailchimp-logo.svg',
@@ -178,6 +183,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://mailchimp.com/',
 		),
 		'stripe' => array(
+            'id' => 'stripe',
 			'name' => 'Stripe',
 			'description' => 'Payment Processing Service for the Internet',
 			'image' => 'stripe-logo.svg',
@@ -185,6 +191,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://stripe.com/',
 		),
 		'tailwindcss' => array(
+            'id' => 'tailwind-css',
 			'name' => 'Tailwind CSS',
 			'alias' => 'TailwindCSS',
 			'description' => 'CSS Framework for Modern Web Development',
@@ -193,6 +200,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://tailwindcss.com/',
 		),
 		'affiliatewp' => array(
+            'id' => 'affiliatewp',
 			'name' => 'AffiliateWP',
 			'description' => 'WordPress Affiliate Program Management',
 			'image' => 'affiliatewp-logo.svg',
@@ -200,6 +208,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://affiliatewp.com/',
 		),
 		'woocommerce' => array(
+            'id' => 'woocommerce',
 			'name' => 'WooCommerce',
 			'description' => 'E-commerce Functionality for WordPress',
 			'image' => 'woocommerce-logo.svg',
@@ -207,6 +216,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://woocommerce.com/',
 		),
 		'zapier' => array(
+            'id' => 'zapier',
 			'name' => 'Zapier',
 			'description' => 'Automate Integrations for Various Web Services',
 			'image' => 'zapier-logo.svg',
@@ -214,6 +224,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://zapier.com/',
 		),
 		'bootstrap' => array(
+            'id' => 'bootstrap',
 			'name' => 'Bootstrap',
 			'description' => 'Front-end Web Development Framework',
 			'image' => 'bootstrap-logo.svg',
@@ -221,6 +232,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://getbootstrap.com/',
 		),
 		'searchwp' => array(
+            'id' => 'searchwp',
 			'name' => 'SearchWP',
 			'description' => 'Advanced Search Engine for WordPress',
 			'image' => 'searchwp-logo.png',
@@ -228,6 +240,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://searchwp.com/',
 		),
 		'easy-digital-downloads' => array(
+            'id' => 'easy-digital-downloads',
 			'name' => 'Easy Digital Downloads',
 			'description' => 'E-commerce Functionality for WordPress',
 			'image' => 'easy-digital-downloads-logo.svg',
@@ -235,6 +248,7 @@ function get_customization_logos( $exclusions = array() ) {
 			'url' => 'https://easydigitaldownloads.com/',
 		),
 		'beaver-builder' => array(
+            'id' => 'beaver-builder',
 			'name' => 'Beaver Builder',
 			'description' => 'Drag & Drop Page Builder for WordPress',
 			'image' => 'beaver-builder-logo.png',

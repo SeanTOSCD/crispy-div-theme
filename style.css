@@ -2441,6 +2441,8 @@ html {
     padding: 1.5rem; }
     .service-section.plugin-integration-section .customizations-service-grid .customization-brand .customization-brand-inner {
       position: relative; }
+      .service-section.plugin-integration-section .customizations-service-grid .customization-brand .customization-brand-inner .brand-logo-link {
+        display: block; }
       .service-section.plugin-integration-section .customizations-service-grid .customization-brand .customization-brand-inner .logo {
         height: 24px;
         margin-bottom: .75rem;

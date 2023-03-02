@@ -73,7 +73,7 @@ if ( isset( $args ) ) {
                             <div class="customization-brand">
                                 <div class="customization-brand-inner">
 									<?php $logo_name = $logo['alias'] ?? $logo['name']; ?>
-                                    <a class="brand-logo-link" href="<?php echo $logo['url']; ?>" target="_blank"><img
+                                    <a class="brand-logo-link" href="<?php echo THEME_URI . '/' . $logo['id']; ?>" target="_blank"><img
                                                 class="logo <?php echo str_replace( " ", "-", strtolower( $logo_name ) ); ?>-logo"
                                                 src="<?php echo THEME_IMAGES . 'logos/' . $logo['image']; ?>"
                                                 alt="<?php echo $logo['name'] . ' - ' . $logo['description']; ?>"
