@@ -918,10 +918,10 @@ form label {
     padding: 2rem; }
     @media all and (min-width: 980px) {
       .general-grid .grid-item {
-        padding: 2.75rem 4rem 2.75rem 4.5rem; } }
+        padding: 2.75rem 4.5rem; } }
     @media all and (min-width: 1400px) {
       .general-grid .grid-item {
-        padding: 3.5rem 4rem 3.5rem 4.5rem; } }
+        padding: 3.5rem 4.5rem; } }
     .general-grid .grid-item .grid-item-content {
       display: flex;
       flex-direction: column;
