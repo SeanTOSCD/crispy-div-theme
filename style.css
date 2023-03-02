@@ -2054,6 +2054,10 @@ template {
         text-decoration-color: #f54952; }
     .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme .gform_footer {
       padding-bottom: 0; }
+    .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_confirmation_message {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 1.5rem;
+      border-radius: 11px; }
 
 html {
   color: #494949;
