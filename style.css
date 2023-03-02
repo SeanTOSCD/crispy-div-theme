@@ -323,6 +323,7 @@ html body {
       display: block; } }
 
 .socials-flex {
+  color: #333333;
   column-gap: 1.2rem;
   display: flex;
   flex-wrap: wrap; }
@@ -330,6 +331,16 @@ html body {
     text-decoration: none; }
     .socials-flex a [class*="fa-"] {
       margin-right: 2px; }
+  .socials-flex.full-color .twitter {
+    color: #1da1f2; }
+    .socials-flex.full-color .twitter a {
+      color: #1da1f2; }
+  .socials-flex.full-color .instagram {
+    color: #e1306c; }
+    .socials-flex.full-color .instagram a {
+      color: #e1306c; }
+  .socials-flex.full-color .social-icon:active, .socials-flex.full-color .social-icon:focus, .socials-flex.full-color .social-icon:hover {
+    color: #333333; }
 
 .border-bottom-over-white {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
@@ -589,6 +600,43 @@ html body {
   font-size: .88rem;
   font-weight: 500;
   line-height: 1.4; }
+  #colophon .fat-footer {
+    padding: 3rem 0; }
+    #colophon .fat-footer .fat-footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem; }
+      @media all and (min-width: 760px) {
+        #colophon .fat-footer .fat-footer-grid {
+          gap: 2.5rem 4rem;
+          grid-template-columns: 1fr 1fr; } }
+      @media all and (min-width: 1080px) {
+        #colophon .fat-footer .fat-footer-grid {
+          grid-template-columns: 2fr 1fr 1fr 1fr; } }
+      #colophon .fat-footer .fat-footer-grid .footer-list-title {
+        font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-weight: 700;
+        font-size: 16px;
+        font-weight: 900;
+        margin-bottom: 1.68rem;
+        text-transform: uppercase; }
+      #colophon .fat-footer .fat-footer-grid a:not(.social-icon) {
+        color: #333333; }
+        #colophon .fat-footer .fat-footer-grid a:not(.social-icon):hover, #colophon .fat-footer .fat-footer-grid a:not(.social-icon):focus, #colophon .fat-footer .fat-footer-grid a:not(.social-icon):active {
+          color: #333333; }
+      #colophon .fat-footer .fat-footer-grid ul {
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        #colophon .fat-footer .fat-footer-grid ul li {
+          margin-bottom: .25rem; }
+      #colophon .fat-footer .fat-footer-grid .crispy-div-info .site-logo {
+        max-width: 100px; }
+      #colophon .fat-footer .fat-footer-grid .crispy-div-company .site-copyright {
+        margin-bottom: .25rem; }
+        #colophon .fat-footer .fat-footer-grid .crispy-div-company .site-copyright .copyright-text {
+          display: block;
+          margin-bottom: .25rem; }
 
 .button,
 button,

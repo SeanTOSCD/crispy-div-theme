@@ -126,9 +126,9 @@ function get_crispydiv_tagline() {
  *
  * @return void
  */
-function crispydiv_social_links() {
+function crispydiv_social_links( $full_color = true ) {
 	?>
-    <div class="socials-flex">
+    <div class="socials-flex <?php echo $full_color ? 'full-color' : ''; ?>">
         <a href="https://twitter.com/crispydiv" class="social-icon twitter" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
         <a href="https://instagram.com/crispydivdesigns" class="social-icon instagram" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
     </div>
@@ -148,7 +148,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Custom Fields Management for WordPress',
 			'image' => 'advanced-custom-fields-logo.png',
 			'type' => array( 'Plugin', 'Custom Fields Management' ),
-			'url' => 'https://www.advancedcustomfields.com/',
 		),
 		'facetwp' => array(
             'id' => 'facetwp',
@@ -156,7 +155,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Advanced Content Filtering for WordPress',
 			'image' => 'facetwp-logo.png',
 			'type' => array( 'Plugin', 'Filtering Tool' ),
-			'url' => 'https://facetwp.com/',
 		),
 		'gravity-forms' => array(
             'id' => 'gravity-forms',
@@ -164,7 +162,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Drag & Drop Form Builder for WordPress',
 			'image' => 'gravity-forms-logo.svg',
 			'type' => array( 'Plugin', 'Form Builder' ),
-			'url' => 'https://www.gravityforms.com',
 		),
 		'elementor' => array(
             'id' => 'elementor',
@@ -172,7 +169,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Drag & Drop Page Builder for WordPress',
 			'image' => 'elementor-logo.svg',
             'type' => array( 'Plugin', 'Page Builder' ),
-            'url' => 'https://elementor.com/',
 		),
 		'mailchimp' => array(
             'id' => 'mailchimp',
@@ -180,7 +176,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Email Marketing & Automations Service',
 			'image' => 'mailchimp-logo.svg',
 			'type' => array( 'Plugin', 'Online Service' ),
-			'url' => 'https://mailchimp.com/',
 		),
 		'stripe' => array(
             'id' => 'stripe',
@@ -188,7 +183,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Payment Processing Service for the Internet',
 			'image' => 'stripe-logo.svg',
 			'type' => array( 'Plugin', 'Online Payments' ),
-			'url' => 'https://stripe.com/',
 		),
 		'tailwindcss' => array(
             'id' => 'tailwind-css',
@@ -197,7 +191,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'CSS Framework for Modern Web Development',
 			'image' => 'tailwindcss-logo.svg',
 			'type' => array( 'Plugin', 'Front-end Framework' ),
-			'url' => 'https://tailwindcss.com/',
 		),
 		'affiliatewp' => array(
             'id' => 'affiliatewp',
@@ -205,7 +198,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'WordPress Affiliate Program Management',
 			'image' => 'affiliatewp-logo.svg',
 			'type' => array( 'Plugin', 'Affiliate Management' ),
-			'url' => 'https://affiliatewp.com/',
 		),
 		'woocommerce' => array(
             'id' => 'woocommerce',
@@ -213,7 +205,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'E-commerce Functionality for WordPress',
 			'image' => 'woocommerce-logo.svg',
 			'type' => array( 'Plugin', 'E-commerce' ),
-			'url' => 'https://woocommerce.com/',
 		),
 		'zapier' => array(
             'id' => 'zapier',
@@ -221,7 +212,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Automate Integrations for Various Web Services',
 			'image' => 'zapier-logo.svg',
 			'type' => array( 'Plugin', 'Online Service' ),
-			'url' => 'https://zapier.com/',
 		),
 		'bootstrap' => array(
             'id' => 'bootstrap',
@@ -229,7 +219,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Front-end Web Development Framework',
 			'image' => 'bootstrap-logo.svg',
 			'type' => array( 'Plugin', 'Front-end Framework' ),
-			'url' => 'https://getbootstrap.com/',
 		),
 		'searchwp' => array(
             'id' => 'searchwp',
@@ -237,7 +226,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Advanced Search Engine for WordPress',
 			'image' => 'searchwp-logo.png',
 			'type' => array( 'Plugin', 'Search Tool' ),
-			'url' => 'https://searchwp.com/',
 		),
 		'easy-digital-downloads' => array(
             'id' => 'easy-digital-downloads',
@@ -245,7 +233,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'E-commerce Functionality for WordPress',
 			'image' => 'easy-digital-downloads-logo.svg',
 			'type' => array( 'Plugin', 'E-commerce' ),
-			'url' => 'https://easydigitaldownloads.com/',
 		),
 		'beaver-builder' => array(
             'id' => 'beaver-builder',
@@ -253,7 +240,6 @@ function get_customization_logos( $exclusions = array() ) {
 			'description' => 'Drag & Drop Page Builder for WordPress',
 			'image' => 'beaver-builder-logo.png',
 			'type' => array( 'Plugin', 'Page Builder' ),
-			'url' => 'https://www.wpbeaverbuilder.com/',
 		),
 	);
 

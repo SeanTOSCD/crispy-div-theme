@@ -2,4 +2,70 @@
 	font-size: .88rem;
 	font-weight: 500;
 	line-height: 1.4;
+
+	.fat-footer {
+		padding: 3rem 0;
+
+		.fat-footer-grid {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+
+			@media all and (min-width: 760px) {
+				gap: 2.5rem 4rem;
+				grid-template-columns: 1fr 1fr;
+			}
+
+			@media all and (min-width: 1080px) {
+				grid-template-columns: 2fr 1fr 1fr 1fr;
+			}
+
+			.footer-list-title {
+				@include headingFont;
+				font-size: 16px;
+				font-weight: 900;
+				margin-bottom: 1.68rem;
+				text-transform: uppercase;
+			}
+
+			a:not(.social-icon) {
+				color: $body_light;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: $body_light;
+				}
+			}
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					margin-bottom: .25rem;
+				}
+			}
+
+			.crispy-div-info {
+
+				.site-logo {
+					max-width: 100px;
+				}
+			}
+
+			.crispy-div-company {
+
+				.site-copyright {
+					margin-bottom: .25rem;
+
+					.copyright-text {
+						display: block;
+						margin-bottom: .25rem;
+					}
+				}
+			}
+		}
+	}
 }
