@@ -92,9 +92,7 @@
 
 			.section-title {
 				font-weight: 800;
-				padding-bottom: 2rem;
-				margin-bottom: 2rem;
-				border-bottom: 1px dashed $border_over_white;
+				margin-bottom: 1rem;
 
 				@media all and (min-width: 1200px) {
 					font-size: 2rem;
@@ -274,6 +272,12 @@
 						position: absolute;
 						right: 12px;
 						top: 1rem;
+
+						&:hover,
+						&:focus,
+						&:active {
+							cursor: pointer;
+						}
 					}
 
 					&.active {

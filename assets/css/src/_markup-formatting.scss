@@ -222,11 +222,11 @@ pre {
 	}
 
 	h2, .h2 {
-		color: $color4;
+		color: $headings;
 	}
 
 	h3, .h3 {
-		color: $color5;
+		color: $color4;
 		font-size: 1.25rem;
 
 		@media all and (min-width: 540px) {
@@ -247,6 +247,7 @@ pre {
 	}
 
 	h4, .h4 {
+		color: $color5;
 		font-size: 1.25rem;
 
 		@media all and (min-width: 540px) {
