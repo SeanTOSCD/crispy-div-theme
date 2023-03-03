@@ -11,8 +11,9 @@ get_template_part( 'template-parts/section', 'subscribe', array(
 ) );
 ?>
 
-    <section class="content-filter-section">
+    <section class="content-filter-section background-gray">
         <div class="inner small">
+            <span class="h5">Find the content you're looking for.</span>
             <div class="content-filter-grid general-grid large">
                 <div class="facetwp-filter">
                     <span class="content-filter-title subdued-title">Filter by Category</span>
