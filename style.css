@@ -621,7 +621,7 @@ html body {
         margin-bottom: 1.68rem;
         text-transform: uppercase; }
       #colophon .fat-footer .fat-footer-grid a:not(.social-icon) {
-        color: #333333; }
+        color: gray; }
         #colophon .fat-footer .fat-footer-grid a:not(.social-icon):hover, #colophon .fat-footer .fat-footer-grid a:not(.social-icon):focus, #colophon .fat-footer .fat-footer-grid a:not(.social-icon):active {
           color: #333333; }
       #colophon .fat-footer .fat-footer-grid ul {
@@ -629,14 +629,13 @@ html body {
         margin: 0;
         padding: 0; }
         #colophon .fat-footer .fat-footer-grid ul li {
+          font-size: 90%;
           margin-bottom: .25rem; }
       #colophon .fat-footer .fat-footer-grid .crispy-div-info .site-logo {
         max-width: 100px; }
-      #colophon .fat-footer .fat-footer-grid .crispy-div-company .site-copyright {
-        margin-bottom: .25rem; }
-        #colophon .fat-footer .fat-footer-grid .crispy-div-company .site-copyright .copyright-text {
-          display: block;
-          margin-bottom: .25rem; }
+  #colophon .site-info .site-copyright {
+    color: gray;
+    font-size: 90%; }
 
 .button,
 button,
@@ -2206,6 +2205,9 @@ html {
       .blog .content-filter-section .content-filter-grid .facetwp-filter .facetwp-facet .facetwp-dropdown {
         background-color: #fff; }
 
+.page-contact #colophon {
+  background-color: #f8f5fc; }
+
 .page-front #site-navigation .menu-toggle {
   color: #fff; }
 .page-front #site-navigation:not(.toggled) #primary-menu li a {
@@ -2402,8 +2404,19 @@ html {
   @media all and (min-width: 980px) {
     .page-front .courses-section .section-heading .section-description {
       grid-template-columns: 5fr 4fr; } }
-.page-front #colophon {
-  border-top: 1px dashed rgba(0, 0, 0, 0.1); }
+
+.page-privacy-policy #site-content .inner.medium {
+  padding-bottom: 3.5rem;
+  padding-top: 3.5rem; }
+.page-privacy-policy #site-content .post-content-grid .content-column {
+  width: 100%; }
+  .page-privacy-policy #site-content .post-content-grid .content-column .entry-content h2 {
+    font-size: 1.5rem;
+    font-weight: 800; }
+.page-privacy-policy #site-content .post-content-grid .sidebar-column {
+  display: none; }
+.page-privacy-policy #colophon {
+  background-color: #f8f5fc; }
 
 .post-type-archive-service .page-header .page-header-description {
   align-items: center;

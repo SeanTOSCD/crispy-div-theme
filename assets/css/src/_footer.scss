@@ -29,7 +29,7 @@
 			}
 
 			a:not(.social-icon) {
-				color: $body_light;
+				color: lighten($body_light, 30%);
 
 				&:hover,
 				&:focus,
@@ -44,6 +44,7 @@
 				padding: 0;
 
 				li {
+					font-size: 90%;
 					margin-bottom: .25rem;
 				}
 			}
@@ -54,18 +55,14 @@
 					max-width: 100px;
 				}
 			}
+		}
+	}
 
-			.crispy-div-company {
+	.site-info {
 
-				.site-copyright {
-					margin-bottom: .25rem;
-
-					.copyright-text {
-						display: block;
-						margin-bottom: .25rem;
-					}
-				}
-			}
+		.site-copyright {
+			color: lighten($body_light, 30%);
+			font-size: 90%;
 		}
 	}
 }

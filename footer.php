@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="site-info">
-            <p class="site-copyright"><?php echo '&copy ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> - <?php echo get_crispydiv_tagline(); ?></p>
+            <p class="site-copyright"><?php echo '&copy ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> - A Project by Top One Code LLC</p>
         </div>
 	</footer>
 </div>
