@@ -34,6 +34,7 @@ add_action( 'after_setup_theme', function() {
 		array(
 			'primary-menu' => 'Primary',
 			'footer-menu' => 'Footer',
+			'company-menu' => 'Company',
 		)
 	);
 

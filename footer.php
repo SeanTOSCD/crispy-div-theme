@@ -53,16 +53,14 @@
                 </div>
                 <div class="crispy-div-company">
                     <span class="footer-list-title h6">Company</span>
-                    <ul class="crispy-div-links-list">
-                        <?php
-                        $privacy_policy_url = get_permalink( get_option( 'wp_page_for_privacy_policy' ) );
-                        if ( $privacy_policy_url ) {
-                            ?>
-                            <li><a href="<?php echo $privacy_policy_url; ?>">Privacy Policy</a></li>
-                            <?php
-                        }
-                        ?>
-                    </ul>
+	                <?php
+	                wp_nav_menu(
+		                array(
+			                'theme_location' => 'company-menu',
+			                'menu_id'        => 'company-menu',
+		                )
+	                );
+	                ?>
                 </div>
             </div>
         </div>
