@@ -19,6 +19,11 @@ add_filter( 'body_class', function( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
+    // Add body class for full-width page template
+    if ( is_page_template( 'template-full-width.php' ) ) {
+        $classes[] = 'full-width';
+    }
+
 	// Adds a class of page-{slug} for every page.
 	if ( isset( $post ) ) {
 		$classes[] = 'page-' . $post->post_name;

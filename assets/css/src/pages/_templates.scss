@@ -1,0 +1,14 @@
+.page.full-width {
+
+	.post-content-grid {
+		display: block;
+
+		.content-column {
+
+			@media all and (min-width: 1080px) {
+				padding-right: 0;
+				width: 100%;
+			}
+		}
+	}
+}
