@@ -37,8 +37,7 @@
 		background: $color2;
 		color: #fff;
 
-		.page-header-hero {
-			background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% ), url("assets/images/annie-spratt-hero-unsplash.png");
+		.page-header-hero {;
 			background-size: cover;
 			background-repeat: no-repeat;
 			flex: 1;

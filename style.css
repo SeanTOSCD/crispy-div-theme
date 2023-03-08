@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.1.4
+ * Version: 1.1.5
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -2020,7 +2020,6 @@ template {
   color: #f9d2e6; }
 
 .subscribe-cta {
-  background-image: linear-gradient(to right, #341671 0%, #341671 10%, rgba(52, 22, 113, 0.8) 100%), url("assets/images/annie-spratt-subscribe-unsplash.png");
   background-position-x: right;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -2294,7 +2293,6 @@ html {
   background: #341671;
   color: #fff; }
   .page-front .page-header .page-header-hero {
-    background-image: linear-gradient(to right, #341671 0%, #341671 10%, rgba(52, 22, 113, 0.2) 100%), url("assets/images/annie-spratt-hero-unsplash.png");
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1; }

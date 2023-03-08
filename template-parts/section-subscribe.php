@@ -11,7 +11,7 @@ if ( ! empty( $args['size'] ) ) {
     $size = $args['size'];
 }
 ?>
-<section id="subscribe" class="subscribe-cta background-purple">
+<section id="subscribe" class="subscribe-cta background-purple" style="background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.8) 100% ), url(<?php echo THEME_IMAGES . 'annie-spratt-subscribe-unsplash.png'; ?>");">
 	<div class="subscribe-content-wrap element-spacing <?php echo $size; ?> corner-accent white-orange">
 		<div class="subscribe-content">
 			<span class="subscribe-title <?php echo is_home() ? 'h1' : 'h3'; ?>"><?php echo $title; ?></span>

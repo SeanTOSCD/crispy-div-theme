@@ -7,7 +7,7 @@ get_header();
 ?>
 
     <section class="page-header">
-        <div class="page-header-hero">
+        <div class="page-header-hero" style="background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% ), url(<?php echo THEME_IMAGES . 'annie-spratt-hero-unsplash.png'; ?>")>
             <div class="page-header-hero-inner">
                 <div class="corner-accent white-orange">
                     <div class="inner no-vertical-spacing">
