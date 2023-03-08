@@ -197,6 +197,23 @@ pre {
 	}
 }
 
+figure {
+
+	&.frame {
+
+		img {
+			border: 1px solid rgba(0,0,0,.2);
+			border-radius: 11px;
+			box-shadow: 6px 6px 0 $gray;
+			margin: 1.5rem 0;
+		}
+	}
+
+	img {
+
+	}
+}
+
 // Adjustments to markup in standard WordPress content areas (so, not custom)
 .site-main {
 

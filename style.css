@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.1.2
+ * Version: 1.1.3
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -1214,6 +1214,12 @@ pre {
 .wp-block-image img + figcaption,
 .wp-block-cover img + figcaption {
   margin-top: .75rem; }
+
+figure.frame img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  box-shadow: 6px 6px 0 #f8f5fc;
+  margin: 1.5rem 0; }
 
 .site-main h1, .site-main .h1,
 .site-main h2, .site-main .h2 {
