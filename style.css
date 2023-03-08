@@ -2269,11 +2269,18 @@ html {
     @media all and (min-width: 1200px) {
       .page-brand-assets .logos-grid > [class*="logo-"] img {
         max-width: 300px; } }
-  .page-brand-assets .logos-grid .logomark img {
-    max-height: 47px; }
-    @media all and (min-width: 1200px) {
-      .page-brand-assets .logos-grid .logomark img {
-        max-height: 63px; } }
+  .page-brand-assets .logos-grid .logomark {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
+    @media all and (min-width: 980px) {
+      .page-brand-assets .logos-grid .logomark {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
+    .page-brand-assets .logos-grid .logomark img {
+      max-height: 47px; }
+      @media all and (min-width: 1200px) {
+        .page-brand-assets .logos-grid .logomark img {
+          max-height: 63px; } }
 
 .page-contact #colophon {
   background-color: #f8f5fc; }
