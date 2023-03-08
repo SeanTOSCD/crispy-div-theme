@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.1.1
+ * Version: 1.1.2
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -2208,6 +2208,8 @@ html {
 .page-brand-assets .brand-asset-title {
   font-size: 1.5rem;
   font-weight: 800; }
+.page-brand-assets .section-description {
+  margin-bottom: 2rem; }
 .page-brand-assets .colors-grid {
   display: grid;
   gap: 1.5rem;
@@ -2280,6 +2282,33 @@ html {
       @media all and (min-width: 1200px) {
         .page-brand-assets .logos-grid .logomark img {
           max-height: 63px; } }
+.page-brand-assets .brand-name-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4rem; }
+  @media all and (min-width: 1200px) {
+    .page-brand-assets .brand-name-grid {
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 6rem; } }
+  .page-brand-assets .brand-name-grid .brand-name-example {
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center; }
+    @media all and (min-width: 980px) {
+      .page-brand-assets .brand-name-grid .brand-name-example {
+        padding: 1.5rem; } }
+    .page-brand-assets .brand-name-grid .brand-name-example .brand-name {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-weight: 700;
+      color: #341671;
+      font-size: 1.25rem;
+      font-weight: 800; }
+      .page-brand-assets .brand-name-grid .brand-name-example .brand-name [class*="fa-"] {
+        color: #d24949;
+        margin-right: 8px; }
+    .page-brand-assets .brand-name-grid .brand-name-example.correct .brand-name [class*="fa-"] {
+      color: #37ab37; }
 
 .page-contact #colophon {
   background-color: #f8f5fc; }

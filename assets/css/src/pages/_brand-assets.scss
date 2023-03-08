@@ -5,6 +5,10 @@
 		font-weight: 800;
 	}
 
+	.section-description {
+		margin-bottom: 2rem;
+	}
+
 	.colors-grid {
 		display: grid;
 		gap: 1.5rem;
@@ -117,6 +121,50 @@
 
 				@media all and (min-width: 1200px) {
 					max-height: 63px;
+				}
+			}
+		}
+	}
+
+	.brand-name-grid {
+		display: grid;
+		gap: 1.5rem;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 4rem;
+
+		@media all and (min-width: 1200px) {
+			grid-template-columns: repeat( 4, 1fr );
+			margin-bottom: 6rem;
+		}
+
+		.brand-name-example {
+			border-radius: 5px;
+			padding: 1rem;
+			text-align: center;
+
+			@media all and (min-width: 980px) {
+				padding: 1.5rem;
+			}
+
+			.brand-name {
+				@include headingFont;
+				color: $color2;
+				font-size: 1.25rem;
+				font-weight: 800;
+
+				[class*="fa-"] {
+					color: #d24949;
+					margin-right: 8px;
+				}
+			}
+
+			&.correct {
+
+				.brand-name {
+
+					[class*="fa-"] {
+						color: #37ab37;
+					}
 				}
 			}
 		}
