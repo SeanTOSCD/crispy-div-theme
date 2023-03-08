@@ -86,10 +86,13 @@
 
 		& > [class*="logo-"],
 		& > .logomark {
+			align-items: center;
+			justify-content: center;
 			border-radius: 5px;
+			display: flex;
+			flex-direction: column;
 			padding: 2rem;
 			position: relative;
-			text-align: center;
 			width: 100%;
 		}
 
@@ -97,11 +100,6 @@
 
 			img {
 				max-width: 220px;
-				vertical-align: bottom;
-
-				@media all and (min-width: 1200px) {
-					max-width: 300px;
-				}
 			}
 		}
 
