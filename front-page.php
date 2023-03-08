@@ -106,7 +106,7 @@ get_header();
                 <div class="grid-item-content">
                     <span class="grid-item-icon element-lead-icon colored"><i class="fa-light fa-browser"></i></span>
                     <h3 class="grid-item-title">Above the Fold</h3>
-                    <p>Users spend 80% of their time on a website viewing information presented above the fold on page load.</p>
+                    <p>Users spend 80% of their time on a website viewing information presented above the fold.</p>
                 </div>
             </div>
             <div class="grid-item">
