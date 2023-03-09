@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.1.7
+ * Version: 1.1.8
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -2683,57 +2683,57 @@ html {
         .page .post-content-grid .content-column > article {
           margin-bottom: 3rem; } }
 
-.single .page-header .page-header-title {
+.single.single-post .page-header .page-header-title {
   text-align: center; }
-.single .post-content-grid {
+.single.single-post .post-content-grid {
   justify-content: space-around; }
-  .single .post-content-grid .post-thumbnail {
+  .single.single-post .post-content-grid .post-thumbnail {
     margin-bottom: .75rem; }
-    .single .post-content-grid .post-thumbnail img {
+    .single.single-post .post-content-grid .post-thumbnail img {
       border-radius: 10px; }
-.single.has-post-thumbnail .page-header .inner {
+.single.single-post.has-post-thumbnail .page-header .inner {
   padding-bottom: 8rem; }
-.single.has-post-thumbnail #site-content .inner {
+.single.single-post.has-post-thumbnail #site-content .inner {
   padding-top: 0; }
-.single.has-post-thumbnail #site-content .post-thumbnail {
+.single.single-post.has-post-thumbnail #site-content .post-thumbnail {
   margin-top: -4rem; }
-  .single.has-post-thumbnail #site-content .post-thumbnail img {
+  .single.single-post.has-post-thumbnail #site-content .post-thumbnail img {
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.4); }
-.single .entry-meta,
-.single .entry-footer {
+.single.single-post .entry-meta,
+.single.single-post .entry-footer {
   font-size: 16px;
   font-weight: 600; }
-  .single .entry-meta a,
-  .single .entry-footer a {
+  .single.single-post .entry-meta a,
+  .single.single-post .entry-footer a {
     color: #ae2d68;
     text-decoration-color: #ae2d68; }
-  .single .entry-meta .updated,
-  .single .entry-footer .updated {
+  .single.single-post .entry-meta .updated,
+  .single.single-post .entry-footer .updated {
     display: none; }
-.single .entry-meta {
+.single.single-post .entry-meta {
   color: #cfc4e6;
   text-align: center; }
-  .single .entry-meta a {
+  .single.single-post .entry-meta a {
     color: #fff; }
-.single .entry-content > p:first-child {
+.single.single-post .entry-content > p:first-child {
   font-size: 110%;
   font-weight: 600;
   margin-top: 2rem; }
   @media all and (min-width: 1080px) {
-    .single .entry-content > p:first-child {
+    .single.single-post .entry-content > p:first-child {
       margin-top: 3rem; } }
-.single .entry-content .post-password-form label {
+.single.single-post .entry-content .post-password-form label {
   display: block; }
-.single .entry-content .post-password-form input[type="password"] {
+.single.single-post .entry-content .post-password-form input[type="password"] {
   margin-bottom: 10px;
   max-width: 300px; }
-.single .entry-footer {
+.single.single-post .entry-footer {
   color: #8b829d;
   margin-top: 1.5rem; }
-  .single .entry-footer .image-attribution {
+  .single.single-post .entry-footer .image-attribution {
     font-size: 14px;
     margin-top: 6px; }
-  .single .entry-footer a {
+  .single.single-post .entry-footer a {
     color: #595168; }
 
 @media all and (min-width: 960px) {
