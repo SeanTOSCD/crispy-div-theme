@@ -15,12 +15,9 @@ crispydiv_page_header( array(
         <div class="inner medium">
 			<?php while ( have_posts() ) : the_post(); ?>
                 <div class="post-content-grid">
+	                <?php crispydiv_post_thumbnail(); ?>
                     <div class="content-column">
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	                        <?php crispydiv_post_thumbnail(); ?>
-                            <div class="entry-meta">
-                                <span class="posted-on"><?php echo crispydiv_posted_on(), crispydiv_posted_by(); ?></span>
-                            </div>
                             <div class="entry-content">
 			                    <?php
                                 the_content();
@@ -50,11 +47,6 @@ crispydiv_page_header( array(
                                 comments_template();
                             endif;
                             ?>
-                        </div>
-                    </div>
-                    <div class="sidebar-column">
-                        <div class="sidebar">
-		                    <?php dynamic_sidebar( 'Post Sidebar' ); ?>
                         </div>
                     </div>
                 </div>

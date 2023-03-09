@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.1.5
+ * Version: 1.1.6
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -2656,10 +2656,14 @@ html {
 .all-services-cta p + .button {
   margin-top: .75rem; }
 
-@media all and (min-width: 960px) {
-  .single .page-header .page-header-title,
-  .page .page-header .page-header-title {
-    max-width: 85%; } }
+.single #site-content .post-thumbnail,
+.page #site-content .post-thumbnail {
+  margin: 0 auto;
+  max-width: 1200px; }
+.single #site-content .post-content-grid,
+.page #site-content .post-content-grid {
+  margin: 0 auto;
+  max-width: 1600px; }
 .single .post-content-grid,
 .page .post-content-grid {
   display: flex;
@@ -2670,14 +2674,7 @@ html {
     @media all and (min-width: 1080px) {
       .single .post-content-grid .content-column,
       .page .post-content-grid .content-column {
-        padding-right: 4.5rem;
         width: 66.66667%; } }
-    .single .post-content-grid .content-column .post-thumbnail,
-    .page .post-content-grid .content-column .post-thumbnail {
-      margin-bottom: 1.75rem; }
-      .single .post-content-grid .content-column .post-thumbnail img,
-      .page .post-content-grid .content-column .post-thumbnail img {
-        border-radius: 10px; }
     .single .post-content-grid .content-column > article,
     .page .post-content-grid .content-column > article {
       margin-bottom: 2rem; }
@@ -2685,88 +2682,23 @@ html {
         .single .post-content-grid .content-column > article,
         .page .post-content-grid .content-column > article {
           margin-bottom: 3rem; } }
-  .single .post-content-grid .sidebar-column,
-  .page .post-content-grid .sidebar-column {
-    width: 100%; }
-    @media all and (min-width: 1080px) {
-      .single .post-content-grid .sidebar-column,
-      .page .post-content-grid .sidebar-column {
-        width: 33.33333%; } }
-    .single .post-content-grid .sidebar-column .sidebar,
-    .page .post-content-grid .sidebar-column .sidebar {
-      font-size: .88rem;
-      margin-top: 2rem; }
-      @media all and (min-width: 1080px) {
-        .single .post-content-grid .sidebar-column .sidebar,
-        .page .post-content-grid .sidebar-column .sidebar {
-          margin-top: 0; } }
-      .single .post-content-grid .sidebar-column .sidebar .widget:not(:last-child),
-      .page .post-content-grid .sidebar-column .sidebar .widget:not(:last-child) {
-        margin-bottom: 2rem; }
-        @media all and (min-width: 1400px) {
-          .single .post-content-grid .sidebar-column .sidebar .widget:not(:last-child),
-          .page .post-content-grid .sidebar-column .sidebar .widget:not(:last-child) {
-            margin-bottom: 3rem; } }
-      .single .post-content-grid .sidebar-column .sidebar .widget ul,
-      .page .post-content-grid .sidebar-column .sidebar .widget ul {
-        list-style-type: unset;
-        list-style-position: outside;
-        margin-left: 1rem; }
-        .single .post-content-grid .sidebar-column .sidebar .widget ul li,
-        .page .post-content-grid .sidebar-column .sidebar .widget ul li {
-          margin-bottom: .75rem; }
-          .single .post-content-grid .sidebar-column .sidebar .widget ul li:not(:last-child),
-          .page .post-content-grid .sidebar-column .sidebar .widget ul li:not(:last-child) {
-            margin-bottom: .75rem; }
-          .single .post-content-grid .sidebar-column .sidebar .widget ul li::marker,
-          .page .post-content-grid .sidebar-column .sidebar .widget ul li::marker {
-            color: #ae2d68; }
-      .single .post-content-grid .sidebar-column .sidebar .widget.widget_search label,
-      .page .post-content-grid .sidebar-column .sidebar .widget.widget_search label {
-        color: #341671;
-        display: block;
-        margin-bottom: 4px;
-        text-transform: unset; }
-      .single .post-content-grid .sidebar-column .sidebar .widget.widget_search input,
-      .page .post-content-grid .sidebar-column .sidebar .widget.widget_search input {
-        background-color: #f8f5fc;
-        border-color: #ae2d68; }
-        .single .post-content-grid .sidebar-column .sidebar .widget.widget_search input:focus, .single .post-content-grid .sidebar-column .sidebar .widget.widget_search input:active,
-        .page .post-content-grid .sidebar-column .sidebar .widget.widget_search input:focus,
-        .page .post-content-grid .sidebar-column .sidebar .widget.widget_search input:active {
-          border-color: #f54952; }
-        .single .post-content-grid .sidebar-column .sidebar .widget.widget_search input::-webkit-input-placeholder,
-        .page .post-content-grid .sidebar-column .sidebar .widget.widget_search input::-webkit-input-placeholder {
-          color: gray; }
-      .single .post-content-grid .sidebar-column .sidebar .widget.widget_recent_entries ul li a,
-      .page .post-content-grid .sidebar-column .sidebar .widget.widget_recent_entries ul li a {
-        color: #341671;
-        display: block;
-        font-weight: 700;
-        text-decoration-color: #ae2d68; }
-        .single .post-content-grid .sidebar-column .sidebar .widget.widget_recent_entries ul li a:active, .single .post-content-grid .sidebar-column .sidebar .widget.widget_recent_entries ul li a:focus, .single .post-content-grid .sidebar-column .sidebar .widget.widget_recent_entries ul li a:hover,
-        .page .post-content-grid .sidebar-column .sidebar .widget.widget_recent_entries ul li a:active,
-        .page .post-content-grid .sidebar-column .sidebar .widget.widget_recent_entries ul li a:focus,
-        .page .post-content-grid .sidebar-column .sidebar .widget.widget_recent_entries ul li a:hover {
-          color: #341671;
-          text-decoration-color: #ae2d68; }
 
-@media all and (min-width: 1080px) {
-  .single.has-post-thumbnail .page-header .inner {
-    padding-bottom: 8rem; }
-  .single.has-post-thumbnail #site-content .inner {
-    padding-top: 0; }
-  .single.has-post-thumbnail #site-content .content-column .post-thumbnail {
-    margin-bottom: 1.75rem;
-    margin-top: -4rem; } }
-  @media all and (min-width: 1080px) and (min-width: 1400px) {
-    .single.has-post-thumbnail #site-content .content-column .post-thumbnail {
-      margin-bottom: 1rem; } }
-@media all and (min-width: 1080px) {
-    .single.has-post-thumbnail #site-content .content-column .post-thumbnail img {
-      box-shadow: 0 0 60px rgba(0, 0, 0, 0.4); }
-  .single.has-post-thumbnail #site-content .sidebar-column {
-    padding-top: 5.5rem; } }
+.single .page-header .page-header-title {
+  text-align: center; }
+.single .post-content-grid {
+  justify-content: space-around; }
+  .single .post-content-grid .post-thumbnail {
+    margin-bottom: .75rem; }
+    .single .post-content-grid .post-thumbnail img {
+      border-radius: 10px; }
+.single.has-post-thumbnail .page-header .inner {
+  padding-bottom: 8rem; }
+.single.has-post-thumbnail #site-content .inner {
+  padding-top: 0; }
+.single.has-post-thumbnail #site-content .post-thumbnail {
+  margin-top: -4rem; }
+  .single.has-post-thumbnail #site-content .post-thumbnail img {
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.4); }
 .single .entry-meta,
 .single .entry-footer {
   font-size: 16px;
@@ -2779,13 +2711,10 @@ html {
   .single .entry-footer .updated {
     display: none; }
 .single .entry-meta {
-  color: #8b829d;
-  margin-bottom: 1.5rem; }
-  .single .entry-meta .posted-on [class*="fa-"] {
-    color: #595168;
-    margin-right: 8px; }
+  color: #cfc4e6;
+  text-align: center; }
   .single .entry-meta a {
-    color: #595168; }
+    color: #fff; }
 .single .entry-content > p:first-child {
   font-size: 110%;
   font-weight: 600;
@@ -2806,6 +2735,59 @@ html {
     margin-top: 6px; }
   .single .entry-footer a {
     color: #595168; }
+
+@media all and (min-width: 960px) {
+  .page .page-header .page-header-title {
+    max-width: 85%; } }
+@media all and (min-width: 1080px) {
+  .page .content-column {
+    padding-right: 4.5rem; } }
+.page .sidebar-column {
+  width: 100%; }
+  @media all and (min-width: 1080px) {
+    .page .sidebar-column {
+      width: 33.33333%; } }
+  .page .sidebar-column .sidebar {
+    font-size: .88rem;
+    margin-top: 2rem; }
+    @media all and (min-width: 1080px) {
+      .page .sidebar-column .sidebar {
+        margin-top: 0; } }
+    .page .sidebar-column .sidebar .widget:not(:last-child) {
+      margin-bottom: 2rem; }
+      @media all and (min-width: 1400px) {
+        .page .sidebar-column .sidebar .widget:not(:last-child) {
+          margin-bottom: 3rem; } }
+    .page .sidebar-column .sidebar .widget ul {
+      list-style-type: unset;
+      list-style-position: outside;
+      margin-left: 1rem; }
+      .page .sidebar-column .sidebar .widget ul li {
+        margin-bottom: .75rem; }
+        .page .sidebar-column .sidebar .widget ul li:not(:last-child) {
+          margin-bottom: .75rem; }
+        .page .sidebar-column .sidebar .widget ul li::marker {
+          color: #ae2d68; }
+    .page .sidebar-column .sidebar .widget.widget_search label {
+      color: #341671;
+      display: block;
+      margin-bottom: 4px;
+      text-transform: unset; }
+    .page .sidebar-column .sidebar .widget.widget_search input {
+      background-color: #f8f5fc;
+      border-color: #ae2d68; }
+      .page .sidebar-column .sidebar .widget.widget_search input:focus, .page .sidebar-column .sidebar .widget.widget_search input:active {
+        border-color: #f54952; }
+      .page .sidebar-column .sidebar .widget.widget_search input::-webkit-input-placeholder {
+        color: gray; }
+    .page .sidebar-column .sidebar .widget.widget_recent_entries ul li a {
+      color: #341671;
+      display: block;
+      font-weight: 700;
+      text-decoration-color: #ae2d68; }
+      .page .sidebar-column .sidebar .widget.widget_recent_entries ul li a:active, .page .sidebar-column .sidebar .widget.widget_recent_entries ul li a:focus, .page .sidebar-column .sidebar .widget.widget_recent_entries ul li a:hover {
+        color: #341671;
+        text-decoration-color: #ae2d68; }
 
 .page.full-width .post-content-grid {
   display: block; }

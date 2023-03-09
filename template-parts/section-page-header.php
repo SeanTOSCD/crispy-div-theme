@@ -37,6 +37,11 @@ if ( ! empty( $args['corner-accent-color'] ) ) {
             <?php } ?>
             <?php echo $args['title']; ?>
         </h1>
+		<?php if ( is_single() ) { ?>
+            <div class="entry-meta">
+                <span class="posted-on"><?php echo crispydiv_posted_on(), crispydiv_posted_by(); ?></span>
+            </div>
+		<?php } ?>
 		<?php
             if ( ! empty( $args['description'] ) ) {
                 ?>

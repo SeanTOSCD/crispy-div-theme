@@ -18,11 +18,7 @@ function crispydiv_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'crispydiv' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);
-	echo '<span class="posted-on"><i class="fa-regular fa-circle-info"></i>' . $posted_on . '</span>';
+	echo '<span class="posted-on">Posted on ' . $time_string . '</span>';
 }
 
 
@@ -30,9 +26,15 @@ function crispydiv_posted_on() {
  * Prints HTML with meta information for the current author.
  */
 function crispydiv_posted_by() {
+	$post_id = get_the_ID();
+	$author_id = get_post_field( 'post_author', $post_id );
+	$author_display_name = get_the_author_meta( 'display_name', $author_id );
+	$author_archive_url = get_author_posts_url( $author_id );
+
+
 	$byline = sprintf(
 		esc_html_x( 'by %s', 'post author', 'crispydiv' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+		'<span class="author vcard"><a class="url fn n" href="' . $author_archive_url . '">' . $author_display_name . '</a></span>'
 	);
 	echo '<span class="byline"> ' . $byline . '</span>';
 }
