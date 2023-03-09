@@ -2417,11 +2417,11 @@ html {
     padding-bottom: 2rem; }
     .page-front .theme-development-section .real-data-header .attribution {
       color: #fff; }
-    .page-front .theme-development-section .real-data-header .nng-stats-grid {
-      border-top: 1px dashed rgba(245, 81, 89, 0.2); }
-      @media all and (min-width: 1200px) {
-        .page-front .theme-development-section .real-data-header .nng-stats-grid {
-          grid-template-columns: repeat(3, 1fr); } }
+  .page-front .theme-development-section .nng-stats-grid {
+    border-top: 1px dashed rgba(245, 81, 89, 0.2); }
+    @media all and (min-width: 760px) and (max-width: 1199.98px) {
+      .page-front .theme-development-section .nng-stats-grid {
+        grid-template-columns: 1fr; } }
   .page-front .theme-development-section .mock-browser-grid {
     display: grid;
     grid-template-columns: 100%; }
@@ -2434,11 +2434,12 @@ html {
         padding-right: 2.75rem; } }
     .page-front .theme-development-section .mock-browser-grid .design-description {
       margin-bottom: 2.5rem;
-      padding-top: 2rem; }
+      padding-top: 4rem; }
       @media all and (min-width: 1200px) {
         .page-front .theme-development-section .mock-browser-grid .design-description {
           margin-bottom: 0;
-          padding-left: 2.7rem; } }
+          padding-left: 2.7rem;
+          padding-top: 2rem; } }
       .page-front .theme-development-section .mock-browser-grid .design-description .blurb-title {
         font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         font-weight: 700;
@@ -2697,8 +2698,6 @@ html {
   padding-top: 0; }
 .single.single-post.has-post-thumbnail #site-content .post-thumbnail {
   margin-top: -4rem; }
-  .single.single-post.has-post-thumbnail #site-content .post-thumbnail img {
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.4); }
 .single.single-post .entry-meta,
 .single.single-post .entry-footer {
   font-size: 16px;

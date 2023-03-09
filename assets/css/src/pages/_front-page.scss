@@ -245,13 +245,13 @@
 			.attribution {
 				color: #fff;
 			}
+		}
 
-			.nng-stats-grid {
-				border-top: 1px dashed $border_over_purple;
+		.nng-stats-grid {
+			border-top: 1px dashed $border_over_purple;
 
-				@media all and (min-width: 1200px) {
-					grid-template-columns: repeat( 3, 1fr );
-				}
+			@media all and (min-width: 760px) and (max-width: 1199.98px) {
+				grid-template-columns: 1fr;
 			}
 		}
 
@@ -273,11 +273,12 @@
 
 			.design-description {
 				margin-bottom: 2.5rem;
-				padding-top: 2rem;
+				padding-top: 4rem;
 
 				@media all and (min-width: 1200px) {
 					margin-bottom: 0;
 					padding-left: 2.7rem;
+					padding-top: 2rem;
 				}
 
 				.blurb-title {
