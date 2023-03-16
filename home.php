@@ -11,24 +11,24 @@ get_template_part( 'template-parts/section', 'subscribe', array(
 ) );
 ?>
 
-    <section class="content-filter-section background-gray">
-        <div class="inner small">
-            <span class="h5">Find the content you're looking for.</span>
-            <div class="content-filter-grid general-grid large">
-                <div class="facetwp-filter">
-                    <span class="content-filter-title subdued-title">Filter by Category</span>
-                    <div class="content-filter-controls">
-		                <?php echo do_shortcode( '[facetwp facet="categories"]' ); ?>
-                    </div>
-                </div>
-                <div class="search-filter">
-                    <span class="element-lead-icon colored">
-                    <span class="content-filter-title subdued-title">Search Content</span>
-                    <?php echo get_search_form(); ?>
-                </div>
-            </div>
-        </div>
-    </section>
+<!--    <section class="content-filter-section background-gray">-->
+<!--        <div class="inner small">-->
+<!--            <span class="h5">Find the content you're looking for.</span>-->
+<!--            <div class="content-filter-grid general-grid large">-->
+<!--                <div class="facetwp-filter">-->
+<!--                    <span class="content-filter-title subdued-title">Filter by Category</span>-->
+<!--                    <div class="content-filter-controls">-->
+<!--		                --><?php //echo do_shortcode( '[facetwp facet="categories"]' ); ?>
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="search-filter">-->
+<!--                    <span class="element-lead-icon colored">-->
+<!--                    <span class="content-filter-title subdued-title">Search Content</span>-->
+<!--                    --><?php //echo get_search_form(); ?>
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
 	<main id="site-content" class="site-main">
 		<?php if ( have_posts() ) : ?>

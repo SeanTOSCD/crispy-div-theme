@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.1.11
+ * Version: 1.1.12
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -2078,13 +2078,11 @@ template {
           display: none; }
     .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme .gform_body .ginput_container_email {
       max-width: 400px; }
-    .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"] {
-      background-color: transparent; }
-      .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:active, .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:focus, .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"]:hover {
-        background-color: #f54952;
-        border-color: #f54952;
-        color: #fff;
-        text-decoration-color: #f54952; }
+      .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme .gform_body .ginput_container_email input {
+        padding: 11px 9px; }
+    @media all and (min-width: 980px) {
+      .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme input[type="submit"] {
+        font-size: .95rem; } }
     .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_wrapper.gravity-theme .gform_footer {
       padding-bottom: 0; }
     .subscribe-cta .subscribe-content-wrap .subscribe-content .subscribe-form-container .gform_confirmation_message {
@@ -2205,6 +2203,14 @@ html {
       margin-bottom: 0; }
       .blog .content-filter-section .content-filter-grid .facetwp-filter .facetwp-facet .facetwp-dropdown {
         background-color: #fff; }
+@media all and (min-width: 980px) {
+  .blog .general-grid .grid-item {
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem; } }
+@media all and (min-width: 1200px) {
+  .blog .general-grid .grid-item {
+    padding-bottom: 4rem;
+    padding-top: 4rem; } }
 
 .page-brand-assets .brand-asset-title {
   font-size: 1.5rem;

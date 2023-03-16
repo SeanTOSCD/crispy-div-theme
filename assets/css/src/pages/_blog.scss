@@ -52,4 +52,20 @@
 			}
 		}
 	}
+
+	.general-grid {
+
+		.grid-item {
+
+			@media all and (min-width:980px) {
+				padding-bottom: 3.5rem;
+				padding-top: 3.5rem;
+			}
+
+			@media all and (min-width:1200px) {
+				padding-bottom: 4rem;
+				padding-top: 4rem;
+			}
+		}
+	}
 }
