@@ -129,8 +129,12 @@
 	.brand-name-grid {
 		display: grid;
 		gap: 1.5rem;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		margin-bottom: 4rem;
+
+		@media all and (min-width: 600px) {
+			grid-template-columns: 1fr 1fr;
+		}
 
 		@media all and (min-width: 1200px) {
 			grid-template-columns: repeat( 4, 1fr );
@@ -149,22 +153,25 @@
 			.brand-name {
 				@include headingFont;
 				color: $color2;
+				display: block;
 				font-size: 1.25rem;
 				font-weight: 800;
 
-				[class*="fa-"] {
-					color: #d24949;
-					margin-right: 8px;
+				@media all and (min-width: 1200px) {
+					font-size: 1.5rem;
 				}
+			}
+
+			.example-status {
+				color: #d24949;
+				font-size: .9rem;
+				font-weight: 600;
 			}
 
 			&.correct {
 
-				.brand-name {
-
-					[class*="fa-"] {
-						color: #37ab37;
-					}
+				.example-status {
+					color: #37ab37;
 				}
 			}
 		}

@@ -67,16 +67,20 @@ crispydiv_page_header( array(
             </div>
             <div class="brand-name-grid">
                 <div class="brand-name-example background-gray incorrect">
-                    <span class="brand-name"><i class="fa-solid fa-circle-xmark"></i>CrispyDiv</span>
+                    <span class="brand-name">CrispyDiv</span>
+                    <span class="example-status">Incorrect</span>
                 </div>
                 <div class="brand-name-example background-gray incorrect">
-                    <span class="brand-name"><i class="fa-solid fa-circle-xmark"></i>crispydiv</span>
+                    <span class="brand-name">crispydiv</span>
+                    <span class="example-status">Incorrect</span>
                 </div>
                 <div class="brand-name-example background-gray incorrect">
-                    <span class="brand-name"><i class="fa-solid fa-circle-xmark"></i>crispy div</span>
+                    <span class="brand-name">crispy&nbsp;div</span>
+                    <span class="example-status">Incorrect</span>
                 </div>
                 <div class="brand-name-example background-gray correct">
-                    <span class="brand-name"><i class="fa-solid fa-circle-check"></i>Crispy Div</span>
+                    <span class="brand-name">Crispy&nbsp;Div</span>
+                    <span class="example-status">Correct</span>
                 </div>
             </div>
             <h3 class="brand-asset-title">Downloads</h3>
