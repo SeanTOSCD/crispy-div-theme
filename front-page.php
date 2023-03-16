@@ -211,9 +211,18 @@ get_header();
         </section>
     <?php } ?>
 
-    <section class="contact-cta-section element-spacing medium background-gray corner-accent black-orange">
-        <span class="cta-title h4">Got questions?</span>
-        <p>Don't be shy! <a class="cta-link" href="<?php echo home_url( '/contact/?type=general' ); ?>">Send an email</a> with your inquiry. No obligations.</p>
+    <section class="footer-lead-cta element-spacing medium background-gray corner-accent black-orange">
+        <span class="cta-title h4 heavy">Got questions?</span>
+        <p>Don't be shy! Send an email with your inquiry. No obligations.</p>
+	    <?php
+	    crispydiv_button(
+		    array(
+			    'text'  => 'Send an email',
+			    'url'  => home_url( '/contact' ),
+			    'classes' => array( 'button', 'outline' ),
+		    )
+	    );
+	    ?>
     </section>
 
 <?php
