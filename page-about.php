@@ -99,15 +99,16 @@ crispydiv_page_header( array(
     </div>
 </section>
 
-<section class="footer-lead-cta element-spacing border-bottom-over-white">
+<section class="footer-lead-cta element-spacing large">
     <div class="service-content">
-        <p>If you believe we're a good fit, let's work. If you have questions, let's have a conversation.</p>
+        <span class="footer-lead-cta-title h4 heavy">Let's have a conversation<span class="highlight-text">.</span></span>
+        <p>If you believe we're a good fit, let's work. If you have questions, just reach out.</p>
         <?php
         crispydiv_button(
             array(
-                'text'  => 'Get in Touch',
+                'text'  => 'Start the Conversation',
                 'url'  => home_url( '/contact' ),
-                'classes' => array( 'button', 'outline' ),
+                'classes' => array( 'button', 'large' ),
             )
         );
         ?>

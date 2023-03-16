@@ -17,6 +17,13 @@ input[type="submit"] {
 		padding: .4em 1.2em;
 	}
 
+	&.large {
+
+		@media all and (min-width: 980px) {
+			font-size: .95rem;
+		}
+	}
+
 	&:active,
 	&:focus,
 	&:hover {

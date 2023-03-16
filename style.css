@@ -665,6 +665,11 @@ input[type="submit"] {
   input[type="submit"].small {
     font-size: .75rem;
     padding: .4em 1.2em; }
+  @media all and (min-width: 980px) {
+    .button.large,
+    button.large,
+    input[type="submit"].large {
+      font-size: .95rem; } }
   .button:active, .button:focus, .button:hover,
   button:active,
   button:focus,
@@ -2164,6 +2169,8 @@ html {
       text-align: center; }
 .page-about .footer-lead-cta {
   text-align: center; }
+.page-about #colophon {
+  background-color: #f8f5fc; }
 
 .archive:not(.post-type-archive) .page-header .page-header-title {
   color: #ae2d68;
