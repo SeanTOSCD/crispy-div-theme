@@ -283,6 +283,7 @@ function get_crispydiv_logo_by_color() {
             || is_post_type_archive( 'course' )
             || is_singular( 'course' )
             || is_singular( 'service' )
+            || is_page( 'about' )
     ) {
         return true;
     }

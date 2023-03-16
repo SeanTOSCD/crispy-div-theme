@@ -30,7 +30,7 @@ if ( have_posts() ) {
 		) );
 	}
 	?>
-	<section class="all-services-cta element-spacing small corner-accent black-orange border-bottom-over-white border-top-over-white">
+	<section class="footer-lead-cta element-spacing small corner-accent black-orange border-bottom-over-white border-top-over-white">
 		<div class="service-content">
 			<span class="all-services-cta-title h5">Not what you're looking for? There's more.</span>
 			<p>We offer a wide range of services to help you grow your business.</p>

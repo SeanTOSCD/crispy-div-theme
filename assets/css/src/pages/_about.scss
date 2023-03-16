@@ -1,90 +1,118 @@
 .page-about {
 
-	.process-section {
-		border-bottom: 1px dashed $border_over_white;
+	.history-section {
 
-		.final-cta-grid {
-			align-items: center;
-			justify-items: center;
+		.history-grid {
 			display: grid;
-			gap: 3rem 5rem;
+			gap: 2.5rem;
 			grid-template-columns: 1fr;
 
-			@media all and (min-width: 980px) {
-				grid-template-columns: 5fr 4fr;
-			}
+			@media (min-width: 840px) {
+				gap: 3.5rem;
+				grid-template-columns: 3fr 4fr;
 
-			@media all and (min-width: 1200px) {
-				//padding-top: 6rem;
-			}
+				.history-grid-content {
+					order: 2;
+				}
 
-			.section-intro {
-
-				.section-title {
-					font-weight: 800;
+				.history-grid-media {
+					order: 1;
 				}
 			}
 
-			.cta {
-
+			@media (min-width: 1200px) {
+				gap: 5rem;
+				grid-template-columns: 3fr 5fr;
 			}
-		}
 
-		.process-grid {
-			display: grid;
-			grid-template-columns: 1fr 2fr;
+			.history-grid-content {
 
-			.process-title-wrap,
-			.process-details {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				padding: 3rem 2rem;
-
-				@media all and (min-width: 980px) {
-					padding-left: 4.5rem;
-					padding-right: 4.5rem;
+				@media (min-width: 1200px) {
+					padding-top: 1rem;
 				}
 
-				@media all and (min-width: 1200px) {
-					padding-bottom: 4rem;
-					padding-top: 4rem;
+				.history-title {
+					color: $color4;
 				}
 			}
 
-			.process-title-wrap {
-				@include headingFont;
-				font-size: 1.45rem;
-				font-weight: 700;
+			.history-grid-media {
 
-				span {
-					display: block;
-					text-align: right;
+				.history-grid-media-inner {
+					background-color: #fff;
+					box-shadow: 6px 6px 0 rgba(0, 0, 0, .05);
+					padding: 3rem;
 
-					span {
-						color: $color6;
-						display: inline;
+					.history-image {
+						align-items: center;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+
+						img {
+							border-radius: 50%;
+							height: auto;
+							margin-bottom: 1rem;
+							width: 110px;
+						}
+					}
+
+					.sean-label {
+						text-align: center;
+
+						.name {
+							display: block;
+							font-weight: 600;
+						}
+
+						.title {
+							display: block;
+							font-size: 15px;
+						}
+					}
+
+					.link-grid {
+						align-items: center;
+						display: flex;
+						gap: 1rem;
+						justify-content: center;
+
+						.github-icon {
+							color: $black;
+						}
+
+						.wordpress-icon {
+							color: #0073AA;
+						}
+
+						.homepage-icon {
+							color: $color2;
+						}
+
+						[class*="fa-"] {
+							font-size: 1.5rem;
+
+							&:active,
+							&:focus,
+							&:hover {
+								opacity: .7;
+							}
+						}
+					}
+
+					p {
+
+						&:last-child {
+							padding: 2rem 0 0;
+							text-align: center;
+						}
 					}
 				}
-
-				@media all and (min-width: 980px) {
-					border-color: $border_over_white;
-					border-style: dashed;
-					border-width: 0 1px 0 0;
-				}
-			}
-
-			.process-details {
-
-				&:not(:last-of-type) {
-
-					@media all and (min-width: 980px) {
-						border-color: $border_over_white;
-						border-style: dashed;
-						border-width: 0 0 1px 0;
-					}
-				}
 			}
 		}
+	}
+
+	.footer-lead-cta {
+		text-align: center;
 	}
 }

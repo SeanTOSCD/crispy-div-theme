@@ -3,7 +3,7 @@
  * Author: Sean Davis
  * Author URI: https://crispydiv.com
  * Description: Custom theme for crispydiv.com
- * Version: 1.1.9
+ * Version: 1.1.10
  * License: GNU General Public License v2 or later
  *
  * Crispy Div is based on Underscores https://underscores.me/, (C) 2012-2023 Automattic, Inc.
@@ -326,6 +326,11 @@ html body {
   @media all and (min-width: 1200px) {
     .disappearing-br {
       display: block; } }
+
+.framed {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  box-shadow: 6px 6px 0 #f8f5fc; }
 
 .socials-flex {
   color: #333333;
@@ -958,6 +963,8 @@ form label {
   @media all and (min-width: 1800px) {
     .general-grid.three-col {
       grid-template-columns: repeat(3, 1fr); }
+      .general-grid.three-col .grid-item:not(:nth-child(4n)) {
+        border-right: none; }
       .general-grid.three-col .grid-item:not(:nth-child(3n)) {
         border-right: 1px dashed rgba(0, 0, 0, 0.1); } }
   .general-grid .grid-item {
@@ -1220,6 +1227,12 @@ figure.frame img {
   border-radius: 11px;
   box-shadow: 6px 6px 0 #f8f5fc;
   margin: 1.5rem 0; }
+
+.semi-heavy {
+  font-weight: 600; }
+
+.heavy {
+  font-weight: 800; }
 
 .site-main h1, .site-main .h1,
 .site-main h2, .site-main .h2 {
@@ -2074,6 +2087,9 @@ template {
       padding: 1.5rem;
       border-radius: 11px; }
 
+.footer-lead-cta p + .button {
+  margin-top: .75rem; }
+
 html {
   color: #494949;
   font-size: 17px;
@@ -2085,59 +2101,69 @@ html {
     html {
       font-size: 19px; } }
 
-.page-about .process-section {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
-  .page-about .process-section .final-cta-grid {
-    align-items: center;
-    justify-items: center;
-    display: grid;
-    gap: 3rem 5rem;
-    grid-template-columns: 1fr; }
-    @media all and (min-width: 980px) {
-      .page-about .process-section .final-cta-grid {
-        grid-template-columns: 5fr 4fr; } }
-    .page-about .process-section .final-cta-grid .section-intro .section-title {
-      font-weight: 800; }
-  .page-about .process-section .process-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr; }
-    .page-about .process-section .process-grid .process-title-wrap,
-    .page-about .process-section .process-grid .process-details {
+.page-about .history-section .history-grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr; }
+  @media (min-width: 840px) {
+    .page-about .history-section .history-grid {
+      gap: 3.5rem;
+      grid-template-columns: 3fr 4fr; }
+      .page-about .history-section .history-grid .history-grid-content {
+        order: 2; }
+      .page-about .history-section .history-grid .history-grid-media {
+        order: 1; } }
+  @media (min-width: 1200px) {
+    .page-about .history-section .history-grid {
+      gap: 5rem;
+      grid-template-columns: 3fr 5fr; } }
+  @media (min-width: 1200px) {
+    .page-about .history-section .history-grid .history-grid-content {
+      padding-top: 1rem; } }
+  .page-about .history-section .history-grid .history-grid-content .history-title {
+    color: #660f56; }
+  .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner {
+    background-color: #fff;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.05);
+    padding: 3rem; }
+    .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .history-image {
+      align-items: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      padding: 3rem 2rem; }
-      @media all and (min-width: 980px) {
-        .page-about .process-section .process-grid .process-title-wrap,
-        .page-about .process-section .process-grid .process-details {
-          padding-left: 4.5rem;
-          padding-right: 4.5rem; } }
-      @media all and (min-width: 1200px) {
-        .page-about .process-section .process-grid .process-title-wrap,
-        .page-about .process-section .process-grid .process-details {
-          padding-bottom: 4rem;
-          padding-top: 4rem; } }
-    .page-about .process-section .process-grid .process-title-wrap {
-      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      font-weight: 700;
-      font-size: 1.45rem;
-      font-weight: 700; }
-      .page-about .process-section .process-grid .process-title-wrap span {
+      justify-content: center; }
+      .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .history-image img {
+        border-radius: 50%;
+        height: auto;
+        margin-bottom: 1rem;
+        width: 110px; }
+    .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .sean-label {
+      text-align: center; }
+      .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .sean-label .name {
         display: block;
-        text-align: right; }
-        .page-about .process-section .process-grid .process-title-wrap span span {
-          color: #f54952;
-          display: inline; }
-      @media all and (min-width: 980px) {
-        .page-about .process-section .process-grid .process-title-wrap {
-          border-color: rgba(0, 0, 0, 0.1);
-          border-style: dashed;
-          border-width: 0 1px 0 0; } }
-    @media all and (min-width: 980px) {
-      .page-about .process-section .process-grid .process-details:not(:last-of-type) {
-        border-color: rgba(0, 0, 0, 0.1);
-        border-style: dashed;
-        border-width: 0 0 1px 0; } }
+        font-weight: 600; }
+      .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .sean-label .title {
+        display: block;
+        font-size: 15px; }
+    .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+      justify-content: center; }
+      .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid .github-icon {
+        color: #161616; }
+      .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid .wordpress-icon {
+        color: #0073AA; }
+      .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid .homepage-icon {
+        color: #341671; }
+      .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*="fa-"] {
+        font-size: 1.5rem; }
+        .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*="fa-"]:active, .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*="fa-"]:focus, .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner .link-grid [class*="fa-"]:hover {
+          opacity: .7; }
+    .page-about .history-section .history-grid .history-grid-media .history-grid-media-inner p:last-child {
+      padding: 2rem 0 0;
+      text-align: center; }
+.page-about .footer-lead-cta {
+  text-align: center; }
 
 .archive:not(.post-type-archive) .page-header .page-header-title {
   color: #ae2d68;
@@ -2380,10 +2406,6 @@ html {
     @media all and (min-width: 1200px) {
       .page-front .plugin-integration-section .advanced-custom-fields-highlight .acf-grid .acf-graphic {
         padding-left: 4.5rem; } }
-    .page-front .plugin-integration-section .advanced-custom-fields-highlight .acf-grid .acf-graphic img {
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      border-radius: 11px;
-      box-shadow: 6px 6px 0 #f8f5fc; }
 .page-front .plugin-integration-section .facetwp-gravity-forms-grid {
   display: grid;
   grid-template-columns: 1fr; }
@@ -2653,9 +2675,6 @@ html {
     display: none;
     font-size: 90%;
     padding: 1rem 1.5rem; }
-
-.all-services-cta p + .button {
-  margin-top: .75rem; }
 
 .single #site-content .post-thumbnail,
 .page #site-content .post-thumbnail {

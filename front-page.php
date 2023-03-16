@@ -75,7 +75,7 @@ get_header();
                     <p>With ACF's features, <strong class="color-black">we make every element of your site editable from the WordPress dashboard</strong>. This allows you to control your site's content, regardless of type or structure, without having to deal with code or theme edits.</p>
                 </div>
                 <div class="acf-graphic">
-                    <img class="advanced-custom-fields-graphic" src="<?php echo THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png'; ?>" alt="Advanced Custom Fields - Page Hero Fields">
+                    <img class="advanced-custom-fields-graphic framed" src="<?php echo THEME_IMAGES . 'advanced-custom-fields-hero-area-fields.png'; ?>" alt="Advanced Custom Fields - Page Hero Fields">
                 </div>
             </div>
         </div>

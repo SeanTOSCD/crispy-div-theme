@@ -45,6 +45,10 @@
 		@media all and (min-width: 1800px) {
 			grid-template-columns: repeat( 3, 1fr );
 
+			.grid-item:not(:nth-child(4n)) {
+				border-right: none;
+			}
+
 			.grid-item:not(:nth-child(3n)) {
 				border-right: 1px dashed $border_over_white;
 			}

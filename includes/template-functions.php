@@ -38,7 +38,7 @@ add_filter( 'body_class', function( $classes ) {
 	}
 
     // Conditionally add header color classes
-    if ( is_front_page() || is_home() || is_singular( 'post' ) || is_post_type_archive( 'course' ) || is_singular( 'course' ) ) {
+    if ( is_front_page() || is_home() || is_singular( 'post' ) || is_post_type_archive( 'course' ) || is_singular( 'course' ) || is_page( 'about' ) ) {
         $classes[] = 'has-purple-header';
     } else if ( is_post_type_archive( 'service' ) || is_singular( 'service' ) ) {
 	    $classes[] = 'has-pink-header';
