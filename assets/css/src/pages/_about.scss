@@ -112,6 +112,23 @@
 		}
 	}
 
+	.how-we-work-grid {
+
+		.grid-item {
+
+			.grid-item-title {
+
+				@media all and (min-width: 1400px) {
+					font-size: 1.35rem;
+				}
+			}
+
+			@media all and (min-width: 1400px) {
+				padding: 2.75rem 4.5rem;
+			}
+		}
+	}
+
 	.footer-lead-cta {
 		text-align: center;
 	}
