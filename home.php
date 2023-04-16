@@ -5,9 +5,11 @@
 
 get_header();
 
-get_template_part( 'template-parts/section', 'subscribe', array(
-	'title' => 'Crispy Reads',
-	'size' => 'medium',
+crispydiv_page_header( array(
+    'bg-color' => 'background-purple',
+    'corner-accent-color' => 'white-orange',
+    'title' => 'Crispy Reads',
+    'description' => 'Learn more about WordPress, web design, web development, and our favorite WordPress plugins and themes. Be sure to engage in the comments section!'
 ) );
 ?>
 
