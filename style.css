@@ -1257,6 +1257,9 @@ figure.frame img {
   color: #660f56; }
 .site-main h6, .site-main .h6 {
   color: #ae2d68; }
+@media all and (min-width: 1500px) {
+  .site-main .entry-content {
+    font-size: 19px; } }
 .site-main .entry-content h1:not(:first-child), .site-main .entry-content .h1:not(:first-child),
 .site-main .entry-content h2:not(:first-child), .site-main .entry-content .h2:not(:first-child),
 .site-main .entry-content h3:not(:first-child), .site-main .entry-content .h3:not(:first-child),

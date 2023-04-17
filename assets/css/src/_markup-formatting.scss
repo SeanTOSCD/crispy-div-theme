@@ -259,6 +259,10 @@ figure {
 
 	.entry-content {
 
+		@media all and (min-width: 1500px) {
+			font-size: 19px;
+		}
+
 		h1:not(:first-child), .h1:not(:first-child),
 		h2:not(:first-child), .h2:not(:first-child),
 		h3:not(:first-child), .h3:not(:first-child),
