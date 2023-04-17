@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="site-info">
-            <p class="site-copyright"><?php echo '&copy ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> - A Project by Top One Code LLC</p>
+            <p class="site-copyright"><?php echo '&copy ' . get_bloginfo( 'name' ) . ' ' . date( 'Y' ); ?> - A Project by <a href="https://toponecode.com" target="_blank">Top One Code LLC</a></p>
         </div>
 	</footer>
 </div>

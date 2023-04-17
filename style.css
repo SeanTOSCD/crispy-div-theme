@@ -646,6 +646,11 @@ html body {
   #colophon .site-info .site-copyright {
     color: gray;
     font-size: 90%; }
+    #colophon .site-info .site-copyright a {
+      color: gray;
+      text-decoration: none; }
+      #colophon .site-info .site-copyright a:hover, #colophon .site-info .site-copyright a:focus, #colophon .site-info .site-copyright a:active {
+        color: #333333; }
 
 .button,
 button,

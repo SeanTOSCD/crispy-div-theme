@@ -63,6 +63,17 @@
 		.site-copyright {
 			color: lighten($body_light, 30%);
 			font-size: 90%;
+
+			a {
+				color: lighten($body_light, 30%);
+				text-decoration: none;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: $body_light;
+				}
+			}
 		}
 	}
 }
