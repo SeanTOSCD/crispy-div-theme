@@ -2706,7 +2706,7 @@ html {
 .single #site-content .post-thumbnail,
 .page #site-content .post-thumbnail {
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 1000px; }
 .single #site-content .post-content-grid,
 .page #site-content .post-content-grid {
   margin: 0 auto;
