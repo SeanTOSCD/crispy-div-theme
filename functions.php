@@ -69,7 +69,7 @@ add_action( 'after_setup_theme', function() {
 
 // Set the content width in pixels
 add_action( 'after_setup_theme', function() {
-	$GLOBALS['content_width'] = apply_filters( 'crispydiv_content_width', 840 );
+	$GLOBALS['content_width'] = apply_filters( 'crispydiv_content_width', 1000 );
 }, 0 );
 
 // Register sidebar area.
