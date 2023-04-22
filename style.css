@@ -2519,6 +2519,10 @@ html {
       color: #cfc4e6; }
       .page-front .theme-development-section .standards-grid .grid-item p a {
         color: #cfc4e6; }
+    .page-front .theme-development-section .standards-grid + .small-cta-section {
+      margin-top: -1px;
+      position: relative;
+      z-index: 999; }
 @media all and (min-width: 1200px) {
   .page-front .courses-section .section-heading {
     padding-bottom: 4.5rem; } }

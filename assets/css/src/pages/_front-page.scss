@@ -327,6 +327,12 @@
 					}
 				}
 			}
+
+			& + .small-cta-section {
+				margin-top: -1px;
+				position: relative;
+				z-index: 999;
+			}
 		}
 	}
 
