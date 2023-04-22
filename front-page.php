@@ -7,13 +7,13 @@ get_header();
 ?>
 
     <section class="page-header">
-        <div class="page-header-hero" style="background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% ), url(<?php echo THEME_IMAGES . 'annie-spratt-hero-unsplash.png'; ?>")>
+        <div class="page-header-hero" style="background-image: linear-gradient( to right, rgba(52, 22, 113, 1) 0%, rgba(52, 22, 113, 1) 10%, rgba(52, 22, 113, 0.2) 100% )">
             <div class="page-header-hero-inner">
                 <div class="corner-accent white-orange">
                     <div class="inner no-vertical-spacing">
                         <div class="what-we-do">
                             <div class="content-wrap">
-                                <h1 class="page-header-title"><?php echo get_crispydiv_tagline(); ?></h1>
+                                <h1 class="page-header-title">Bespoke Design &<br class="disappearing-br"> Development for WordPress<span class="highlight-text">.</span></h1>
                                 <div class="page-header-description">
                                     <?php echo get_field( 'page_header_description' ); ?>
                                 </div>

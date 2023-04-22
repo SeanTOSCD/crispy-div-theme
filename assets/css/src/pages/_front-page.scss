@@ -38,15 +38,7 @@
 		color: #fff;
 
 		.page-header-hero {;
-			background-size: cover;
-			background-repeat: no-repeat;
 			flex: 1;
-
-			@media all and (min-width: 1080px) {
-				background-size: 110% auto;
-				background-position-x: 6rem;
-				background-position-y: 0;
-			}
 
 			.page-header-hero-inner {
 				background-image: linear-gradient(45deg, rgba(102, 15, 86, .4) 0%, rgba(102, 15, 86, .2) 13%, rgba(52,22,113,.6) 40%, rgba(52, 22, 113, .7) 100%);
@@ -73,7 +65,18 @@
 							font-weight: 800;
 
 							@media all and (min-width: 980px) {
-								width: 60%;
+								width: 90%;
+							}
+
+							@media all and (min-width: 1200px) {
+								font-size: 3.75rem;
+							}
+
+							.disappearing-br {
+
+								@media all and (min-width: 760px) {
+									display: block;
+								}
 							}
 						}
 

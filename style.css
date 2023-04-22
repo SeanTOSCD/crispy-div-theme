@@ -816,17 +816,17 @@ form label {
 .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield {
   margin-bottom: 1rem;
   max-width: 900px; }
-  @media all and (min-width: 960px) {
+  @media all and (min-width: 980px) {
     .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield {
       margin-bottom: 2rem; } }
   .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type {
     margin-bottom: 2rem; }
-    @media all and (min-width: 960px) {
+    @media all and (min-width: 980px) {
       .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type {
         margin-bottom: 3rem; } }
     .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type > .gfield_label {
       color: #341671; }
-      @media all and (min-width: 960px) {
+      @media all and (min-width: 980px) {
         .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type > .gfield_label {
           font-size: 1.7rem; } }
     .gform_wrapper.gravity-theme .gform_body .gform_fields > .gfield.contact-type .gfield_radio {
@@ -909,7 +909,7 @@ form label {
   border-color: #f54952 !important;
   box-shadow: none !important;
   margin-bottom: 2rem; }
-  @media all and (min-width: 960px) {
+  @media all and (min-width: 980px) {
     .gform_wrapper.gravity-theme .gform_validation_errors {
       margin-bottom: 3.5rem; } }
   .gform_wrapper.gravity-theme .gform_validation_errors > h2 {
@@ -2060,7 +2060,7 @@ template {
     @media all and (min-width: 760px) {
       .subscribe-cta .subscribe-content-wrap {
         grid-template-columns: 5fr 2fr; } }
-    @media all and (min-width: 960px) {
+    @media all and (min-width: 980px) {
       .subscribe-cta .subscribe-content-wrap {
         grid-template-columns: 5fr 3fr; } }
     @media all and (min-width: 1400px) {
@@ -2354,14 +2354,7 @@ html {
   background: #341671;
   color: #fff; }
   .page-front .page-header .page-header-hero {
-    background-size: cover;
-    background-repeat: no-repeat;
     flex: 1; }
-    @media all and (min-width: 1080px) {
-      .page-front .page-header .page-header-hero {
-        background-size: 110% auto;
-        background-position-x: 6rem;
-        background-position-y: 0; } }
     .page-front .page-header .page-header-hero .page-header-hero-inner {
       background-image: linear-gradient(45deg, rgba(102, 15, 86, 0.4) 0%, rgba(102, 15, 86, 0.2) 13%, rgba(52, 22, 113, 0.6) 40%, rgba(52, 22, 113, 0.7) 100%);
       height: 100%; }
@@ -2381,7 +2374,13 @@ html {
           font-weight: 800; }
           @media all and (min-width: 980px) {
             .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-title {
-              width: 60%; } }
+              width: 90%; } }
+          @media all and (min-width: 1200px) {
+            .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-title {
+              font-size: 3.75rem; } }
+          @media all and (min-width: 760px) {
+            .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-title .disappearing-br {
+              display: block; } }
         .page-front .page-header .page-header-hero .page-header-hero-inner .what-we-do .content-wrap .page-header-description {
           color: #cfc4e6;
           font-size: 1.1rem;
@@ -2789,7 +2788,7 @@ html {
   .single.single-post .entry-footer a {
     color: #595168; }
 
-@media all and (min-width: 960px) {
+@media all and (min-width: 980px) {
   .page .page-header .page-header-title {
     max-width: 85%; } }
 @media all and (min-width: 1080px) {
