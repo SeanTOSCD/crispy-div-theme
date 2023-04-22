@@ -76,7 +76,7 @@ function crispydiv_post_thumbnail() {
 		?>
 
         <div class="post-thumbnail">
-			<?php the_post_thumbnail(); ?>
+			<?php the_post_thumbnail( 'media-large' ); ?>
         </div>
 
 	<?php else : ?>
@@ -84,7 +84,7 @@ function crispydiv_post_thumbnail() {
         <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 			<?php
 			the_post_thumbnail(
-				'post-thumbnail',
+				'media',
 				array(
 					'alt' => the_title_attribute(
 						array(

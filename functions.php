@@ -29,6 +29,11 @@ add_action( 'after_setup_theme', function() {
 	// Enable support for Post Thumbnails on posts and pages.
 	add_theme_support( 'post-thumbnails' );
 
+	// Hard cropped image sizes
+	add_image_size( 'media', 696, 348, true );
+	add_image_size( 'media-large', 1000, 500, true );
+	add_image_size( 'media-full', 1600, 800, true );
+
 	// wp_nav_menu() used in one location.
 	register_nav_menus(
 		array(
