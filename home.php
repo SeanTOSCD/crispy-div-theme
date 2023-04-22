@@ -51,7 +51,11 @@ crispydiv_page_header( array(
 			<?php
 			endif;
 		endif;
-		?>
+
+        get_template_part( 'template-parts/section', 'subscribe', array(
+			'title' => 'Subscribe for more<span class="highlight-text">.</span>',
+			'size'  => 'medium',
+		) ); ?>
 	</main>
 
 <?php

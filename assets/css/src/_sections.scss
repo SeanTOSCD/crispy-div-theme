@@ -1,13 +1,4 @@
 .subscribe-cta {
-	background-position-x: right;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-	@media all and (min-width: 760px) {
-		background-size: 100% auto;
-		background-position-x: 6rem;
-		background-position-y: 80%;
-	}
 
 	.subscribe-content-wrap {
 		display: grid;
