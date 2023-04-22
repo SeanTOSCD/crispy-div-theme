@@ -20,7 +20,7 @@ get_header();
                                 <p class="page-header-cta dual-cta">
                                     <?php
                                     crispydiv_button( array(
-                                        'text' => 'Start the Conversation',
+                                        'text' => 'Work with Crispy Div',
                                         'url' => home_url( '/contact/' ),
                                         'classes' => array( 'button', 'primary' ),
                                     ) );
@@ -217,7 +217,7 @@ get_header();
 	    <?php
 	    crispydiv_button(
 		    array(
-			    'text'  => 'Send an email',
+			    'text'  => 'Start the conversation',
 			    'url'  => home_url( '/contact' ),
 			    'classes' => array( 'button', 'outline' ),
 		    )
