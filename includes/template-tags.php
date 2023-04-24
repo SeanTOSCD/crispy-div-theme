@@ -169,14 +169,14 @@ function get_customization_logos( $exclusions = array() ) {
             'id' => 'elementor',
 			'name' => 'Elementor',
 			'description' => 'Drag & Drop Page Builder for WordPress',
-			'image' => 'elementor-logo.svg',
+			'image' => 'elementor-logo.png',
             'type' => array( 'Plugin', 'Page Builder' ),
 		),
 		'mailchimp' => array(
             'id' => 'mailchimp',
 			'name' => 'Mailchimp',
 			'description' => 'Email Marketing & Automations Service',
-			'image' => 'mailchimp-logo.svg',
+			'image' => 'mailchimp-logo.png',
 			'type' => array( 'Plugin', 'Online Service' ),
 		),
 		'stripe' => array(
