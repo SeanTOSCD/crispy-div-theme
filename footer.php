@@ -17,7 +17,6 @@
                 <div class="crispy-div-info">
                     <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="site-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/branding/crispy-div-logo-color.svg" alt="<?php echo THEME_NAME; ?>" /></a></p>
                     <p class="site-description">Getting started with WordPress is simple. Molding WordPress to your needs can be difficult. We find creative ways to solve that problem. <a href="<?php echo home_url( '/contact/' ); ?>">Reach out</a>.</p>
-		            <?php crispydiv_social_links(); ?>
                 </div>
                 <div class="crispy-div-links">
                     <span class="footer-list-title h6">Services</span>
